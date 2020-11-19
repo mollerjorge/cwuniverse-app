@@ -93,13 +93,13 @@ export default function Home() {
                     <Button>Get started</Button>
                   </div>
                 </div>
-                {/* <img
+                <img
                   className='mt-10 max-w-2xl lg:w-full'
                   width='672px'
                   height='592px'
-                  src='images/home-hero-infographic.svg'
+                  src='images/home-hero-infographic.png'
                   alt='home hero inphografic'
-                /> */}
+                />
                 <div className='hidden md:block absolute w-full left-0 lg:bottom-0'>
                   <svg
                     class='nectar-shape-divider'
