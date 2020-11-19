@@ -3,13 +3,16 @@ import Button from '../components/Button'
 import GroupBox from "../components/GroupBox/GroupBox"
 import FounderIcon from '../public/images/founder-icon.svg'
 import InvestorIcon from '../public/images/investor-icon.svg'
-import Image from 'next/image'
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Clockwork Universe</title>
+        <meta
+          name='description'
+          content='Clockwork universe, investment intelligence app'
+        />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
@@ -26,20 +29,26 @@ export default function Home() {
             <ul className='flex'>
               <li>
                 {' '}
-                <a href='#' className='text-md font-light text-gray-900'>
+                <a
+                  href='/for-founders'
+                  className='text-md font-light text-gray-900'
+                >
                   For Founders{' '}
                 </a>{' '}
               </li>
               <li>
                 {' '}
-                <a href='#' className='text-md ml-10 font-light text-gray-900'>
+                <a
+                  href='/for-investors'
+                  className='text-md ml-10 font-light text-gray-900'
+                >
                   For Investors{' '}
                 </a>{' '}
               </li>
               <li>
                 {' '}
                 <a
-                  hreg='#'
+                  hreg='https://cwuniverse.app/sign-in'
                   className='uppercase ml-16 text-sm text-blue-800 ml-10 font-medium'
                 >
                   Sign in{' '}
@@ -48,7 +57,7 @@ export default function Home() {
               <li>
                 {' '}
                 <a
-                  hreg='#'
+                  hreg='https://cwuniverse.app/sign-un'
                   className='uppercase ml-6 text-sm text-blue-800 font-medium border-blue-800 border-1 rounded-md px-4 py-2'
                 >
                   Sign up{' '}
@@ -84,12 +93,13 @@ export default function Home() {
                     <Button>Get started</Button>
                   </div>
                 </div>
-                <Image
+                {/* <img
+                  className='mt-10 max-w-2xl lg:w-full'
+                  width='672px'
+                  height='592px'
                   src='images/home-hero-infographic.svg'
-                  alt='hero home infographic'
-                  width={672}
-                  height={592}
-                />
+                  alt='home hero inphografic'
+                /> */}
                 <div className='hidden md:block absolute w-full left-0 lg:bottom-0'>
                   <svg
                     class='nectar-shape-divider'
