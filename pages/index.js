@@ -48,7 +48,7 @@ export default function Home() {
               <li>
                 {' '}
                 <a
-                  hreg='https://cwuniverse.app/sign-in'
+                  href='https://cwuniverse.app/sign-in'
                   className='uppercase ml-16 text-sm text-blue-800 ml-10 font-medium'
                 >
                   Sign in{' '}
@@ -57,7 +57,7 @@ export default function Home() {
               <li>
                 {' '}
                 <a
-                  hreg='https://cwuniverse.app/sign-un'
+                  href='https://cwuniverse.app/sign-un'
                   className='uppercase ml-6 text-sm text-blue-800 font-medium border-blue-800 border-1 rounded-md px-4 py-2'
                 >
                   Sign up{' '}
