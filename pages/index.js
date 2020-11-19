@@ -3,6 +3,7 @@ import Button from '../components/Button'
 import GroupBox from "../components/GroupBox/GroupBox"
 import FounderIcon from '../public/images/founder-icon.svg'
 import InvestorIcon from '../public/images/investor-icon.svg'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -83,12 +84,11 @@ export default function Home() {
                     <Button>Get started</Button>
                   </div>
                 </div>
-                <img
-                  className='mt-10 max-w-2xl lg:w-full'
-                  width='672px'
-                  height='592px'
+                <Image
                   src='images/home-hero-infographic.svg'
-                  alt='home hero inphografic'
+                  alt='hero home infographic'
+                  width={672}
+                  height={592}
                 />
                 <div className='hidden md:block absolute w-full left-0 lg:bottom-0'>
                   <svg
