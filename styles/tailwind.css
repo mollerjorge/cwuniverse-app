@@ -1,0 +1,48 @@
+/* purgecss start ignore */
+@tailwind  base;
+@tailwind  components;
+/* purgecss end ignore */
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+a {
+  @apply antialiased;
+}
+
+.btn {
+  @apply py-4 px-6 rounded;
+}
+
+.btn-primary {
+  @apply bg-blue-800 text-white text-base uppercase tracking-wide font-normal font-lato;
+}
+
+.group-box {
+  @apply transition-all duration-300 ease-in-out items-start gap-4   border flex flex-col px-8 py-12 border-gray-300 rounded cursor-pointer;
+}
+
+.group-box:first-child {
+  @apply ml-10
+}
+
+.group-box:hover {
+  @apply  bg-gradient-to-r from-blue-900 to-blue-800;
+}
+
+.group-box:hover h3,
+.group-box:hover p {
+  @apply text-white;
+}
+
+.group-box:hover svg path {
+  fill: #ffffff;
+}
+
+@tailwind utilities;
