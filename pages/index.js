@@ -1,10 +1,53 @@
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Button from '../components/Button'
-import GroupBox from "../components/GroupBox/GroupBox"
+import GroupBox from '../components/GroupBox/GroupBox'
 import FounderIcon from '../public/images/founder-icon.svg'
 import InvestorIcon from '../public/images/investor-icon.svg'
+import classNames from 'classnames'
 
 export default function Home() {
+  const [activeTab, setActiveTab] = useState(0)
+
+  const displayImage = () => {
+    if (activeTab === 0) {
+      return (
+        <img
+          key="0"
+          className='mx-auto animate__animated animate__fadeIn animate__fast'
+          width='762px'
+          height='632'
+          src='images/automated-investor-reporting.png'
+          alt='automated investor reporting'
+        />
+      )
+    }
+    if (activeTab === 1) {
+      return (
+        <img
+          key="1"
+          className='mx-auto animate__animated animate__fadeIn animate__fast'
+          width='762px'
+          height='632'
+          src='images/digital-private-investment.png'
+          alt='automated investor reporting'
+        />
+      )
+    }
+    if (activeTab === 2) {
+      return (
+        <img
+          key="2"
+          className='mx-auto animate__animated animate__fadeIn animate__fast'
+          width='762px'
+          height='632'
+          src='images/automated-investor-reporting.png'
+          alt='automated investor reporting'
+        />
+      )
+    }
+  }
+
   return (
     <div>
       <Head>
@@ -116,7 +159,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='bg-white min-h-screen mt-32' id='meetClockwork'>
+        <section className='bg-white mb-40  mt-32' id='meetClockwork'>
           <div className='max-w-7xl m-auto flex gap-6  px-10 2xl:px-24 w-full'>
             <div className='flex flex-col'>
               <h2 className='leading-tight text-xl font-raleway font-normal text-gray-700 max-w-sm lg:text-5xl lg:max-w-5xl'>
@@ -137,6 +180,106 @@ export default function Home() {
               legend='Modernize your portfolio operations and improve founder engagement.'
               icon={<InvestorIcon />}
             />
+          </div>
+        </section>
+
+        <section
+          id='enhancing private investment efficienty'
+          className='bg-blue-800 pt-32'
+        >
+          <div className='max-w-7xl m-auto flex  px-10 2xl:px-24 w-full flex-col'>
+            <h2 className='text-5xl text-center w-full capitalize text-white mb-1 font-raleway'>
+              enhancing private investment efficienty
+            </h2>
+            <p className='text-white text-center font-normal font-raleway text-lg  w-full'>
+              Clockwork® enables better outcomes for founders and investors
+              throughout the investment lifecycle.
+            </p>
+
+            <div className='tabs-container relative flex mt-16'>
+              <div className='tab-line' />
+              <div className='py-12 flex flex-col gap-10 w-1/4  max-w-sm'>
+                <div
+                  onClick={() => {
+                    document.getElementsByClassName(
+                      'tab-line'
+                    )[0].style.cssText = 'transform: translateY(0px)'
+                    setActiveTab(0)
+                  }}
+                  className={classNames(
+                    'cursor-pointer',
+                    'flex',
+                    'flex-col',
+                    'gap-6',
+                    'justify-center',
+                    'pl-12',
+                    { ['opacity-50']: activeTab !== 0 }
+                  )}
+                >
+                  <h3 className='text-white text-2xl font-normal capitalize font-raleway'>
+                    Dynamic Company Profile
+                  </h3>
+                  <p className='text-gray-400 text-md'>
+                    Track portfolio company operational and investment specific
+                    data.
+                  </p>
+                </div>
+
+                <div
+                  onClick={() => {
+                    document.getElementsByClassName(
+                      'tab-line'
+                    )[0].style.cssText = 'transform: translateY(190px)'
+                    setActiveTab(1)
+                  }}
+                  className={classNames(
+                    'cursor-pointer',
+                    'flex',
+                    'flex-col',
+                    'gap-6',
+                    'justify-center',
+                    'pl-12',
+                    { ['opacity-50']: activeTab !== 1 }
+                  )}
+                >
+                  <h3 className='text-white text-2xl font-normal capitalize font-raleway'>
+                    Automated Investor Reporting
+                  </h3>
+                  <p className='text-gray-400 text-md'>
+                    Facilitate reporting and organization of investor
+                    communications.
+                  </p>
+                </div>
+
+                <div
+                  onClick={() => {
+                    document.getElementsByClassName(
+                      'tab-line'
+                    )[0].style.cssText = 'transform: translateY(373px)'
+                    setActiveTab(2)
+                  }}
+                  className={classNames(
+                    'cursor-pointer',
+                    'flex',
+                    'flex-col',
+                    'gap-6',
+                    'justify-center',
+                    'pl-12',
+                    { ['opacity-50']: activeTab !== 2 }
+                  )}
+                >
+                  <h3 className='text-white text-2xl font-normal capitalize font-raleway'>
+                    Digital Private Investment Office
+                  </h3>
+                  <p className='text-gray-400 text-md'>
+                    Interactive portfolio overview and performance metrics.
+                  </p>
+                </div>
+              </div>
+              <div className=' w-3/4'>
+               {displayImage()}
+              </div>
+            </div>
           </div>
         </section>
       </main>
