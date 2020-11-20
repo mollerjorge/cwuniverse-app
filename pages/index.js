@@ -191,7 +191,7 @@ export default function Home() {
             <h2 className='text-5xl text-center w-full capitalize text-white mb-1 font-raleway'>
               enhancing private investment efficienty
             </h2>
-            <p className='text-white text-center font-normal font-raleway text-lg  w-full'>
+            <p className='text-gray-400 text-center font-normal font-raleway text-lg  w-full'>
               Clockwork® enables better outcomes for founders and investors
               throughout the investment lifecycle.
             </p>
@@ -213,13 +213,13 @@ export default function Home() {
                     'gap-6',
                     'justify-center',
                     'pl-12',
-                    { ['opacity-50']: activeTab !== 0 }
+                    { ['opacity-75']: activeTab !== 0 }
                   )}
                 >
                   <h3 className='text-white text-2xl font-normal capitalize font-raleway'>
                     Dynamic Company Profile
                   </h3>
-                  <p className='text-gray-400 text-md'>
+                  <p className='text-gray-100 text-md'>
                     Track portfolio company operational and investment specific
                     data.
                   </p>
@@ -239,13 +239,13 @@ export default function Home() {
                     'gap-6',
                     'justify-center',
                     'pl-12',
-                    { ['opacity-50']: activeTab !== 1 }
+                    { ['opacity-75']: activeTab !== 1 }
                   )}
                 >
                   <h3 className='text-white text-2xl font-normal capitalize font-raleway'>
                     Automated Investor Reporting
                   </h3>
-                  <p className='text-gray-400 text-md'>
+                  <p className='text-gray-100 text-md'>
                     Facilitate reporting and organization of investor
                     communications.
                   </p>
@@ -265,20 +265,18 @@ export default function Home() {
                     'gap-6',
                     'justify-center',
                     'pl-12',
-                    { ['opacity-50']: activeTab !== 2 }
+                    { ['opacity-75']: activeTab !== 2 }
                   )}
                 >
                   <h3 className='text-white text-2xl font-normal capitalize font-raleway'>
                     Digital Private Investment Office
                   </h3>
-                  <p className='text-gray-400 text-md'>
+                  <p className='text-gray-100 text-md'>
                     Interactive portfolio overview and performance metrics.
                   </p>
                 </div>
               </div>
-              <div className=' w-3/4'>
-               {displayImage()}
-              </div>
+              <div className=' w-3/4'>{displayImage()}</div>
             </div>
           </div>
         </section>

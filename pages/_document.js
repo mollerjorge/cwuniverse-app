@@ -14,6 +14,8 @@ class MyDocument extends Document {
             rel='preconnect'
             href='https://fonts.gstatic.com'
             crossorigin
+            media='print'
+            onload="this.onload=null;this.removeAttribute('media');"
           ></link>
 
           <link
