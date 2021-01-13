@@ -13,7 +13,7 @@ class MyDocument extends Document {
           <link
             rel='preconnect'
             href='https://fonts.gstatic.com'
-            crossorigin
+            crossOrigin="true"
             media='print'
             onload="this.onload=null;this.removeAttribute('media');"
           ></link>

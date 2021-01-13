@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button = ({ children }) => {
+const Button = ({ children, className }) => {
   return (
-    <a href="#" className="btn btn-primary">
+    <a href="#" className={`btn btn-primary ${className}`}>
       {children}
     </a>
   )

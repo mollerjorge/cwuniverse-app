@@ -3,16 +3,8 @@
 @tailwind components;
 /* purgecss end ignore */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-button,
-a {
-  @apply antialiased;
+h2 {
+  @apply text-5xl font-raleway font-normal antialiased mb-10;
 }
 
 .btn {
@@ -20,7 +12,7 @@ a {
 }
 
 .btn-primary {
-  @apply bg-blue-800 text-white text-base uppercase tracking-wide font-normal font-lato;
+  @apply bg-blue text-white text-base uppercase tracking-wide font-normal font-lato;
 }
 
 .group-box {
@@ -32,7 +24,7 @@ a {
 }
 
 .group-box:hover {
-  @apply bg-gradient-to-r from-blue-900 to-blue-800;
+  @apply bg-gradient-to-r from-blue-dark to-blue;
 }
 
 .group-box:hover h3,
@@ -67,7 +59,75 @@ a {
   position: absolute;
   left: -1px;
   top: 3rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
+
+.flickity-prev-next-button {
+  display: none;
+}
+
+.flickity-slider div:not(.is-selected) {
+  transform: scale(0.8);
+  opacity: .8;
+}
+
+.flickity-slider > div {
+  transition:  all .3s ease-in-out;
+}
+
+ol.flickity-page-dots {
+  @apply -bottom-8;
+}
+
+li.dot.is-selected {
+  @apply bg-transparent border-2 border-black;
+}
+
+li.dot {
+  @apply border-0 bg-gray-600;
+}
+
+.badge {
+  position: relative;
+}
+
+.badge::before {
+  content: '';
+  width: 100%;
+  height: 1.5rem;
+  background: #e95565;
+  display: inline-block;
+  position: absolute;
+  top: 2.5rem;
+  z-index: -1;
+}
+
+.gradient {
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 0%, 100%),
+    hsl(0, 0%, 100%)
+  );
+  z-index: 1;
+}
+
+.gradient::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #123861, #2463af);
+  z-index: -1;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+}
+
+.gradient:hover::before {
+  opacity: 1;
+}
+
 
 @tailwind utilities;
