@@ -39,7 +39,7 @@ const Footer = () => {
             <a className=' text-md mt-2 text-gray-500'>For founders</a>
             <a className=' text-md mt-2 text-gray-500'>For investors</a>
           </div>
-          <div className='w-4/12'>
+          <div className='w-4/12 pt-4'>
             <p className='text-black uppercase antialiased text-xl'>
               JOIN CLOCKWORK®
             </p>

@@ -2,10 +2,10 @@ import React from 'react'
 import Head from 'next/head'
 import Button from '../components/Button'
 import ReactCompareImage from 'react-compare-image'
-import Footer from "../components/Footer"
+import Footer from '../components/Footer'
 import Header from "../components/Header"
 
-const ForFounders = () => {
+const ForInvestors = () => {
   return (
     <div>
       <Head>
@@ -26,11 +26,12 @@ const ForFounders = () => {
               <div>
                 <h1 className='leading-tight capitalize text-big z-10 font-raleway font-normal text-gray-700 max-w-sm lg:text-6xl lg:max-w-2xl'>
                   Clockwork Universe For{' '}
-                  <span className='badge badge-red'> Founders</span>
+                  <span className='badge badge-green'>Investors</span>
                 </h1>
                 <p className='font-lato text-xl mt-6  text-gray-800 antialiased font-light lg:max-w-lg'>
-                  Free modern investor reporting technology. Improve investor
-                  engagement with branded updates, file sharing, and more.
+                  A better way to monitor your private investment portfolio.
+                  Easily organize and engage with transparent portfolio company
+                  updates and investment data.
                 </p>
                 <div className='mt-20'>
                   <Button className='transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block'>
@@ -42,7 +43,7 @@ const ForFounders = () => {
                 className='mt-10 max-w-2xl lg:w-full'
                 width='672px'
                 height='592px'
-                src='images/founders.svg'
+                src='images/investors-hero.svg'
                 alt='home hero inphografic'
               />
             </div>
@@ -90,20 +91,18 @@ const ForFounders = () => {
             <div className='mt-20  md:mt-40 lg:mt-12 lg:flex lg:justify-between lg:items-center'>
               <div>
                 <h2 className='leading-tight capitalize text-5xl z-10 font-raleway font-normal text-gray-700'>
-                  Investor Relations Platform
+                  Portfolio Dashboard
                 </h2>
                 <p className='font-lato mt-6 antialiased text-base text-gray-700 leading-8 max-w-lg'>
-                  Manage your company profile for communication and data sharing
-                  with current and prospective investors and other key contacts.
-                  Send regular updates, quick announcements, news, notes, and
-                  files, in a single place.
+                  Track aggregate portfolio performance from individual
+                  investment transactions.
                 </p>
               </div>
               <img
                 className='mt-10 max-w-2xl lg:w-full'
                 width='672px'
                 height='592px'
-                src='images/investor-relations.svg'
+                src='images/portfolio-dashboard.svg'
                 alt='home hero inphografic'
               />
             </div>
@@ -117,17 +116,15 @@ const ForFounders = () => {
                 className='mt-10 max-w-2xl lg:w-full'
                 width='672px'
                 height='592px'
-                src='images/investor-updates.svg'
+                src='images/company-index.svg'
                 alt='home hero inphografic'
               />
               <div className='ml-20'>
                 <h2 className='leading-tight capitalize text-5xl z-10 font-raleway font-normal text-gray-700'>
-                  Investor Updates Templates
+                  Company Index
                 </h2>
                 <p className='font-lato mt-6 antialiased text-base text-gray-700 leading-8 max-w-lg'>
-                  A structured approach to investor updates with standard and
-                  custom templates. Rely on best practices to ensure you
-                  communicate what is needed without wasting your time.
+                  Organize and filter active, prospective, and past investments.
                 </p>
               </div>
             </div>
@@ -139,19 +136,18 @@ const ForFounders = () => {
             <div className='mt-20  md:mt-40 lg:mt-12 lg:flex lg:justify-between lg:items-center'>
               <div>
                 <h2 className='leading-tight capitalize text-5xl z-10 font-raleway font-normal text-gray-700'>
-                  Systems Integrations
+                  Portfolio Digest
                 </h2>
                 <p className='font-lato mt-6 antialiased text-base text-gray-700 leading-8 max-w-lg'>
-                  Import data from systems you are already using for better and
-                  easier reporting. Save time and build trust accuracy with
-                  investor communications and records.
+                  Dynamic feed with portfolio company updates, news, and other
+                  information.
                 </p>
               </div>
               <img
                 className='mt-10 max-w-2xl lg:w-full'
                 width='672px'
                 height='592px'
-                src='images/integrations.svg'
+                src='images/portfolio-digest.svg'
                 alt='home hero inphografic'
               />
             </div>
@@ -161,10 +157,10 @@ const ForFounders = () => {
         <section className='py-20 bg-blue-dark'>
           <div className='flex flex-col justify-center items-center'>
             <h2 className='text-5xl text-white antialiased text-center'>
-              Sign Up Free & Claim Your Profile
+              Request a Demo Today
             </h2>
             <Button className='border-white flex items-center border-2 w-fit px-8 py-4 mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent'>
-              <span className='font-bold'>Get started</span>
+              <span className='font-bold'>Get in touch</span>
               <svg
                 className='w-6 ml-5'
                 xmlns='http://www.w3.org/2000/svg'
@@ -184,72 +180,22 @@ const ForFounders = () => {
         </section>
 
         <section className='py-40'>
-          <div className='container'>
-            <h2 className='text-center text-5xl antialiased'>Pricing</h2>
+          <div className='container flex flex-col justify-center items-center'>
+            <h2 className='mb-20 text-center text-5xl antialiased'>Pricing</h2>
+            <h3 className='text-2xl text-center text-gray-700 antialiased mb-5 font-raleway'>
+              Your portfolio is unique and so are your needs.
+            </h3>
+            <p className='text-md text-gray-500 antialiased text-center mb-5 max-w-xl mx-auto'>
+              We don’t believe pricing should be a one-size-fits-all approach.
+              Contact us to discuss what you’re looking for and nothing more.
+            </p>
 
-            <div className='flex justify-center gap-6'>
-              <div className='gradient group w-1/3 flex justify-center items-center flex-col border-1 border-gray-200 rounded-md text-gray-200 py-40 px-16'>
-                <span className='uppercase group-hover:text-white text-gray-500 text-md mb-5 font-raleway'>
-                  Try it now!
-                </span>
-                <h2 className='text-black group-hover:text-white antialiased text-5xl'>
-                  Free
-                </h2>
-                <p className='text-gray-500 group-hover:text-white antialiased text-md text-center mb-20'>
-                  Create your Clockwork Universe profile and improve your
-                  investor relations.{' '}
-                </p>
-
-                <a className='text-gray-600 group-hover:text-white flex items-center antialiased text-sm uppercase tracking-widest font-raleway'>
-                  <span>Sign up now</span>
-                  <svg
-                    className='w-8 group-hover:text-white text-gray-400 ml-2'
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'
-                  >
-                    <path
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1'
-                      d='M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z'
-                    />
-                  </svg>
-                </a>
-              </div>
-
-              <div className='gradient group w-1/3 flex justify-center items-center flex-col border-1 border-gray-200 rounded-md text-gray-200 py-40 px-16'>
-                <span className='uppercase group-hover:text-white text-gray-500 text-md mb-5 font-raleway'>
-                  NEED MORE HELP?
-                </span>
-                <h2 className='text-black group-hover:text-white antialiased text-5xl'>
-                  Premium
-                </h2>
-                <p className='text-gray-500 group-hover:text-white antialiased text-md text-center mb-20'>
-                  Rely on our team for hands-on financial management and
-                  strategic support.
-                </p>
-
-                <a className='text-gray-600 group-hover:text-white flex items-center antialiased text-sm uppercase tracking-widest font-raleway'>
-                  <span>Contact us</span>
-                  <svg
-                    className='w-8 group-hover:text-white text-gray-400 ml-2'
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'
-                  >
-                    <path
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1'
-                      d='M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z'
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
+            <a
+              className='text-gray-500 antialiased font-light text-md uppercase text-center'
+              href='https://clockwork4.typeform.com/to/Ma9jZH'
+            >
+              Contact us
+            </a>
           </div>
         </section>
 
@@ -346,10 +292,11 @@ const ForFounders = () => {
             <div className='bg-blue-dark pt-60 pb-36 '>
               <div className='container flex flex-col justify-center items-center'>
                 <h2 className='text-center text-white'>
-                  Improve your investor relations
+                  We are building the digital infrastructure for private
+                  investing.
                 </h2>
                 <Button className='border-white flex items-center border-2 w-fit px-8 py-4 mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent'>
-                  <span className='font-bold'>Get started</span>
+                  <span className='font-bold'>Request a demo</span>
                   <svg
                     className='w-6 ml-5'
                     xmlns='http://www.w3.org/2000/svg'
@@ -376,4 +323,4 @@ const ForFounders = () => {
   )
 }
 
-export default ForFounders
+export default ForInvestors
