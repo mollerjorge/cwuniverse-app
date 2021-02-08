@@ -90,8 +90,8 @@ export async function getStaticPaths() {
   //   fallback: false
   // }
   return {
-    paths: [{ params: { slug: 'abc'}}],
-    fallback: false,
+    paths: [{ params: { slug: 'abc' } }],
+    fallback: false
   }
 }
 
@@ -106,11 +106,11 @@ export async function getStaticProps({ params }) {
   //   revalidate: 1
   // }
 
-  return { 
+  return {
     props: {
       article: {},
       categories: {},
-      revalidate: 1, 
+      revalidate: 1
     }
   }
 }
