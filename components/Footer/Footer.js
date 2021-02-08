@@ -9,7 +9,7 @@ const Footer = () => {
           <div className='w-4/12 flex flex-col'>
             <img
               className=' max-w-6xl w-72'
-              src='images/clockwork-logo.png'
+              src='/images/clockwork-logo.png'
               alt='clockwork logo'
             />
 

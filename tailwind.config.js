@@ -28,7 +28,10 @@ module.exports = {
         blue: {
           light: '#2463AF',
           DEFAULT: '#194378',
-          dark: '#143D69'
+          dark: '#143D69',
+
+          darkest: '#101527',
+          link: '#153960',
         },
         teal: {
           DEFAULT: '#3cc3af'
@@ -41,13 +44,28 @@ module.exports = {
         },
         purple: {
           DEFAULT: '#8a67eb'
+        },
+        black: {
+          DEFAULT: '#333333'
+        },
+        gray: {
+          DEFAULT: '#444444',
         }
+
       },
       spacing: {
         0.5: '2px'
       },
+      boxShadow: {
+        '3xl': '0 20px 38px rgba(0, 0, 0, 0.16)'
+      },
       fontSize: {
-        big: '42px'
+        15: '15px',
+        26: '26px',
+        big: '42px',
+        '6xl': ['4rem', '4.6rem'],
+        '46': '46px',
+        '60': '60px',
       },
       borderWidth: {
         1: '1px'

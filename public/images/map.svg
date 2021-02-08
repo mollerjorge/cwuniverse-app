@@ -33,7 +33,7 @@
                         <circle id="Oval" cx="10.8" cy="10.8" r="4.8"></circle>
                     </g>
                 </g>
-                <g className="animate-ping" id="Group-2-Copy-14" transform="translate(217.200000, 210.000000)" fill="#c34">
+                <g className="animate-ping" id="Group-2-Copy-14" transform="translate(217.200000, 210.000000)" fill="#2563AF">
                     <circle id="Oval" className="animate-ping" fill-opacity="0.2" cx="10.8" cy="10.8" r="10.8"></circle>
                     <circle id="Oval" className="animate-ping" cx="10.8" cy="10.8" r="4.8"></circle>
                 </g>

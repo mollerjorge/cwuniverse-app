@@ -8,46 +8,34 @@ const Header = () => {
           <img
             width='230px'
             height='48px'
-            src='images/clockwork-logo.png'
+            src='/images/clockwork-logo.png'
             alt='clockwork logo'
           />
         </a>
 
         <nav className='hidden lg:block'>
-          <ul className='flex'>
+          <ul className='flex font-raleway antialiased text-blue-darkest'>
             <li>
               {' '}
-              <a
-                href='/for-founders'
-                className='text-md font-light text-gray-900'
-              >
+              <a href='/for-founders' className='text-15 font-normal hover:text-blue-light'>
                 For Founders{' '}
               </a>{' '}
             </li>
             <li>
               {' '}
-              <a
-                href='/for-investors'
-                className='text-md ml-10 font-light text-gray-900'
-              >
+              <a href='/for-investors' className='text-15 ml-10 font-normal hover:text-blue-light'>
                 For Investors{' '}
               </a>{' '}
             </li>
             <li>
               {' '}
-              <a
-                href='/about-us'
-                className='text-md ml-10 font-light text-gray-900'
-              >
+              <a href='/about-us' className='text-15 ml-10 font-normal hover:text-blue-light'>
                 About Us
               </a>{' '}
             </li>
             <li>
               {' '}
-              <a
-                href='/blog'
-                className='text-md ml-10 font-light text-gray-900'
-              >
+              <a href='/blog' className='text-15 ml-10 font-normal hover:text-blue-light'>
                 Blog
               </a>{' '}
             </li>
@@ -55,7 +43,7 @@ const Header = () => {
               {' '}
               <a
                 href='https://cwuniverse.app/sign-in'
-                className='uppercase ml-16 text-sm text-blue-800 font-medium'
+                className='uppercase ml-16 text-sm text-blue-link font-semibold antialiased'
               >
                 Sign in{' '}
               </a>{' '}
@@ -64,7 +52,7 @@ const Header = () => {
               {' '}
               <a
                 href='https://cwuniverse.app/sign-un'
-                className='uppercase ml-6 text-sm text-blue-800 font-medium border-blue-800 border-1 rounded-md px-4 py-2'
+                className='uppercase ml-6 text-sm text-blue-darkest border-blue-link font-semibold antialiased border-1 rounded px-4 py-2'
               >
                 Sign up{' '}
               </a>{' '}

@@ -15,15 +15,16 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <link
-          rel='stylesheet'
-          id='ubermenu-raleway-css'
-          href='//fonts.googleapis.com/css?family=Raleway%3A%2C300%2C400%2C700&amp;ver=5.6'
-          type='text/css'
-          media='all'
-        ></link>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"></link>
         <link rel='shortcut icon' href={getStrapiMedia(global.favicon)} />
+        <link rel='preconnect' href='https://fonts.gstatic.com'></link>
+        <link
+          href='https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap'
+          rel='stylesheet'
+        ></link>
+        <link
+          href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap'
+          rel='stylesheet'
+        ></link>
       </Head>
       <GlobalContext.Provider value={global}>
         <Component {...pageProps} />

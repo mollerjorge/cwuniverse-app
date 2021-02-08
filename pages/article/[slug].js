@@ -1,9 +1,12 @@
 import ReactMarkdown from 'react-markdown'
+import Head from 'next/head'
 import Moment from 'react-moment'
 import { fetchAPI } from '../../lib/api'
 import Image from '../../components/image'
 import Seo from '../../components/seo'
 import { getStrapiMedia } from '../../lib/media'
+import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 
 const Article = ({ article, categories }) => {
   const imageUrl = getStrapiMedia(article.image)
@@ -15,47 +18,63 @@ const Article = ({ article, categories }) => {
     article: true
   }
 
+  const HOST_STRAPI = 'http://localhost:1337'
+
   return (
-    <>
-      <Seo seo={seo} />
-      <div
-        id='banner'
-        className='uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin'
-        data-src={imageUrl}
-        data-srcset={imageUrl}
-        data-uk-img
-      >
-        <h1>{article.title}</h1>
-      </div>
-      <div className='uk-section'>
-        <div className='uk-container uk-container-small'>
-          <ReactMarkdown source={article.content} escapeHtml={false} />
-          <hr className='uk-divider-small' />
-          <div className='uk-grid-small uk-flex-left' data-uk-grid='true'>
-            <div>
-              {article.author.picture && (
-                <Image
-                  image={article.author.picture}
-                  style={{
-                    position: 'static',
-                    borderRadius: '50%',
-                    height: 30
-                  }}
-                />
-              )}
-            </div>
-            <div className='uk-width-expand'>
-              <p className='uk-margin-remove-bottom'>
-                By {article.author.name}
-              </p>
-              <p className='uk-text-meta uk-margin-remove-top'>
-                <Moment format='MMM Do YYYY'>{article.published_at}</Moment>
+    <div>
+      <div>
+        <Head>
+          <title>Clockwork Universe</title>
+          <meta
+            name='description'
+            content='Clockwork universe, investment intelligence app'
+          />
+          <link rel='icon' href='/favicon.ico' />
+        </Head>
+
+        <Header />
+
+        <div className='pt-28'>
+          <div
+            className='w-full bg-cover bg-center'
+            style={{
+              backgroundImage: `linear-gradient(0deg, rgba(16, 21, 39, 0.8), rgba(16, 21, 39, 0.8)), url(${imageUrl})`,
+              height: '400px'
+            }}
+          >
+            <div className='container flex flex-col justify-center items-center py-20'>
+              <span className='uppercase font-normal font-lato text-white text-lg border-2 border-gray-300 rounded-md px-2 antialiased'>
+                {article.category.name}
+              </span>
+              <h1 className='text-4xl my-10 antialiased font-raleway text-white font-normal max-w-4xl text-center'>
+                {article.title}
+              </h1>
+              <p className='text-white antialiased'>
+                <Moment format='MMMM Do YYYY'>{article.published_at}</Moment>
               </p>
             </div>
           </div>
         </div>
+        <main className='article container pt-40 max-w-5xl antialiased leading-8 text-gray-800'>
+          <ReactMarkdown
+            source={article.content}
+            escapeHtml={false}
+            transformImageUri={(uri) => {
+              return `${process.env.STRAPI_HOST || HOST_STRAPI}${uri}`
+            }}
+          />
+        </main>
+
+        <div className='uk-width-expand'>
+          <p className='uk-margin-remove-bottom'>By {article.author.name}</p>
+          <p className='uk-text-meta uk-margin-remove-top'>
+            <Moment format='MMM Do YYYY'>{article.published_at}</Moment>
+          </p>
+        </div>
+
+        <Footer />
       </div>
-    </>
+    </div>
   )
 }
 
