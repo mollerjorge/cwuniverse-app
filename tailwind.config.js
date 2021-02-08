@@ -5,7 +5,7 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: ['./pages/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
       raleway: ['Raleway', 'sans-serif'],
@@ -31,7 +31,7 @@ module.exports = {
           dark: '#143D69',
 
           darkest: '#101527',
-          link: '#153960',
+          link: '#153960'
         },
         teal: {
           DEFAULT: '#3cc3af'
@@ -49,9 +49,8 @@ module.exports = {
           DEFAULT: '#333333'
         },
         gray: {
-          DEFAULT: '#444444',
+          DEFAULT: '#444444'
         }
-
       },
       spacing: {
         0.5: '2px'
@@ -64,8 +63,8 @@ module.exports = {
         26: '26px',
         big: '42px',
         '6xl': ['4rem', '4.6rem'],
-        '46': '46px',
-        '60': '60px',
+        46: '46px',
+        60: '60px'
       },
       borderWidth: {
         1: '1px'

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 import Head from 'next/head'
 import Button from 'components/Button'
 import GroupBox from 'components/GroupBox/GroupBox'
@@ -436,10 +437,12 @@ export default function Home() {
 
                   <div className='flex justify-start flex-col items-start'>
                     <div className='object-cover'>
-                      <img
-                        className='rounded-full w-32'
-                        src='https://cdn.clockwork.app/wp-content/uploads/2020/10/28162051/Captura-de-Pantalla-2020-10-28-a-las-13.20.25-e1603902092836-300x158.png'
+                      <Image
+                        src='/images/ffora.png'
                         alt='client image'
+                        width={96}
+                        height={96}
+                        className='rounded-full w-24'
                       />
                     </div>
                     <div className='flex flex-col'>
@@ -464,10 +467,12 @@ export default function Home() {
 
                   <div className='flex justify-start flex-col items-start'>
                     <div className='object-cover'>
-                      <img
-                        className='rounded-full w-24'
+                      <Image
                         src='/images/ffora.png'
                         alt='client image'
+                        width={96}
+                        height={96}
+                        className='rounded-full w-24'
                       />
                     </div>
                     <div className='flex flex-col'>
@@ -577,28 +582,28 @@ export default function Home() {
                   <path d='M 0 58 s 188.29 32 508 32 c 290 0 494 -35 494 -35 v 45 h -1002 z'></path>
                 </svg>
               </div>
-                <div className='container flex flex-col justify-center items-center'>
-                  <h2 className='text-center text-white z-50'>
-                    Welcome to the future of private investing
-                  </h2>
-                  <Button className='border-white flex items-center border-2 w-fit px-8 py-4 mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50'>
-                    <span className='font-bold'>Get started</span>
-                    <svg
-                      className='w-6 ml-5'
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      stroke='currentColor'
-                    >
-                      <path
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        stroke-width='2'
-                        d='M17 8l4 4m0 0l-4 4m4-4H3'
-                      />
-                    </svg>
-                  </Button>
-                </div>
+              <div className='container flex flex-col justify-center items-center'>
+                <h2 className='text-center text-white z-50'>
+                  Welcome to the future of private investing
+                </h2>
+                <Button className='border-white flex items-center border-2 w-fit px-8 py-4 mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50'>
+                  <span className='font-bold'>Get started</span>
+                  <svg
+                    className='w-6 ml-5'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'
+                  >
+                    <path
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                      stroke-width='2'
+                      d='M17 8l4 4m0 0l-4 4m4-4H3'
+                    />
+                  </svg>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
