@@ -44,7 +44,7 @@ const Article = ({ article, categories }) => {
           >
             <div className='container flex flex-col justify-center items-center py-20'>
               <span className='uppercase font-normal font-lato text-white text-lg border-2 border-gray-300 rounded-md px-2 antialiased'>
-                {article.category.name}
+                {article?.category?.name}
               </span>
               <h1 className='text-4xl my-10 antialiased font-raleway text-white font-normal max-w-4xl text-center'>
                 {article.title}
@@ -66,9 +66,9 @@ const Article = ({ article, categories }) => {
         </main>
 
         <div className='uk-width-expand'>
-          <p className='uk-margin-remove-bottom'>By {article.author.name}</p>
+          <p className='uk-margin-remove-bottom'>By {article?.author?.name}</p>
           <p className='uk-text-meta uk-margin-remove-top'>
-            <Moment format='MMM Do YYYY'>{article.published_at}</Moment>
+            <Moment format='MMM Do YYYY'>{article?.published_at}</Moment>
           </p>
         </div>
 
@@ -79,27 +79,39 @@ const Article = ({ article, categories }) => {
 }
 
 export async function getStaticPaths() {
-  const articles = await fetchAPI('/articles')
+  // const articles = await fetchAPI('/articles')
 
+  // return {
+  //   paths: articles.map((article) => ({
+  //     params: {
+  //       slug: article.slug
+  //     }
+  //   })),
+  //   fallback: false
+  // }
   return {
-    paths: articles.map((article) => ({
-      params: {
-        slug: article.slug
-      }
-    })),
-    fallback: false
+    paths: [{ params: { slug: 'abc'}}],
+    fallback: false,
   }
 }
 
 export async function getStaticProps({ params }) {
-  const articles = await fetchAPI(
-    `/articles?slug=${params.slug}&status=published`
-  )
-  const categories = await fetchAPI('/categories')
+  // const articles = await fetchAPI(
+  //   `/articles?slug=${params.slug}&status=published`
+  // )
+  // const categories = await fetchAPI('/categories')
 
-  return {
-    props: { article: articles[0], categories },
-    revalidate: 1
+  // return {
+  //   props: { article: articles[0], categories },
+  //   revalidate: 1
+  // }
+
+  return { 
+    props: {
+      article: {},
+      categories: {},
+      revalidate: 1,
+    }
   }
 }
 
