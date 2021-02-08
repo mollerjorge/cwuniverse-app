@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
-import Button from '../components/Button'
-import GroupBox from '../components/GroupBox/GroupBox'
-import FounderIcon from '../public/images/founder-icon.svg'
-import InvestorIcon from '../public/images/investor-icon.svg'
+import Button from 'components/Button'
+import GroupBox from 'components/GroupBox/GroupBox'
+import FounderIcon from 'public/images/founder-icon.svg'
+import InvestorIcon from 'public/images/investor-icon.svg'
 import classNames from 'classnames'
 import Flickity from 'react-flickity-component'
 
 import 'flickity/css/flickity.css'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Footer from 'components/Footer'
+import Header from 'components/Header'
 
 const flickityOptions = {
   initialIndex: 1,

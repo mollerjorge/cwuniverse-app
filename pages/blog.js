@@ -1,10 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
-import Card from '../components/Card'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import { fetchAPI } from '../lib/api'
-import Image from '../components/Image'
+import Card from 'components/Card'
+import Footer from 'components/Footer'
+import Header from 'components/Header'
+import { fetchAPI } from 'lib/api'
+import Image from 'components/Image'
 import Link from 'next/link'
 
 const Blog = ({ articles, categories }) => {

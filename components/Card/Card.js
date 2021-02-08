@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from '../Image'
+import Image from 'components/Image'
 
 const Card = ({ article }) => {
   return (

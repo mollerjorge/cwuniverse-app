@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-import Button from '../components/Button'
+import Button from 'components/Button'
 import ReactCompareImage from 'react-compare-image'
-import Footer from '../components/Footer'
-import Header from "../components/Header"
+import Footer from 'components/Footer'
+import Header from 'components/Header'
 
 const ForInvestors = () => {
   return (

@@ -1,12 +1,12 @@
 import ReactMarkdown from 'react-markdown'
 import Head from 'next/head'
 import Moment from 'react-moment'
-import { fetchAPI } from '../../lib/api'
-import Image from '../../components/image'
-import Seo from '../../components/seo'
-import { getStrapiMedia } from '../../lib/media'
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
+import { fetchAPI } from 'lib/api'
+import Image from 'components/image'
+import Seo from 'components/seo'
+import { getStrapiMedia } from 'lib/media'
+import Footer from 'components/Footer'
+import Header from 'components/Header'
 
 const Article = ({ article, categories }) => {
   const imageUrl = getStrapiMedia(article.image)
