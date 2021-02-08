@@ -5,7 +5,7 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: ['./pages/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
+  purge: ['./pages/**/*.js', './components/**/*.js'],
   theme: {
     fontFamily: {
       raleway: ['Raleway', 'sans-serif'],
