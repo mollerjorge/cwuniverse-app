@@ -545,7 +545,9 @@ export default function Home() {
                   <div className='flex justify-start flex-col items-start'>
                     <div className='object-cover'>
                       <img
-                        className='rounded-full w-24'
+                        width={40}
+                        height={40}
+                        className='rounded-full'
                         src='/images/logo-cardboard.png'
                         alt='client image'
                       />
