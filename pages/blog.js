@@ -18,7 +18,7 @@ const Blog = ({ articles, categories }) => {
       return (
         <Link as={`/article/${article.slug}`} href='/article/[id]'>
           <div className='flex flex-col rounded-md overflow-hidden'>
-            <Image image={article.image} />
+            {/* <Image image={article.image} />
             <p className='antialiased mt-5 font-raleway text-gray-600 text-sm'>
               {article.category?.name}
             </p>
@@ -27,7 +27,7 @@ const Blog = ({ articles, categories }) => {
             </h2>
             <p className='antialiased font-lato text-gray-700 text-base'>
               {article.description}
-            </p>
+            </p> */}
           </div>
         </Link>
       )
@@ -64,22 +64,18 @@ const Blog = ({ articles, categories }) => {
           <div className='grid grid-cols-2'>{displayArticles()}</div>
         </section>
       </main>
-
+      <div dangerouslySetInnerHTML={{ __html: articles[0]?.content?.rendered }} />
       <Footer />
     </div>
   )
 }
 
 export async function getStaticProps() {
-  // Run API calls in parallel
-  // const [articles, categories, homepage] = await Promise.all([
-  //   fetchAPI('/articles?status=published'),
-  //   fetchAPI('/categories'),
-  //   fetchAPI('/homepage')
-  // ])
-
+  const response = await fetch('https://clockwork.app/wp-json/wp/v2/posts')
+  const data = await response.json()
+  
   return {
-    props: { articles: [], categories: [], homepage: {} },
+    props: { articles: data, categories: [], homepage: {} },
     revalidate: 1
   }
 }

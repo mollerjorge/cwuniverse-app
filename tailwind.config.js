@@ -5,7 +5,7 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: ['pages/**/*.js', 'components/**/*.js'],
+  purge: ['./pages/**/*.js', './components/**/*.js'],
   theme: {
     fontFamily: {
       raleway: ['Raleway', 'sans-serif'],
@@ -13,11 +13,12 @@ module.exports = {
     },
     container: {
       center: true,
-      screens: {
-        lg: '1500px'
-      },
       padding: {
-        DEFAULT: '90px'
+        DEFAULT: '1rem',
+        lg: '1.5rem'
+      },
+      screens: {
+        lg: '1252px'
       }
     },
     extend: {
@@ -63,6 +64,7 @@ module.exports = {
         26: '26px',
         big: '42px',
         '6xl': ['4rem', '4.6rem'],
+        '39': '39px',
         46: '46px',
         60: '60px'
       },
@@ -77,3 +79,5 @@ module.exports = {
   variants: {},
   plugins: []
 }
+
+

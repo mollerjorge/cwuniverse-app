@@ -76,7 +76,7 @@ export default function Home() {
         <section className='container relative pb-12  2xl:py-24' id='hero'>
           <div className='w-full'>
             <div className='mt-20  md:mt-40 lg:mt-12 lg:flex lg:justify-between lg:items-center'>
-              <div className='w-1/2'>
+              <div className='w-full lg:w-1/2'>
                 <h1 className='capitalize text-big font-raleway font-normal text-gray-700 max-w-sm lg:text-60 lg:max-w-2xl'>
                   Modern inverstor relations
                 </h1>
@@ -84,13 +84,13 @@ export default function Home() {
                   Clockwork improves transparency to drive results for founders
                   and investors alike.
                 </p>
-                <div className='mt-10'>
+                <div className='mt-10 mb-10 lg:mb-0'>
                   <Button className='transition duration-500 transform inline-block bg-teal'>
                     Try it for free
                   </Button>
                 </div>
               </div>
-              <div className='w-1/2'>
+              <div className='w-full lg:w-1/2'>
                 <lottie-player
                   src='https://assets10.lottiefiles.com/packages/lf20_uuzrbscg.json'
                   background='transparent'
@@ -104,16 +104,16 @@ export default function Home() {
         </section>
 
         <section className='container bg-white mb-40  mt-32' id='meetClockwork'>
-          <div className=' flex gap-6  w-full'>
-            <div className='flex flex-col w-4/12'>
-              <h2 className='leading-tight text-xl font-raleway font-normal text-gray-900 lg:text-46 antialized'>
+          <div className=' flex flex-col lg:flex-row gap-6  w-full'>
+            <div className='flex flex-col w-full lg:w-4/12'>
+              <h2 className='leading-tight font-raleway font-normal text-gray-900 text-4xl lg:text-46 antialized'>
                 Meet Clockwork Universe
               </h2>
               <p className='text-md font-light antialiased'>
                 A new technology platform for collaborative private investing.
               </p>
             </div>
-            <div className='w-8/12 flex'>
+            <div className='w-full lg:w-8/12 flex flex-col lg:flex-row'>
               <GroupBox
                 title='founders'
                 legend='Upgrade your investor reporting and evolve your investor relationships.'
@@ -130,10 +130,10 @@ export default function Home() {
 
         <section
           id='enhancing private investment efficienty'
-          className='bg-blue py-32 container'
+          className='bg-blue py-32'
         >
-          <div className='m-auto flex 2xl:px-24 w-full flex-col'>
-            <h2 className='text-5xl text-center w-full capitalize text-white mb-4 font-raleway'>
+          <div className=' container m-auto flex 2xl:px-24 w-full flex-col'>
+            <h2 className='text-4xl lg:text-5xl text-center w-full capitalize text-white mb-4 font-raleway'>
               enhancing private investment efficienty
             </h2>
             <p className='text-white text-center font-normal font-raleway antialiased text-lg  w-full'>
@@ -142,8 +142,8 @@ export default function Home() {
             </p>
 
             <div className='tabs-container relative flex mt-20'>
-              <div className='tab-line' />
-              <div className='py-12 flex flex-col gap-10 w-1/4  max-w-sm'>
+              <div className='tab-line hidden lg:block' />
+              <div className='py-12 hidden lg:flex flex-col gap-10 w-1/4  max-w-sm'>
                 <div
                   onClick={() => {
                     document.getElementsByClassName(
@@ -218,15 +218,64 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className=' w-3/4'>{displayImage()}</div>
+              <div className='hidden lg:block w-3/4'>{displayImage()}</div>
+            </div>
+
+            <div className='lg:hidden flex flex-col'>
+              <h3 className='text-white text-26 font-normal capitalize font-raleway antialiased mb-3'>
+                Dynamic Company Profile
+              </h3>
+              <p className='text-gray-200 text-md antialiased mb-5'>
+                Track portfolio company operational and investment specific
+                data.
+              </p>
+              <img
+                key='0'
+                className='mx-auto animate__animated animate__fadeIn animate__fast mb-16 '
+                width='762px'
+                height='632'
+                src='images/automated-investor-reporting.png'
+                alt='automated investor reporting'
+              />
+
+              <h3 className='text-white text-26 antialiased font-normal capitalize font-raleway mb-3'>
+                Automated Investor Reporting
+              </h3>
+              <p className='text-gray-100 text-md mb-5'>
+                Facilitate reporting and organization of investor
+                communications.
+              </p>
+              <img
+                key='1'
+                className='mx-auto animate__animated animate__fadeIn animate__fast mb-16 '
+                width='762px'
+                height='632'
+                src='images/digital-private-investment.png'
+                alt='automated investor reporting'
+              />
+
+              <h3 className='text-white text-26 antialiased font-normal capitalize font-raleway mb-3'>
+                Digital Private Investment Office
+              </h3>
+              <p className='text-gray-100 text-md mb-5'>
+                Interactive portfolio overview and performance metrics.
+              </p>
+              <img
+                key='2'
+                className='mx-auto animate__animated animate__fadeIn animate__fast mb-16 '
+                width='762px'
+                height='632'
+                src='images/automated-investor-reporting.png'
+                alt='automated investor reporting'
+              />
             </div>
           </div>
         </section>
 
         <section className='container py-52'>
-          <div className='flex justify-between'>
-            <div className='flex flex-col justify-center mr-20'>
-              <h2 className='font-normal text-black text-48 antialiased'>
+          <div className='flex flex-col lg:flex-row justify-between'>
+            <div className='flex flex-col justify-center lg:mr-20'>
+              <h2 className='font-normal text-black text-4xl lg:text-48 antialiased'>
                 Who we work with
               </h2>
               <p className='text-black font-normal text-base tracking-wide leading-8 max-w-md antialiased font-lato'>
@@ -235,7 +284,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className='grid-cols-3 grid-rows-2 grid gap-7'>
+            <div className='mt-10 lg:mt-0 grid-cols-1 grid-row-6 lg:grid-cols-3 lg:grid-rows-2 grid gap-7 px-10 lg:px-0'>
               <div className='justify-center flex  flex-col rounded-md bg-red text-white p-10'>
                 <svg
                   className='w-10 font-light'
@@ -257,7 +306,7 @@ export default function Home() {
                 </h3>
               </div>
 
-              <div className='justify-center -mt-12 mb-12 flex  flex-col rounded-md bg-blue text-white p-10'>
+              <div className='justify-center lg:-mt-12 lg:mb-12 flex  flex-col rounded-md bg-blue text-white p-10'>
                 <svg
                   className='w-10 font-light'
                   xmlns='http://www.w3.org/2000/svg'
@@ -320,7 +369,7 @@ export default function Home() {
                 </h3>
               </div>
 
-              <div className='justify-center -mt-12 mb-12 flex  flex-col rounded-md bg-purple text-white p-10'>
+              <div className='justify-center lg:-mt-12 lg:mb-12 flex  flex-col rounded-md bg-purple text-white p-10'>
                 <svg
                   className='w-10 font-light'
                   xmlns='http://www.w3.org/2000/svg'
@@ -366,8 +415,8 @@ export default function Home() {
         </section>
 
         <section className='bg-blue-dark w-full'>
-          <div className='container flex justify-between items-center py-40'>
-            <div className='w-1/2'>
+          <div className='container flex flex-col lg:flex-row justify-between items-center py-40'>
+            <div className='w-full lg:w-1/2'>
               <lottie-player
                 src='https://assets9.lottiefiles.com/packages/lf20_t04injmt.json'
                 background='transparent'
@@ -378,8 +427,8 @@ export default function Home() {
               ></lottie-player>
             </div>
 
-            <div className='flex flex-col w-1/2'>
-              <h3 className='text-white font-raleway text-5xl font-normal antialiased'>
+            <div className='flex flex-col w-full lg:w-1/2'>
+              <h3 className='text-white font-raleway text-4xl lg:text-5xl font-normal antialiased'>
                 We’re building the platform so you don’t have to.
               </h3>
 
@@ -416,14 +465,14 @@ export default function Home() {
         <section className='py40'>
           <div class='container py-40'>
             <div>
-              <h2 className='text-center mb-20 w-sm text-black'>
+              <h2 className='text-center mb-20 text-4xl lg:text-5xl w-sm text-black'>
                 What they're saying about us
               </h2>
             </div>
             <div className='flickity-container'>
               <Flickity
                 options={{
-                  initialIndex: 1
+                  initialIndex: 1,
                 }}
               >
                 <div className='border-1 border-gray-300 rounded-md w-1/3 h-120 p-12 '>
@@ -583,10 +632,10 @@ export default function Home() {
                 </svg>
               </div>
               <div className='container flex flex-col justify-center items-center'>
-                <h2 className='text-center text-white z-50'>
+                <h2 className='text-center text-4xl lg:text-5xl text-white z-50 mt-16 lg:mt-0'>
                   Welcome to the future of private investing
                 </h2>
-                <Button className='border-white flex items-center border-2 w-fit px-8 py-4 mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50'>
+                <Button className='border-white flex items-center border-2 w-fit px-8 py-4 mt-5 lg:mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50'>
                   <span className='font-bold'>Get started</span>
                   <svg
                     className='w-6 ml-5'
