@@ -1,33 +1,26 @@
 import React from 'react'
 import Head from 'next/head'
-import Card from 'components/Card'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
-import { fetchAPI } from 'lib/api'
-import Image from 'components/Image'
 import Link from 'next/link'
+import { posts } from 'getAllPosts'
 
-const Blog = ({ articles, categories }) => {
-  const leftArticlesCount = Math.ceil(articles.length / 5)
-  const leftArticles = articles.slice(0, leftArticlesCount)
-  const rightArticles = articles.slice(leftArticlesCount, articles.length)
-  console.log(articles, categories)
-
+const Blog = () => {
   const displayArticles = () => {
-    return articles.map((article) => {
+    return posts.map((post) => {
+      const { meta } = post.module
       return (
-        <Link as={`/article/${article.slug}`} href='/article/[id]'>
-          <div className='flex flex-col rounded-md overflow-hidden'>
-            {/* <Image image={article.image} />
-            <p className='antialiased mt-5 font-raleway text-gray-600 text-sm'>
-              {article.category?.name}
-            </p>
-            <h2 className='antialiased font-raleway text-gray-900 mt-2 tracking-normal font-light text-3xl mb-5'>
-              {article.title}
+        <Link key={post.link} as={`/blog${post.link}`} href={`/blog/${post.link}`}>
+          <div className="flex flex-col rounded-md overflow-hidden">
+            <div
+              style={{ background: `url(/images/${meta.thumbnail})`, height: '600px' }}
+              className=" bg-cover bg-center"
+            />
+            <p className="antialiased mt-5 font-raleway text-gray-600 text-sm">{meta.category}</p>
+            <h2 className="antialiased font-raleway text-gray-900 mt-2 tracking-normal font-light text-3xl mb-5">
+              {meta?.title}
             </h2>
-            <p className='antialiased font-lato text-gray-700 text-base'>
-              {article.description}
-            </p> */}
+            <p className="antialiased font-lato text-gray-700 text-base">{meta.description}</p>
           </div>
         </Link>
       )
@@ -38,46 +31,29 @@ const Blog = ({ articles, categories }) => {
     <div>
       <Head>
         <title>Clockwork Universe</title>
-        <meta
-          name='description'
-          content='Clockwork universe, investment intelligence app'
-        />
-        <link rel='icon' href='/favicon.ico' />
+        <meta name="description" content="Clockwork universe, investment intelligence app" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
 
-      <main className='container py-20 pt-40'>
-        <p className='font-raleway text-gray-700 antialiased uppercase tracking-wider mb-10'>
+      <main className="container py-20 pt-40">
+        <p className="font-raleway text-gray-700 antialiased uppercase tracking-wider mb-10">
           News and resources
         </p>
-        <h1 className='text-6xl antialiased font-raleway font-normal mb-10'>
-          Our Blog
-        </h1>
+        <h1 className="text-6xl antialiased font-raleway font-normal mb-10">Our Blog</h1>
 
-        <p className='antialized font-light text-lg text-gray-700 '>
-          Follow Clockwork’s new blog to find out about strategic insights,
-          practical ideas and actionable tips and ticks for founders and
-          investors.
+        <p className="antialized font-light text-lg text-gray-700 ">
+          Follow Clockwork’s new blog to find out about strategic insights, practical ideas and
+          actionable tips and ticks for founders and investors.
         </p>
-        <section className='mt-20'>
-          <div className='grid grid-cols-2'>{displayArticles()}</div>
+        <section className="mt-20">
+          <div className="grid gap-12 grid-cols-1 md:grid-cols-2">{displayArticles()}</div>
         </section>
       </main>
-      <div dangerouslySetInnerHTML={{ __html: articles[0]?.content?.rendered }} />
       <Footer />
     </div>
   )
-}
-
-export async function getStaticProps() {
-  const response = await fetch('https://clockwork.app/wp-json/wp/v2/posts')
-  const data = await response.json()
-  
-  return {
-    props: { articles: data, categories: [], homepage: {} },
-    revalidate: 1
-  }
 }
 
 export default Blog
