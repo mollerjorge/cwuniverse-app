@@ -24,7 +24,11 @@ const PostLayout = ({ children, meta }) => {
 
         <meta property="twitter:title" content={meta.title}></meta>
         <meta property="twitter:description" content={meta.description}></meta>
-        <meta property="twitter:image" content={`/images/${meta.thumbnail}`}></meta>
+        <meta
+          property="twitter:image"
+          content={`https://cwuniverse-app.vercel.app/images/${meta.thumbnail}`}
+        ></meta>
+        <meta property="twitter:card" content="summary_large_image"></meta>
       </Head>
       <Header />
       <main>
@@ -61,7 +65,7 @@ const PostLayout = ({ children, meta }) => {
         </div>
 
         <div>
-          <ShocialShare postTitle={meta.title} postUrl={`${router.pathname}`} />
+          <ShocialShare postTitle={meta.title} />
         </div>
 
         <Footer />
