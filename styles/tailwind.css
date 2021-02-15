@@ -43,11 +43,11 @@ h2 {
   top: 3rem;
   content: '';
   width: 1px;
-  height: 82%;
+  height: 90%;
 }
 
 .tab-line {
-  max-height: 134px;
+  max-height: 190px;
   background: linear-gradient(to bottom, #123861, #2463af);
   height: 100%;
   width: 3px;

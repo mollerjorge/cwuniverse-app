@@ -26,45 +26,6 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState(0)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const displayImage = () => {
-    if (activeTab === 0) {
-      return (
-        <img
-          key="0"
-          className="mx-auto animate__animated animate__fadeIn animate__fast"
-          width={745}
-          height={522}
-          src="images/automated-investor-reporting.png"
-          alt="automated investor reporting"
-        />
-      )
-    }
-    if (activeTab === 1) {
-      return (
-        <img
-          key="1"
-          className="mx-auto animate__animated animate__fadeIn animate__fast"
-          width={745}
-          height={522}
-          src="images/digital-private-investment.png"
-          alt="automated investor reporting"
-        />
-      )
-    }
-    if (activeTab === 2) {
-      return (
-        <img
-          key="2"
-          className="mx-auto animate__animated animate__fadeIn animate__fast"
-          width={745}
-          height={522}
-          src="images/automated-investor-reporting.png"
-          alt="automated investor reporting"
-        />
-      )
-    }
-  }
-
   return (
     <div>
       <Head>
@@ -149,7 +110,7 @@ export default function Home() {
 
             <div className="tabs-container relative flex mt-20">
               <div className="tab-line hidden lg:block" />
-              <div className="py-12 hidden lg:flex flex-col gap-10 w-1/4  max-w-sm">
+              <div className="py-12 hidden lg:flex flex-col gap-10 w-1/4  max-w-sm justify-between">
                 <button
                   type="button"
                   onClick={() => {
@@ -180,7 +141,7 @@ export default function Home() {
                   type="button"
                   onClick={() => {
                     document.getElementsByClassName('tab-line')[0].style.cssText =
-                      'transform: translateY(190px)'
+                      'transform: translateY(280px)'
                     setActiveTab(1)
                   }}
                   className={classNames(
@@ -206,7 +167,7 @@ export default function Home() {
                   type="button"
                   onClick={() => {
                     document.getElementsByClassName('tab-line')[0].style.cssText =
-                      'transform: translateY(373px)'
+                      'transform: translateY(540px)'
                     setActiveTab(2)
                   }}
                   className={classNames(
@@ -228,7 +189,32 @@ export default function Home() {
                   </p>
                 </button>
               </div>
-              <div className="hidden lg:block w-3/4">{displayImage()}</div>
+              <div className="hidden lg:block w-3/4">
+                <img
+                  key="0"
+                  className={`mx-auto pt-16 ${activeTab === 0 ? 'block' : 'hidden'}`}
+                  width={1145}
+                  height={922}
+                  src="images/dynamic-company-profiles.svg"
+                  alt="automated investor reporting"
+                />
+                <img
+                  key="1"
+                  className={`mx-auto pt-16 ${activeTab === 1 ? 'block' : 'hidden'}`}
+                  width={1145}
+                  height={922}
+                  src="images/automated-investor-reporting.svg"
+                  alt="automated investor reporting"
+                />
+                <img
+                  key="2"
+                  className={`mx-auto pt-16 ${activeTab === 2 ? 'block' : 'hidden'}`}
+                  width={1145}
+                  height={922}
+                  src="images/digital-private-investing.svg"
+                  alt="automated investor reporting"
+                />
+              </div>
             </div>
 
             <div className="lg:hidden flex flex-col">
@@ -241,8 +227,8 @@ export default function Home() {
               <img
                 key="0"
                 className="mx-auto animate__animated animate__fadeIn animate__fast mb-16 "
-                width={745}
-                height={522}
+                width={1145}
+                height={922}
                 src="images/automated-investor-reporting.png"
                 alt="automated investor reporting"
               />
@@ -256,8 +242,8 @@ export default function Home() {
               <img
                 key="1"
                 className="mx-auto animate__animated animate__fadeIn animate__fast mb-16 "
-                width={745}
-                height={522}
+                width={1145}
+                height={922}
                 src="images/digital-private-investment.png"
                 alt="automated investor reporting"
               />
@@ -271,8 +257,8 @@ export default function Home() {
               <img
                 key="2"
                 className="mx-auto animate__animated animate__fadeIn animate__fast mb-16 "
-                width={745}
-                height={522}
+                width={1145}
+                height={922}
                 src="images/automated-investor-reporting.png"
                 alt="automated investor reporting"
               />
