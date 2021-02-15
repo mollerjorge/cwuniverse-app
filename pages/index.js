@@ -32,8 +32,8 @@ export default function Home() {
         <img
           key="0"
           className="mx-auto animate__animated animate__fadeIn animate__fast"
-          width="762px"
-          height="632"
+          width={745}
+          height={522}
           src="images/automated-investor-reporting.png"
           alt="automated investor reporting"
         />
@@ -44,8 +44,8 @@ export default function Home() {
         <img
           key="1"
           className="mx-auto animate__animated animate__fadeIn animate__fast"
-          width="762px"
-          height="632"
+          width={745}
+          height={522}
           src="images/digital-private-investment.png"
           alt="automated investor reporting"
         />
@@ -56,8 +56,8 @@ export default function Home() {
         <img
           key="2"
           className="mx-auto animate__animated animate__fadeIn animate__fast"
-          width="762px"
-          height="632"
+          width={745}
+          height={522}
           src="images/automated-investor-reporting.png"
           alt="automated investor reporting"
         />
@@ -241,8 +241,8 @@ export default function Home() {
               <img
                 key="0"
                 className="mx-auto animate__animated animate__fadeIn animate__fast mb-16 "
-                width="762px"
-                height="632"
+                width={745}
+                height={522}
                 src="images/automated-investor-reporting.png"
                 alt="automated investor reporting"
               />
@@ -256,8 +256,8 @@ export default function Home() {
               <img
                 key="1"
                 className="mx-auto animate__animated animate__fadeIn animate__fast mb-16 "
-                width="762px"
-                height="632"
+                width={745}
+                height={522}
                 src="images/digital-private-investment.png"
                 alt="automated investor reporting"
               />
@@ -271,8 +271,8 @@ export default function Home() {
               <img
                 key="2"
                 className="mx-auto animate__animated animate__fadeIn animate__fast mb-16 "
-                width="762px"
-                height="632"
+                width={745}
+                height={522}
                 src="images/automated-investor-reporting.png"
                 alt="automated investor reporting"
               />
