@@ -1,5 +1,7 @@
 import React from 'react'
 import Button from 'components/Button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
   return (
@@ -58,7 +60,12 @@ const Footer = () => {
                 or create your own.
               </p>
               <div className="mt-20">
-                <Button className="transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block">
+                <Button
+                  onClick={() => {
+                    window.open('https://clockwork4.typeform.com/to/QIJxjP', '_blank')
+                  }}
+                  className="transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block"
+                >
                   Apply Today
                 </Button>
               </div>
@@ -66,10 +73,22 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-20 flex justify-between">
+        <div className="mt-20 flex justify-between flex-col lg:flex-row">
           <p className="text-sm text-gray-500 antialiased">
             © 2021 Clockwork. All Rights Reserved. Value over vanity.
           </p>
+          <div className="mt-5 lg:mt-0">
+            <a href="https://twitter.com/clockworkapp" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faTwitter} className="text-2xl text-gray-500" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/clockworkapp/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} className="text-2xl text-gray-500 ml-5" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

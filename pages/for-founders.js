@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
 import Button from 'components/Button'
 import ReactCompareImage from 'react-compare-image'
+
 import Footer from 'components/Footer'
 import Header from 'components/Header'
+import SignupModal from 'components/SignupModal'
 
 const ForFounders = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <div>
       <Head>
@@ -34,7 +37,12 @@ const ForFounders = () => {
                   branded updates, file sharing, and more.
                 </p>
                 <div className="mt-8 mb-10 lg:mb-0">
-                  <Button className="transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block py-5 px-12 text-lg antialiased">
+                  <Button
+                    onClick={() => {
+                      setIsModalOpen(true)
+                    }}
+                    className="transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block py-5 px-12 text-lg antialiased"
+                  >
                     Get started
                   </Button>
                 </div>
@@ -169,7 +177,12 @@ const ForFounders = () => {
             <h2 className="text-4xl lg:text-5xl text-white antialiased text-center">
               Sign Up Free & Claim Your Profile
             </h2>
-            <Button className="border-white flex items-center border-2 w-fit px-8 py-4 mt-8 w-max rounded-md uppercase font-normal antialiased bg-transparent">
+            <Button
+              onClick={() => {
+                setIsModalOpen(true)
+              }}
+              className="border-white flex items-center border-2 w-fit px-8 py-4 mt-8 w-max rounded-md uppercase font-normal antialiased bg-transparent"
+            >
               <span className="font-bold">Get started</span>
               <svg
                 className="w-6 ml-5"
@@ -305,7 +318,12 @@ const ForFounders = () => {
                 <h2 className="text-center text-4xl lg:text-5xl text-white z-50 mt-16 lg:mt-0">
                   Improve your investor relations
                 </h2>
-                <Button className="border-white flex items-center border-2 w-fit px-8 py-4 mt-5 lg:mt-8 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50">
+                <Button
+                  onClick={() => {
+                    setIsModalOpen(true)
+                  }}
+                  className="border-white flex items-center border-2 w-fit px-8 py-4 mt-5 lg:mt-8 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50"
+                >
                   <span className="font-bold">Get started</span>
                   <svg
                     className="w-6 ml-5"
@@ -329,6 +347,12 @@ const ForFounders = () => {
       </main>
 
       <Footer />
+      <SignupModal
+        onHide={() => {
+          setIsModalOpen(false)
+        }}
+        isOpen={isModalOpen}
+      />
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </div>
   )

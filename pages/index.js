@@ -1,21 +1,30 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
 import Head from 'next/head'
 import classNames from 'classnames'
-import Flickity from 'react-flickity-component'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faUserHardHat,
+  faBriefcase,
+  faUniversity,
+  faUsers,
+  faRocket,
+  faCogs,
+} from '@fortawesome/pro-light-svg-icons'
 
 import Button from 'components/Button'
 import GroupBox from 'components/GroupBox/GroupBox'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
+import SignupModal from 'components/SignupModal'
+import Testimonials from 'components/Testimonials'
 
 import FounderIcon from 'public/images/founder-icon.svg'
 import InvestorIcon from 'public/images/investor-icon.svg'
 
-import 'flickity/css/flickity.css'
-
 export default function Home() {
   const [activeTab, setActiveTab] = useState(0)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const displayImage = () => {
     if (activeTab === 0) {
@@ -78,7 +87,12 @@ export default function Home() {
                   Clockwork improves transparency to drive results for founders and investors alike.
                 </p>
                 <div className="mt-10 mb-10 lg:mb-0">
-                  <Button className="transition duration-500 transform inline-block bg-teal">
+                  <Button
+                    onClick={() => {
+                      setIsModalOpen(true)
+                    }}
+                    className="transition duration-500 transform inline-block bg-teal"
+                  >
                     Try it for free
                   </Button>
                 </div>
@@ -111,11 +125,13 @@ export default function Home() {
                 title="founders"
                 legend="Upgrade your investor reporting and evolve your investor relationships."
                 icon={<FounderIcon />}
+                path="for-founders"
               />
               <GroupBox
                 title="investors"
                 legend="Modernize your portfolio operations and improve founder engagement."
                 icon={<InvestorIcon />}
+                path="for-investors"
               />
             </div>
           </div>
@@ -267,7 +283,7 @@ export default function Home() {
         <section className="container py-52">
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="flex flex-col justify-center lg:mr-20">
-              <h2 className="font-normal text-black text-4xl lg:text-48 antialiased">
+              <h2 className="font-normal text-black text-4xl lg:text-46 antialiased">
                 Who we work with
               </h2>
               <p className="text-black font-normal text-base tracking-wide leading-8 max-w-md antialiased font-lato">
@@ -276,22 +292,9 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="mt-10 lg:mt-0 grid-cols-1 grid-row-6 lg:grid-cols-3 lg:grid-rows-2 grid gap-7 px-10 lg:px-0">
+            <div className="mt-10 lg:mt-0 grid-cols-1 grid-row-6 lg:grid-cols-3 lg:grid-rows-2 grid gap-7 px-0">
               <div className="justify-center flex  flex-col rounded-md bg-red text-white p-10">
-                <svg
-                  className="w-10 font-light"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
+                <FontAwesomeIcon icon={faUserHardHat} className="text-3xl" />
 
                 <h3 className="text-lg mt-5  text-white font-raleway font-light">
                   Founders & managements teams
@@ -299,20 +302,7 @@ export default function Home() {
               </div>
 
               <div className="justify-center lg:-mt-12 lg:mb-12 flex  flex-col rounded-md bg-blue text-white p-10">
-                <svg
-                  className="w-10 font-light"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
+                <FontAwesomeIcon icon={faBriefcase} className="text-3xl" />
 
                 <h3 className="text-lg mt-5  text-white font-raleway font-light">
                   VC/PE Funds & Corporate Venture
@@ -320,20 +310,7 @@ export default function Home() {
               </div>
 
               <div className="justify-center flex  flex-col rounded-md bg-blue-light text-white p-10">
-                <svg
-                  className="w-10 font-light"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
+                <FontAwesomeIcon icon={faUniversity} className="text-3xl" />
 
                 <h3 className="text-lg mt-5  text-white font-raleway font-light">
                   Institutional Limited Partners
@@ -341,20 +318,7 @@ export default function Home() {
               </div>
 
               <div className="justify-center flex  flex-col rounded-md bg-teal text-white p-10">
-                <svg
-                  className="w-10 font-light"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
+                <FontAwesomeIcon icon={faUsers} className="text-3xl" />
 
                 <h3 className="text-lg mt-5  text-white font-raleway font-light">
                   Individuals & Family Offices
@@ -362,20 +326,7 @@ export default function Home() {
               </div>
 
               <div className="justify-center lg:-mt-12 lg:mb-12 flex  flex-col rounded-md bg-purple text-white p-10">
-                <svg
-                  className="w-10 font-light"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
+                <FontAwesomeIcon icon={faRocket} className="text-3xl" />
 
                 <h3 className="text-lg mt-5  text-white font-raleway font-light">
                   Accelerators & Angel Groups
@@ -383,20 +334,7 @@ export default function Home() {
               </div>
 
               <div className="justify-center flex  flex-col rounded-md bg-yellow text-white p-10">
-                <svg
-                  className="w-10 font-light"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
+                <FontAwesomeIcon icon={faCogs} className="text-3xl" />
 
                 <h3 className="text-lg mt-5  text-white font-raleway font-light">
                   Advisors & Intermediaries
@@ -431,7 +369,12 @@ export default function Home() {
                 monitoring, our solutions can be tailored to fit your unique needs.
               </p>
 
-              <Button className="border-gray-200 tracking-normal flex items-center border-2 w-fit mt-12 w-max rounded uppercase font-normal text-sm antialiased bg-transparent py-3 px-6">
+              <Button
+                onClick={() => {
+                  setIsModalOpen(true)
+                }}
+                className="border-gray-200 tracking-normal flex items-center border-2 w-fit mt-12 w-max rounded uppercase font-normal text-sm antialiased bg-transparent py-3 px-6"
+              >
                 <span>Get started</span>
                 <svg
                   className="w-6 ml-5"
@@ -452,113 +395,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py40">
-          <div className="container py-40">
-            <div>
-              <h2 className="text-center mb-20 text-4xl lg:text-5xl w-sm text-black">
-                What they&apos;re saying about us
-              </h2>
-            </div>
-            <div className="flickity-container">
-              <Flickity
-                options={{
-                  initialIndex: 1,
-                }}
-              >
-                <div className="border-1 border-gray-300 rounded-md w-1/3 h-120 p-12 ">
-                  <p className="text-lg font-lato leading-8 antialiased text-gray-600 ">
-                    “Working with Clockwork provides our team with easy, centralized access to key
-                    data and updates from our portfolio companies, and features like alerts and the
-                    weekly digest help us better stay on top of our private investments.”
-                  </p>
-
-                  <div className="flex justify-start flex-col items-start">
-                    <div className="object-cover">
-                      <Image
-                        src="/images/ffora.png"
-                        alt="client image"
-                        width={96}
-                        height={96}
-                        className="rounded-full w-24"
-                      />
-                    </div>
-                    <div className="flex flex-col">
-                      <p className="font-normal w-full antialiased text-base text-gray-900">
-                        Jake Sargent, General Partner
-                      </p>
-                      <p className="text-gray-500 antialiased text-sm ">Magic Hour</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="border-1 border-gray-300 rounded-md w-1/3 h-120 p-12 ">
-                  <p className="text-lg font-lato leading-8 antialiased text-gray-600 ">
-                    “My investor communications have become more impactful with Clockwork Universe.
-                    This has helped foster more collaborative investor relationships as everyone is
-                    clearer on what my needs are and how they can best support what we’re building.”
-                  </p>
-
-                  <div className="flex justify-start flex-col items-start">
-                    <div className="object-cover">
-                      <Image
-                        src="/images/ffora.png"
-                        alt="client image"
-                        width={96}
-                        height={96}
-                        className="rounded-full w-24"
-                      />
-                    </div>
-                    <div className="flex flex-col">
-                      <p className="font-normal w-full antialiased text-base text-gray-900">
-                        Lucy Jones, Founder
-                      </p>
-                      <p className="text-gray-500 antialiased text-sm ">Ffora</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="border-1 border-gray-300 rounded-md w-1/3 h-120 p-12 ">
-                  <p className="text-lg font-lato leading-8 antialiased text-gray-600 ">
-                    “I love that Clockwork Universe helps manage investor communications in one
-                    place. I&apos;ve noticed that investors are more engaged with our updates, which
-                    has led to more productive relationships overall.”
-                  </p>
-
-                  <div className="flex justify-start flex-col items-start">
-                    <div className="object-cover">
-                      <img
-                        width={40}
-                        height={40}
-                        className="rounded-full"
-                        src="/images/logo-cardboard.png"
-                        alt="client"
-                      />
-                    </div>
-                    <div className="flex flex-col">
-                      <p className="font-normal w-full antialiased text-base text-gray-900">
-                        Wilson Hunter, Founder
-                      </p>
-                      <p className="text-gray-500 antialiased text-sm ">CardBoard Live</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="border-1 border-gray-300 rounded-md w-1/3 h-120 p-12 ">
-                  <p className="text-lg font-lato leading-8 antialiased text-gray-600 ">
-                    “Working with Clockwork provides our team with easy, centralized access to key
-                    data and updates from our portfolio companies, and features like alerts and the
-                    weekly digest help us better stay on top of our private investments.”
-                  </p>
-
-                  <div className="flex justify-start flex-col items-start">
-                    <div className="flex flex-col">
-                      <p className="text-gray-500 antialiased text-sm ">Moses Gates Holdings</p>
-                    </div>
-                  </div>
-                </div>
-              </Flickity>
-            </div>
-          </div>
-        </section>
+        <Testimonials />
 
         <section>
           <div className="relative">
@@ -606,7 +443,12 @@ export default function Home() {
                 <h2 className="text-center text-4xl lg:text-5xl text-white z-50 mt-16 lg:mt-0">
                   Welcome to the future of private investing
                 </h2>
-                <Button className="border-white flex items-center border-2 w-fit px-8 py-4 mt-5 lg:mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50">
+                <Button
+                  onClick={() => {
+                    setIsModalOpen(true)
+                  }}
+                  className="border-white flex items-center border-2 w-fit px-8 py-4 mt-5 lg:mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50"
+                >
                   <span className="font-bold">Get started</span>
                   <svg
                     className="w-6 ml-5"
@@ -629,6 +471,12 @@ export default function Home() {
         </section>
 
         <Footer />
+        <SignupModal
+          onHide={() => {
+            setIsModalOpen(false)
+          }}
+          isOpen={isModalOpen}
+        />
       </main>
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </div>

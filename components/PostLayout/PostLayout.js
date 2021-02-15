@@ -4,13 +4,33 @@ import PropTypes from 'prop-types'
 import Head from 'next/head'
 import Moment from 'react-moment'
 
+import { posts } from 'getAllPosts'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import ShocialShare from 'components/SocialShare/ShocialShare'
 
 const PostLayout = ({ children, meta }) => {
   const router = useRouter()
+  const getPrevPost = () => {
+    const index = posts.findIndex((post) => {
+      return post.link === `/${router.pathname.split('/')?.[2]}`
+    })
 
+    if (index > 0) {
+      return posts[index - 1]
+    }
+    return posts[0]
+  }
+  const getNextPost = () => {
+    const index = posts.findIndex((post) => {
+      return post.link === `/${router.pathname.split('/')?.[2]}`
+    })
+
+    if (index < posts.length - 1) {
+      return posts[index + 1]
+    }
+    return posts[0]
+  }
   return (
     <>
       <Head>
@@ -57,15 +77,48 @@ const PostLayout = ({ children, meta }) => {
           {children}
         </main>
 
-        <div className="uk-width-expand">
-          <p className="uk-margin-remove-bottom">By {meta.author}</p>
-          <p className="uk-text-meta uk-margin-remove-top">
-            <Moment format="MMM Do YYYY">{meta.publishedAt}</Moment>
+        <div className="container max-w-5xl">
+          <p className=" antialiased font-lato uppercase font-bold text-sm tracking-wider text-black mb-20">
+            Author: {meta.author}
           </p>
+          <div>
+            <ShocialShare postTitle={meta.title} />
+          </div>
         </div>
 
-        <div>
-          <ShocialShare postTitle={meta.title} />
+        <div className="mt-16">
+          <ul className="flex list-none overflow-hidden bg-blue ">
+            <li
+              className="w-1/2 bg-cover bg-center hover:scale-110 transform transition-all"
+              style={{
+                background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/prevnextbackground.png) ;`,
+              }}
+            >
+              <a href={`/blog${getPrevPost()?.link}`} className="p-28 inline-block">
+                <p className="text-white text-xl font-light mb-5 font-raleway text-right antialiased">
+                  Previous Post
+                </p>
+                <p className="text-white text-2xl font-raleway text-right antialiased">
+                  {getPrevPost()?.module?.meta?.title}
+                </p>
+              </a>
+            </li>
+            <li
+              className="w-1/2 bg-cover bg-center hover:scale-110 transform transition-all"
+              style={{
+                background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/prevnextbackground.png);`,
+              }}
+            >
+              <a href={`/blog${getNextPost()?.link}`} className="p-28 inline-block">
+                <p className="text-white text-xl font-light mb-5 font-raleway text-left antialiased">
+                  Next Post
+                </p>
+                <p className="text-white text-2xl font-raleway text-left antialiased">
+                  {getNextPost()?.module?.meta?.title}
+                </p>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <Footer />

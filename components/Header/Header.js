@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/Link'
 import classNames from 'classnames'
 
 const Header = () => {
@@ -11,53 +12,65 @@ const Header = () => {
   return (
     <header className="bg-white fixed w-full z-index-9999">
       <div className="container flex m-auto py-8  justify-between items-center md:justify-between">
-        <a href="/">
-          <img width="230px" height="48px" src="/images/clockwork-logo.png" alt="clockwork logo" />
-        </a>
+        <Link href="/">
+          <img
+            width="230px"
+            height="48px"
+            src="/images/clockwork-logo.png"
+            alt="clockwork logo"
+            className="cursor-pointer"
+          />
+        </Link>
 
         <nav className="hidden lg:block">
           <ul className="flex font-raleway antialiased text-blue-darkest">
             <li>
-              {' '}
-              <a href="/for-founders" className="text-15 font-normal hover:text-blue-light">
-                For Founders{' '}
-              </a>{' '}
+              <Link href="/for-founders">
+                <span className="text-15 font-normal cursor-pointer hover:text-blue-light">
+                  For Founders
+                </span>
+              </Link>
             </li>
             <li>
-              {' '}
-              <a href="/for-investors" className="text-15 ml-10 font-normal hover:text-blue-light">
-                For Investors{' '}
-              </a>{' '}
+              <Link href="/for-investors">
+                <span className="text-15 ml-10 font-normal cursor-pointer hover:text-blue-light">
+                  For Investors
+                </span>
+              </Link>
             </li>
             <li>
-              {' '}
-              <a href="/about-us" className="text-15 ml-10 font-normal hover:text-blue-light">
-                About Us
-              </a>{' '}
-            </li>
-            <li>
-              {' '}
-              <a href="/blog" className="text-15 ml-10 font-normal hover:text-blue-light">
-                Blog
-              </a>{' '}
-            </li>
-            <li>
-              {' '}
-              <a
-                href="https://cwuniverse.app/sign-in"
-                className="uppercase ml-16 text-sm text-blue-link font-semibold antialiased"
+              <Link
+                href="/about-us"
+                className="text-15 ml-10 font-normal cursor-pointer hover:text-blue-light"
               >
-                Sign in{' '}
-              </a>{' '}
+                <span className="text-15 ml-10 font-normal cursor-pointer hover:text-blue-light">
+                  About Us
+                </span>
+              </Link>
             </li>
             <li>
-              {' '}
-              <a
-                href="https://cwuniverse.app/sign-un"
-                className="uppercase ml-6 text-sm text-blue-darkest border-blue-link font-semibold antialiased border-1 rounded px-4 py-2"
+              <Link
+                href="/blog"
+                className="text-15 ml-10 font-normal cursor-pointer hover:text-blue-light"
               >
-                Sign up{' '}
-              </a>{' '}
+                <span className="text-15 ml-10 font-normal cursor-pointer hover:text-blue-light">
+                  Blog
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="https://cwuniverse.app/sign-in">
+                <span className="uppercase ml-16 text-sm text-blue-link font-semibold antialiased cursor-pointer">
+                  Sign in
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="https://cwuniverse.app/welcome">
+                <span className="uppercase ml-6 text-sm text-blue-darkest border-blue-link font-semibold antialiased border-1 rounded px-4 py-2 cursor-pointer">
+                  Sign up
+                </span>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -70,46 +83,52 @@ const Header = () => {
         >
           <ul className="flex px-5 font-raleway antialiased text-blue-darkest flex-col min-h-screen fixed w-full left-0 top-28 bg-white">
             <li className="mb-5">
-              {' '}
-              <a href="/for-founders" className="text-15 font-normal hover:text-blue-light">
-                For Founders{' '}
-              </a>{' '}
+              <Link href="/for-founders">
+                <span className="text-15 font-normal cursor-pointer hover:text-blue-light">
+                  For Founders
+                </span>
+              </Link>
             </li>
             <li className="mb-5">
-              {' '}
-              <a href="/for-investors" className="text-15 font-normal hover:text-blue-light">
-                For Investors{' '}
-              </a>{' '}
+              <Link href="/for-investors">
+                <span className="text-15 font-normal cursor-pointer hover:text-blue-light">
+                  For Investors
+                </span>
+              </Link>
             </li>
             <li className="mb-5">
-              {' '}
-              <a href="/about-us" className="text-15 font-normal hover:text-blue-light">
-                About Us
-              </a>{' '}
-            </li>
-            <li className="mb-5">
-              {' '}
-              <a href="/blog" className="text-15 font-normal hover:text-blue-light">
-                Blog
-              </a>{' '}
-            </li>
-            <li className="mt-10 mb-8">
-              {' '}
-              <a
-                href="https://cwuniverse.app/sign-in"
-                className="uppercase  text-sm text-blue-link font-semibold antialiased"
+              <Link
+                href="/about-us"
+                className="text-15 font-normal cursor-pointer hover:text-blue-light"
               >
-                Sign in{' '}
-              </a>{' '}
+                <span className="text-15 font-normal cursor-pointer hover:text-blue-light">
+                  About Us
+                </span>
+              </Link>
+            </li>
+            <li className="mb-10">
+              <Link
+                href="/blog"
+                className="text-15 font-normal cursor-pointer hover:text-blue-light"
+              >
+                <span className="text-15 font-normal cursor-pointer hover:text-blue-light">
+                  Blog
+                </span>
+              </Link>
+            </li>
+            <li className="mb-10">
+              <Link href="https://cwuniverse.app/sign-in">
+                <span className="uppercase text-sm text-blue-link font-semibold antialiased cursor-pointer">
+                  Sign in
+                </span>
+              </Link>
             </li>
             <li>
-              {' '}
-              <a
-                href="https://cwuniverse.app/sign-un"
-                className="uppercase  text-sm text-blue-darkest border-blue-link font-semibold antialiased border-1 rounded px-8 py-4"
-              >
-                Sign up{' '}
-              </a>{' '}
+              <Link href="https://cwuniverse.app/welcome">
+                <span className="uppercase  text-sm text-blue-darkest border-blue-link font-semibold antialiased border-1 rounded px-8 py-4 cursor-pointer">
+                  Sign up
+                </span>
+              </Link>
             </li>
           </ul>
         </nav>

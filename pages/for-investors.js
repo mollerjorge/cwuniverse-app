@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
 import Button from 'components/Button'
 import ReactCompareImage from 'react-compare-image'
+
 import Footer from 'components/Footer'
 import Header from 'components/Header'
+import SignupModal from 'components/SignupModal'
 
 const ForInvestors = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <div>
       <Head>
@@ -34,7 +38,12 @@ const ForInvestors = () => {
                   engage with transparent portfolio company updates and investment data.
                 </p>
                 <div className="mt-8 mb-10 lg:mb-0">
-                  <Button className="transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block py-5 px-12 text-lg antialiased">
+                  <Button
+                    onClick={() => {
+                      setIsModalOpen(true)
+                    }}
+                    className="transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block py-5 px-12 text-lg antialiased"
+                  >
                     Get started
                   </Button>
                 </div>
@@ -167,7 +176,12 @@ const ForInvestors = () => {
             <h2 className="text-3xl lg:text-5xl text-white antialiased text-center">
               Request a Demo Today
             </h2>
-            <Button className="border-white flex items-center border-2 w-fit px-8 py-4 mt-8 w-max rounded-md uppercase font-normal antialiased bg-transparent">
+            <Button
+              onClick={() => {
+                setIsModalOpen(true)
+              }}
+              className="border-white flex items-center border-2 w-fit px-8 py-4 mt-8 w-max rounded-md uppercase font-normal antialiased bg-transparent"
+            >
               <span className="font-bold">Get in touch</span>
               <svg
                 className="w-6 ml-5"
@@ -269,7 +283,12 @@ const ForInvestors = () => {
                 <h2 className="text-center text-4xl lg:text-5xl text-white z-50 mt-16 lg:mt-0">
                   We are building the digital infrastructure for private investing.
                 </h2>
-                <Button className="border-white flex items-center border-2 w-fit px-8 py-4 mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50">
+                <Button
+                  onClick={() => {
+                    window.open('https://cwuniverse.app/access-request', '_blank')
+                  }}
+                  className="border-white flex items-center border-2 w-fit px-8 py-4 mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50"
+                >
                   <span className="font-bold">Request a demo</span>
                   <svg
                     className="w-6 ml-5"
@@ -293,6 +312,12 @@ const ForInvestors = () => {
       </main>
 
       <Footer />
+      <SignupModal
+        onHide={() => {
+          setIsModalOpen(false)
+        }}
+        isOpen={isModalOpen}
+      />
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </div>
   )

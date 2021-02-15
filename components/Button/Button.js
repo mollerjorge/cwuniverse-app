@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Button = ({ children, className }) => {
+const Button = ({ children, className, ...rest }) => {
   return (
-    <a href="#" className={`btn btn-primary ${className}`}>
+    <button type="button" className={`btn btn-primary ${className}`} {...rest}>
       {children}
-    </a>
+    </button>
   )
 }
 

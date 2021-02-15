@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
+
+import SignupModal from 'components/SignupModal'
 import Button from 'components/Button'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
-import Flickity from 'react-flickity-component'
-
-import 'flickity/css/flickity.css'
+import Testimonials from 'components/Testimonials'
 
 const ForInvestors = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <div>
       <Head>
@@ -104,107 +105,7 @@ const ForInvestors = () => {
           </div>
         </section>
 
-        <section className="py40">
-          <div className="container py-40">
-            <div>
-              <h2 className="text-center text-3xl lg:text-5xl mb-20 w-sm">
-                What they&apos;re saying about us
-              </h2>
-            </div>
-            <div className="flickity-container">
-              <Flickity
-                options={{
-                  initialIndex: 1,
-                }}
-              >
-                <div className="border-1 border-gray-300 rounded-md w-1/3 h-120 p-12 ">
-                  <p className="text-xl leading-8 antialiased text-gray-600 ">
-                    “Working with Clockwork provides our team with easy, centralized access to key
-                    data and updates from our portfolio companies, and features like alerts and the
-                    weekly digest help us better stay on top of our private investments.”
-                  </p>
-
-                  <div className=" mt-10 flex justify-start items-center">
-                    <div className="object-cover">
-                      <img
-                        className="rounded-full w-24"
-                        src="https://cdn.clockwork.app/wp-content/uploads/2020/10/28162051/Captura-de-Pantalla-2020-10-28-a-las-13.20.25-e1603902092836-300x158.png"
-                        alt="client"
-                      />
-                    </div>
-                    <div className="flex flex-col ml-5">
-                      <p className="font-regular w-full">Jake Sargent, General Partner</p>
-                      <p className="text-gray-500 antialiased">Magic Hour</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="border-1 border-gray-300 rounded-md w-1/3 h-120 p-12 ">
-                  <p className="text-xl leading-8 antialiased text-gray-600 ">
-                    “Working with Clockwork provides our team with easy, centralized access to key
-                    data and updates from our portfolio companies, and features like alerts and the
-                    weekly digest help us better stay on top of our private investments.”
-                  </p>
-
-                  <div className=" mt-10 flex justify-start items-center">
-                    <div className="object-cover">
-                      <img
-                        className="rounded-full w-24"
-                        src="https://cdn.clockwork.app/wp-content/uploads/2020/10/28162051/Captura-de-Pantalla-2020-10-28-a-las-13.20.25-e1603902092836-300x158.png"
-                        alt="client"
-                      />
-                    </div>
-                    <div className="flex flex-col ml-5">
-                      <p className="font-regular w-full">Jake Sargent, General Partner</p>
-                      <p className="text-gray-500 antialiased">Magic Hour</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="border-1 border-gray-300 rounded-md w-1/3 h-120 p-12 ">
-                  <p className="text-xl leading-8 antialiased text-gray-600 ">
-                    “Working with Clockwork provides our team with easy, centralized access to key
-                    data and updates from our portfolio companies, and features like alerts and the
-                    weekly digest help us better stay on top of our private investments.”
-                  </p>
-
-                  <div className=" mt-10 flex justify-start items-center">
-                    <div className="object-cover">
-                      <img
-                        className="rounded-full w-24"
-                        src="https://cdn.clockwork.app/wp-content/uploads/2020/10/28162051/Captura-de-Pantalla-2020-10-28-a-las-13.20.25-e1603902092836-300x158.png"
-                        alt="client"
-                      />
-                    </div>
-                    <div className="flex flex-col ml-5">
-                      <p className="font-regular w-full">Jake Sargent, General Partner</p>
-                      <p className="text-gray-500 antialiased">Magic Hour</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="border-1 border-gray-300 rounded-md w-1/3 h-120 p-12 ">
-                  <p className="text-xl leading-8 antialiased text-gray-600 ">
-                    “Working with Clockwork provides our team with easy, centralized access to key
-                    data and updates from our portfolio companies, and features like alerts and the
-                    weekly digest help us better stay on top of our private investments.”
-                  </p>
-
-                  <div className=" mt-10 flex justify-start items-center">
-                    <div className="object-cover">
-                      <img
-                        className="rounded-full w-24"
-                        src="https://cdn.clockwork.app/wp-content/uploads/2020/10/28162051/Captura-de-Pantalla-2020-10-28-a-las-13.20.25-e1603902092836-300x158.png"
-                        alt="client"
-                      />
-                    </div>
-                    <div className="flex flex-col ml-5">
-                      <p className="font-regular w-full">Jake Sargent, General Partner</p>
-                      <p className="text-gray-500 antialiased">Magic Hour</p>
-                    </div>
-                  </div>
-                </div>
-              </Flickity>
-            </div>
-          </div>
-        </section>
+        <Testimonials />
 
         <section>
           <div className="container lg:py-40">
@@ -232,7 +133,12 @@ const ForInvestors = () => {
               create your own.
             </p>
             <div className="flex justify-center">
-              <Button className="mt-10 transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block mx-auto">
+              <Button
+                onClick={() => {
+                  window.open('https://clockwork4.typeform.com/to/QIJxjP', '_blank')
+                }}
+                className="mt-10 transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block mx-auto"
+              >
                 Apply Today
               </Button>
             </div>
@@ -285,7 +191,12 @@ const ForInvestors = () => {
                 <h2 className="text-center text-4xl lg:text-5xl text-white z-50 mt-16 lg:mt-0">
                   Welcome to the future of private investing
                 </h2>
-                <Button className="border-white flex items-center border-2 w-fit px-8 py-4 mt-5 lg:mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50">
+                <Button
+                  onClick={() => {
+                    setIsModalOpen(true)
+                  }}
+                  className="border-white flex items-center border-2 w-fit px-8 py-4 mt-5 lg:mt-12 w-max rounded-md uppercase font-normal antialiased bg-transparent z-50"
+                >
                   <span className="font-bold">Get started</span>
                   <svg
                     className="w-6 ml-5"
@@ -309,6 +220,12 @@ const ForInvestors = () => {
       </main>
 
       <Footer />
+      <SignupModal
+        onHide={() => {
+          setIsModalOpen(false)
+        }}
+        isOpen={isModalOpen}
+      />
     </div>
   )
 }
