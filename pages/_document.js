@@ -27,44 +27,17 @@ class MyDocument extends Document {
             content="/images/cropped-clockwork-270x270.png"
           ></meta>
           <link
-            rel="preload"
-            as="style"
-            onLoad="this.onload=null;this.rel='stylesheet'"
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
           ></link>
-          <noscript>
-            <link
-              href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
-              rel="stylesheet"
-              type="text/css"
-            />
-          </noscript>
           <link
-            rel="preload"
-            as="style"
-            onLoad="this.onload=null;this.rel='stylesheet'"
             href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
+            rel="stylesheet"
           ></link>
-          <noscript>
-            <link
-              href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
-              rel="stylesheet"
-              type="text/css"
-            />
-          </noscript>
           <link
-            rel="preload"
-            as="style"
-            onLoad="this.onload=null;this.rel='stylesheet'"
+            rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
           />
-          <noscript>
-            <link
-              href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-              rel="stylesheet"
-              type="text/css"
-            />
-          </noscript>
         </Head>
         <body>
           <Main />
