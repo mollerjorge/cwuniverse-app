@@ -12,9 +12,11 @@ const ForInvestors = () => {
   return (
     <div>
       <Head>
-        <title>Clockwork Universe</title>
-        <meta name="description" content="Clockwork universe, investment intelligence app" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>About | Clockwork</title>
+        <meta
+          name="description"
+          content="Clockwork Universe™ is a streamlined investor and founder collaboration platform which seeks to increase visibility and transparency."
+        />
       </Head>
 
       <Header />

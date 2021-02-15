@@ -78,13 +78,19 @@ const Footer = () => {
             © 2021 Clockwork. All Rights Reserved. Value over vanity.
           </p>
           <div className="mt-5 lg:mt-0">
-            <a href="https://twitter.com/clockworkapp" target="_blank" rel="noreferrer">
+            <a
+              href="https://twitter.com/clockworkapp"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Twitter"
+            >
               <FontAwesomeIcon icon={faTwitter} className="text-2xl text-gray-500" />
             </a>
             <a
               href="https://www.linkedin.com/company/clockworkapp/"
               target="_blank"
               rel="noreferrer"
+              aria-label="Linkedin"
             >
               <FontAwesomeIcon icon={faLinkedin} className="text-2xl text-gray-500 ml-5" />
             </a>

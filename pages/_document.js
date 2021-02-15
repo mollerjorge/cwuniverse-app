@@ -9,41 +9,62 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
+          <link rel="icon" href="/images/cropped-clockwork-32x32.png" sizes="32x32"></link>
+          <link rel="icon" href="/images/cropped-clockwork-192x192.png" sizes="192x192"></link>
           <link
-            rel="icon"
-            href="https://cdn.clockwork.app/wp-content/uploads/2020/06/11233244/cropped-clockwork-32x32.png"
-            sizes="32x32"
-          ></link>
-          <link
-            rel="icon"
-            href="https://cdn.clockwork.app/wp-content/uploads/2020/06/11233244/cropped-clockwork-192x192.png"
+            rel="shortcut icon"
+            href="/images/cropped-clockwork-192x192.png"
             sizes="192x192"
           ></link>
-          <link
-            rel="apple-touch-icon"
-            href="https://cdn.clockwork.app/wp-content/uploads/2020/06/11233244/cropped-clockwork-180x180.png"
-          ></link>
+          <link rel="apple-touch-icon" href="/images/cropped-clockwork-180x180.png"></link>
           <link rel="preconnect" href="https://fonts.gstatic.com"></link>
           <meta
             name="msapplication-TileImage"
-            content="https://cdn.clockwork.app/wp-content/uploads/2020/06/11233244/cropped-clockwork-270x270.png"
+            content="/images/cropped-clockwork-270x270.png"
           ></meta>
           <link
+            rel="preload"
+            as="style"
+            onLoad="this.onload=null;this.rel='stylesheet'"
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
           ></link>
+          <noscript>
+            <link
+              href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+              rel="stylesheet"
+              type="text/css"
+            />
+          </noscript>
           <link
+            rel="preload"
+            as="style"
+            onLoad="this.onload=null;this.rel='stylesheet'"
             href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
-            rel="stylesheet"
           ></link>
+          <noscript>
+            <link
+              href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
+              rel="stylesheet"
+              type="text/css"
+            />
+          </noscript>
           <link
-            rel="stylesheet"
+            rel="preload"
+            as="style"
+            onLoad="this.onload=null;this.rel='stylesheet'"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
           />
+          <noscript>
+            <link
+              href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+              rel="stylesheet"
+              type="text/css"
+            />
+          </noscript>
         </Head>
         <body>
           <Main />

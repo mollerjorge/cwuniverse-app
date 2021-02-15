@@ -27,12 +27,12 @@ const Testimonials = () => {
 
               <div className="flex justify-start flex-col items-start">
                 <div className="object-cover my-5">
-                  <Image
+                  <img
                     src="/images/magicHour.png"
-                    alt="client image"
+                    alt="client magic hour"
                     width={100}
                     height={40}
-                    className="rounded-full w-24 "
+                    className="rounded-full"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -53,12 +53,12 @@ const Testimonials = () => {
 
               <div className="flex justify-start flex-col items-start">
                 <div className="object-cover">
-                  <Image
+                  <img
                     src="/images/ffora.png"
-                    alt="client image"
+                    alt="client ffora"
                     width={96}
                     height={96}
-                    className="rounded-full w-24"
+                    className="rounded-full"
                   />
                 </div>
                 <div className="flex flex-col">
