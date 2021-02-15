@@ -26,14 +26,6 @@ class MyDocument extends Document {
             name="msapplication-TileImage"
             content="/images/cropped-clockwork-270x270.png"
           ></meta>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-          ></link>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
-            rel="stylesheet"
-          ></link>
         </Head>
         <body>
           <Main />
@@ -80,6 +72,19 @@ class MyDocument extends Document {
                   }
                 }
               })()
+
+              
+                WebFontConfig = {
+                  google: { families: [ 'Lato:300,400', 'Raleway:400,500,600' ] }
+                };
+                (function() {
+                  var wf = document.createElement('script');
+                  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                  wf.type = 'text/javascript';
+                  wf.async = 'true';
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(wf, s);
+                })();
               `,
             }}
           />
