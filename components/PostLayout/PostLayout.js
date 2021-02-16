@@ -12,25 +12,29 @@ import CLockworkCTA from 'components/ClockworkCTA'
 
 const PostLayout = ({ children, meta }) => {
   const router = useRouter()
+
+  const sortedPosts = currentPosts.sort((a, b) => {
+    return new Date(b.module?.meta?.publishedAt) - new Date(a.module?.meta?.publishedAt)
+  })
+
   const getPrevPost = () => {
-    const index = currentPosts.findIndex((post) => {
+    const index = sortedPosts.findIndex((post) => {
       return post.link === `/${router.pathname.split('/')?.[2]}`
     })
-
     if (index > 0) {
-      return currentPosts[index - 1]
+      return sortedPosts[index - 1]
     }
-    return currentPosts[0]
+    return sortedPosts[0]
   }
   const getNextPost = () => {
-    const index = currentPosts.findIndex((post) => {
+    const index = sortedPosts.findIndex((post) => {
       return post.link === `/${router.pathname.split('/')?.[2]}`
     })
 
-    if (index < currentPosts.length - 1) {
-      return currentPosts[index + 1]
+    if (index < sortedPosts.length - 1) {
+      return sortedPosts[index + 1]
     }
-    return currentPosts[0]
+    return sortedPosts[0]
   }
   return (
     <>
@@ -91,9 +95,13 @@ const PostLayout = ({ children, meta }) => {
         <div className="mt-16">
           <ul className="flex list-none overflow-hidden bg-blue ">
             <li
-              className="w-1/2 bg-cover bg-center hover:scale-110 transform transition-all"
+              className="w-1/2  overflow-hidden "
               style={{
-                background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/prevnextbackground.png) ;`,
+                backgroundRepeat: 'no-repeat',
+                background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/${
+                  getPrevPost()?.module?.meta?.thumbnail
+                });`,
+                backgroundSize: 'cover',
               }}
             >
               <a href={`/blog${getPrevPost()?.link}`} className="p-28 inline-block">
@@ -106,9 +114,13 @@ const PostLayout = ({ children, meta }) => {
               </a>
             </li>
             <li
-              className="w-1/2 bg-cover bg-center hover:scale-110 transform transition-all"
+              className="w-1/2 overflow-hidden"
               style={{
-                background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/prevnextbackground.png);`,
+                backgroundRepeat: 'no-repeat',
+                background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/${
+                  getNextPost()?.module?.meta?.thumbnail
+                });`,
+                backgroundSize: 'cover',
               }}
             >
               <a href={`/blog${getNextPost()?.link}`} className="p-28 inline-block">
