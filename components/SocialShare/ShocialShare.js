@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { useRouter } from 'next/router'
 import { faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -36,6 +37,10 @@ const ShocialShare = ({ postTitle }) => {
       </a>
     </div>
   )
+}
+
+ShocialShare.propTypes = {
+  postTitle: PropTypes.string.isRequired,
 }
 
 export default ShocialShare

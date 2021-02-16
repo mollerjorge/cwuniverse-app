@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import classNames from 'classnames'
 
-const SelectBox = ({ children, onClick, name, active, className }) => {
+const SelectBox = ({ children, onClick, name, className }) => {
   return (
     <button
       onClick={() => {
@@ -43,11 +43,11 @@ SelectBox.propTypes = {
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
-  active: PropTypes.bool,
+  className: PropTypes.string,
 }
 
 SelectBox.defaultProps = {
-  active: false,
+  className: '',
 }
 
 SelectBox.Image.propTypes = {

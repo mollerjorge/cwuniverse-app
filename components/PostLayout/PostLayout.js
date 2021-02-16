@@ -26,6 +26,7 @@ const PostLayout = ({ children, meta }) => {
     }
     return sortedPosts[0]
   }
+
   const getNextPost = () => {
     const index = sortedPosts.findIndex((post) => {
       return post.link === `/${router.pathname.split('/')?.[2]}`
