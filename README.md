@@ -32,7 +32,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 ## Configuring Intercom
-An environment file .env or .env.local must be placed in the local directory with all variables specified in .env.example file.
+An environment file .env or .env.local should be placed in the local directory with all variables specified in .env.example file in order to make intercom work.
 
 ```
 NEXT_PUBLIC_INTERCOM_APP_ID=/*INTERCOM_APP_ID*/
@@ -44,7 +44,7 @@ If using vercel you should also add this env variable under project settings > e
 
 ```bash
 README.md
-├── components # Reusable components should be under this folder 
+├── components # Reusable components should live under this folder 
 │   ├── Button
 │   │   ├── Button.js
 │   │   └── index.js
@@ -135,7 +135,7 @@ You can create a new blog post by adding a folder under the `pages/blog` directo
 ```bash
 e.g.
 pages
-|
+│
 ├── blog 
 │   │   ├── this-is-a-new-blog-post
 │   │   │   └── index.mdx
