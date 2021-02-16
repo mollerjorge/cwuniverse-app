@@ -79,7 +79,7 @@ const PostLayout = ({ children, meta }) => {
             </div>
           </div>
         </div>
-        <main className="article container pt-40 max-w-5xl antialiased leading-8 text-gray-800">
+        <main className="post container pt-40 max-w-5xl antialiased leading-8 text-gray-800">
           {children}
         </main>
 

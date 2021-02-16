@@ -1,0 +1,6 @@
+h1 {
+  @apply font-raleway font-bold antialiased;
+}
+h2 {
+  @apply text-5xl font-raleway font-normal antialiased mb-10;
+}

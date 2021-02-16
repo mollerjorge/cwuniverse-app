@@ -1,0 +1,33 @@
+.flickity-prev-next-button {
+  display: none;
+}
+
+.flickity-slider > div:not(.is-selected) {
+  transform: scale(0.8);
+}
+
+@media (max-width: 480px) {
+  .flickity-slider > div {
+    width: 100%;
+    height: 160px;
+    margin-right: 10px;
+  }
+}
+
+.flickity-slider > div {
+  max-height: 453px;
+  min-height: 453px;
+  transition: all 0.3s ease-in-out;
+}
+
+ol.flickity-page-dots {
+  @apply -bottom-8;
+}
+
+li.dot.is-selected {
+  @apply bg-transparent border-2 border-black;
+}
+
+li.dot {
+  @apply border-0 bg-gray-600;
+}

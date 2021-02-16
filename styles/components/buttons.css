@@ -1,0 +1,7 @@
+.btn {
+  @apply py-4 px-6 rounded hover:-translate-y-1 hover:shadow-3xl transition-all transform;
+}
+
+.btn-primary {
+  @apply bg-blue text-white uppercase text-15 font-normal font-lato antialiased tracking-wider;
+}

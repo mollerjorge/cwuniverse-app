@@ -1,0 +1,18 @@
+
+.badge {
+  position: absolute;
+  height: 1rem;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  @apply lg:h-8;
+}
+
+.badge-red {
+  background: #e95565;
+}
+
+.badge-green {
+  background: #3cc3af;
+}

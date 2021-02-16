@@ -1,0 +1,25 @@
+.tabs-container {
+  position: relative;
+}
+
+.tabs-container:before {
+  @apply hidden lg:block;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  content: '';
+  width: 1px;
+  height: 90%;
+}
+
+.tab-line {
+  max-height: 190px;
+  background: linear-gradient(to bottom, #123861, #2463af);
+  height: 100%;
+  width: 3px;
+  position: absolute;
+  left: -1px;
+  top: 3rem;
+  transition: all 0.2s ease-in-out;
+}

@@ -31,7 +31,7 @@ const Blog = () => {
         return new Date(b.publishedAt) - new Date(a.publishedAt)
       })
       postsToDisplay.push(
-        <>
+        <div key={Math.random()}>
           <h2 className="text-5xl antialiased font-raleway mt-32 mb-10">{category}</h2>
           <div className="grid gap-12 grid-cols-1 md:grid-cols-2">
             {sortedPosts?.map((post) => {
@@ -61,7 +61,7 @@ const Blog = () => {
               )
             })}
           </div>
-        </>
+        </div>
       )
     })
 

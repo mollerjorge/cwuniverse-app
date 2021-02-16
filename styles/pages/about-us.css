@@ -1,0 +1,27 @@
+@screen lg {
+  .about-us-overlay {
+    background-image: url('/images/about-us-background-overlay.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us-columns {
+  column-count: 1;
+}
+@screen lg {
+  .about-us-columns {
+    column-count: 2;
+    column-gap: 6rem;
+  }
+}
+
+.who-we-are {
+  column-count: 1;
+}
+@screen lg {
+  .who-we-are {
+    column-count: 2;
+    column-gap: 4rem;
+  }
+}

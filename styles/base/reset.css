@@ -1,0 +1,35 @@
+.gradient {
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 0%, 100%),
+    hsl(0, 0%, 100%)
+  );
+  z-index: 1;
+}
+
+.gradient::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #123861, #2463af);
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.gradient:hover::before {
+  opacity: 1;
+}
+
+.z-index-9999 {
+  z-index: 9999;
+}
+
+.select-box:focus {
+  outline: none;
+  @apply border-1 border-blue;
+}
