@@ -4,32 +4,33 @@ import PropTypes from 'prop-types'
 import Head from 'next/head'
 import Moment from 'react-moment'
 
-import { posts } from 'getAllPosts'
+import { currentPosts } from 'getAllPosts'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import ShocialShare from 'components/SocialShare/ShocialShare'
+import CLockworkCTA from 'components/ClockworkCTA'
 
 const PostLayout = ({ children, meta }) => {
   const router = useRouter()
   const getPrevPost = () => {
-    const index = posts.findIndex((post) => {
+    const index = currentPosts.findIndex((post) => {
       return post.link === `/${router.pathname.split('/')?.[2]}`
     })
 
     if (index > 0) {
-      return posts[index - 1]
+      return currentPosts[index - 1]
     }
-    return posts[0]
+    return currentPosts[0]
   }
   const getNextPost = () => {
-    const index = posts.findIndex((post) => {
+    const index = currentPosts.findIndex((post) => {
       return post.link === `/${router.pathname.split('/')?.[2]}`
     })
 
-    if (index < posts.length - 1) {
-      return posts[index + 1]
+    if (index < currentPosts.length - 1) {
+      return currentPosts[index + 1]
     }
-    return posts[0]
+    return currentPosts[0]
   }
   return (
     <>
@@ -84,6 +85,7 @@ const PostLayout = ({ children, meta }) => {
           <div>
             <ShocialShare postTitle={meta.title} />
           </div>
+          <CLockworkCTA />
         </div>
 
         <div className="mt-16">
