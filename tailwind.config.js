@@ -53,7 +53,7 @@ module.exports = {
         gray: {
           DEFAULT: '#444444',
         },
-      }, 
+      },
       boxShadow: {
         '3xl': '0 20px 38px rgba(0, 0, 0, 0.16)',
       },

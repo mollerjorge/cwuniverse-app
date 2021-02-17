@@ -10,7 +10,7 @@ import Header from 'components/Header'
 import ShocialShare from 'components/SocialShare/ShocialShare'
 import CLockworkCTA from 'components/ClockworkCTA'
 
-const PostLayout = ({ children, meta, isInterview }) => {
+const InterviewLayout = ({ children, meta }) => {
   const router = useRouter()
 
   const sortedPosts = currentPosts.sort((a, b) => {
@@ -52,9 +52,7 @@ const PostLayout = ({ children, meta, isInterview }) => {
         <meta property="twitter:description" content={meta.description}></meta>
         <meta
           property="twitter:image"
-          content={`https://cwuniverse-app.vercel.app/images/${
-            meta.twitterThumbnail || meta.thumbnail
-          }`}
+          content={`https://cwuniverse-app.vercel.app/images/${meta.thumbnail}`}
         ></meta>
         <meta property="twitter:card" content="summary_large_image"></meta>
       </Head>
@@ -64,9 +62,7 @@ const PostLayout = ({ children, meta, isInterview }) => {
           <div
             className="w-full bg-cover bg-center"
             style={{
-              backgroundImage: `linear-gradient(0deg, rgba(16, 21, 39, 0.8), rgba(16, 21, 39, 0.8)), url(/images/${
-                isInterview ? 'prevnextbackground.png' : meta.thumbnail
-              })`,
+              backgroundImage: `linear-gradient(0deg, rgba(16, 21, 39, 0.8), rgba(16, 21, 39, 0.8)), url(/images/${meta.thumbnail})`,
               height: '400px',
             }}
           >
@@ -88,11 +84,9 @@ const PostLayout = ({ children, meta, isInterview }) => {
         </main>
 
         <div className="container max-w-5xl">
-          {meta.author && (
-            <p className=" antialiased font-lato uppercase font-bold text-sm tracking-wider text-black mb-20">
-              Author: {meta.author}
-            </p>
-          )}
+          <p className=" antialiased font-lato uppercase font-bold text-sm tracking-wider text-black mb-20">
+            Author: {meta.author}
+          </p>
           <div>
             <ShocialShare postTitle={meta.title} />
           </div>
@@ -148,7 +142,7 @@ const PostLayout = ({ children, meta, isInterview }) => {
   )
 }
 
-PostLayout.propTypes = {
+InterviewLayout.propTypes = {
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node)]),
   meta: PropTypes.shape({
     title: PropTypes.string.isRequired,
@@ -157,13 +151,7 @@ PostLayout.propTypes = {
     category: PropTypes.string.isRequired,
     publishedAt: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-    twitterThumbnail: PropTypes.string,
   }),
-  isInterview: PropTypes.bool,
 }
 
-PostLayout.defaultProps = {
-  isInterview: false,
-}
-
-export default PostLayout
+export default InterviewLayout
