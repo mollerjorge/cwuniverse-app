@@ -48,18 +48,26 @@ const PostLayout = ({ children, meta, isInterview }) => {
 
         <meta property="og:title" content={meta.title}></meta>
         <meta property="og:description" content={meta.description}></meta>
-        <meta property="og:image" content={`/images/${meta.thumbnail}`}></meta>
-        <meta property="og:url" content={`https://clockwork.app${router.pathname}`}></meta>
+        <meta
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_HOST}/images/${meta.thumbnail}`}
+        ></meta>
+        <meta
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_HOST}${router.pathname}`}
+        ></meta>
 
         <meta property="twitter:title" content={meta.title}></meta>
         <meta property="twitter:description" content={meta.description}></meta>
+        <meta property="twitter:card" content="summary"></meta>
+        <meta property="twitter:site" content="@clockworkapp"></meta>
+        <meta property="twitter:domain" content="clockwork.app"></meta>
         <meta
           property="twitter:image"
           content={`${process.env.NEXT_PUBLIC_HOST}/images/${
             meta.twitterThumbnail || meta.thumbnail
           }`}
         ></meta>
-        <meta property="twitter:card" content="summary_large_image"></meta>
       </Head>
       <Header />
       <main>
