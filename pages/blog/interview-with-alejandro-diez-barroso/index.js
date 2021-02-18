@@ -2,19 +2,13 @@ import React from 'react'
 import PostLayout from 'components/PostLayout'
 import MarketMeter from 'components/MarketMeter'
 import SocialLink from 'components/SocialLink'
-
-export const meta = {
-  thumbnail: 'alejandro.jpg',
-  category: 'Clockwork Investor Series',
-  title: 'Interview With Alejandro Diez Barroso',
-  publishedAt: '2021-01-10',
-  description:
-    'When sitting down to build your next investor update, consider beginning by identifying the thematic areas you plan to address with your audience. Distilling your update into smaller, topic-based segments will make for a more approachable letter with a narrative that sticks. Ideally the structure stays consistent over time. ',
-}
+import usePost from 'utils/usePost'
 
 const Interview = () => {
+  const currentPost = usePost()
+
   return (
-    <PostLayout isInterview meta={meta}>
+    <PostLayout isInterview meta={currentPost}>
       <div className="flex mb-20">
         <div className=" border-gray-300 border-1 p-8 w-1/3" style={{ height: 'max-content' }}>
           <div>
@@ -54,9 +48,12 @@ const Interview = () => {
           <b className="antialiased">Pre-Series A, Series A</b>
 
           <div className="flex mt-5">
-            <SocialLink />
-            <SocialLink icon="medium" />
-            <SocialLink icon="linkedin" />
+            <SocialLink to="http://www.dilacapital.com/" />
+            <SocialLink to="https://adiezbarroso.medium.com/" icon="medium" />
+            <SocialLink
+              to="https://www.linkedin.com/in/alejandro-diez-barroso-aa372416/?locale=es_ES"
+              icon="linkedin"
+            />
           </div>
         </div>
 

@@ -52,9 +52,7 @@ const PostLayout = ({ children, meta, isInterview }) => {
         <meta property="twitter:description" content={meta.description}></meta>
         <meta
           property="twitter:image"
-          content={`https://cwuniverse-app.vercel.app/images/${
-            meta.twitterThumbnail || meta.thumbnail
-          }`}
+          content={`/images/${meta.twitterThumbnail || meta.thumbnail}`}
         ></meta>
         <meta property="twitter:card" content="summary_large_image"></meta>
       </Head>
