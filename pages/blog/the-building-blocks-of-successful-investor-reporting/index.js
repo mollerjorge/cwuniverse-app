@@ -1,7 +1,7 @@
 import React from 'react'
 import PostLayout from 'components/PostLayout'
 import Image from 'next/image'
-import usePost from 'utils/posts'
+import usePost from 'utils/usePost'
 
 const Post = () => {
   const post = usePost()
