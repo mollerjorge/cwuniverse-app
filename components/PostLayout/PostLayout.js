@@ -55,7 +55,9 @@ const PostLayout = ({ children, meta, isInterview }) => {
         <meta property="twitter:description" content={meta.description}></meta>
         <meta
           property="twitter:image"
-          content={`/images/${meta.twitterThumbnail || meta.thumbnail}`}
+          content={`${process.env.NEXT_PUBLIC_HOST}/images/${
+            meta.twitterThumbnail || meta.thumbnail
+          }`}
         ></meta>
         <meta property="twitter:card" content="summary_large_image"></meta>
       </Head>
