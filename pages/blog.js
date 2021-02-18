@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Head from 'next/head'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
@@ -31,14 +32,11 @@ const Blog = () => {
                   return (
                     <Link key={post.link} as={`/blog/${post.link}`} href={`/blog/${post.link}`}>
                       <div className="flex flex-col  overflow-hidden cursor-pointer">
-                        <div
-                          style={{
-                            background: `url(/images/${post.thumbnail})`,
-                            height: '400px',
-                            width: '100%',
-                            backgroundSize: 'cover',
-                            backgroundRepeat: 'no-repeat',
-                          }}
+                        <Image
+                          src={`/images/${post.thumbnail}`}
+                          layout="responsive"
+                          width={600}
+                          height={400}
                           className="rounded-md"
                         />
                         <p className="antialiased  mt-5 font-raleway text-gray-600 text-sm">
@@ -60,14 +58,12 @@ const Blog = () => {
                   return (
                     <Link key={post.link} as={`/blog${post.link}`} href={`/blog/${post.link}`}>
                       <div className="flex flex-col rounded-md overflow-hidden cursor-pointer">
-                        <div
-                          style={{
-                            background: `url(/images/${post.thumbnail})`,
-                            height: '400px',
-                            width: '600px',
-                            backgroundSize: 'cover',
-                            backgroundRepeat: 'no-repeat',
-                          }}
+                        <Image
+                          src={`/images/${post.thumbnail}`}
+                          layout="responsive"
+                          width={600}
+                          height={400}
+                          className="rounded-md"
                         />
                         <p className="antialiased  mt-5 font-raleway text-gray-600 text-sm">
                           {post.category}

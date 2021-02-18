@@ -206,7 +206,7 @@ const ForFounders = () => {
 
         <section className="py-40">
           <div className="container">
-            <h2 className="text-center text-5xl antialiased">Pricing</h2>
+            <h2 className="text-center text-5xl antialiased mb-10">Pricing</h2>
 
             <div className="flex flex-col lg:flex-row justify-center gap-6">
               <div className="gradient w-full group lg:w-1/3 flex justify-center items-center flex-col border-1 border-gray-200 rounded-md text-gray-200 py-40 px-16">

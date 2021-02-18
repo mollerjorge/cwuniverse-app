@@ -7,7 +7,7 @@ const Post = () => {
   const post = usePost()
   return (
     <PostLayout meta={post}>
-      <p>
+      <p className="mb-10">
         Established or nascent, public or private, a fundamental truism to businesses is that they
         require capital (in some form) to grow. Especially in the early stages of a company’s
         lifecycle, choosing investment partners can be a critical juncture in the ultimate success
@@ -18,7 +18,7 @@ const Post = () => {
         opportunities that they believe have a strong likelihood of generating attractive economic
         returns.
       </p>
-      <p>
+      <p className="mb-10">
         As a founder, it can be intimidating dealing with the world of early-stage financing for the
         first time (or second, or third… does it ever get easier?). While it is normal to have a
         myopic focus on executing your own view of success, it is not always clear exactly what
@@ -26,7 +26,7 @@ const Post = () => {
         belief and (capital) support. Here we attempt to demystify the investor-founder divide by
         looking at the type of return-oriented performance metrics that investors tend to focus on./
       </p>
-      <p>
+      <p className="mb-10">
         First, the good news. You have some time! In most circumstances, early-stage investors
         expect that they will not realize any meaningful returns on their money for five to ten
         years. They are in it for the (relatively) long haul, expecting that there will be some
@@ -35,7 +35,7 @@ const Post = () => {
         several common ways investors can realize returns.
       </p>
 
-      <ul className="list-disc">
+      <ul className="list-disc pl-5 mt-5">
         <li>
           <b>Exit:</b> This is the most common way for an investor to realize a gain on their
           investment. An exit occurs when all or a sizable portion of the company is sold to or
@@ -78,8 +78,10 @@ const Post = () => {
           height={407}
         />
       </div>
-      <h3 className="text-2xl uppercase tracking-wide">RETURN-ORIENTED METRICS</h3>
-      <p>
+      <h3 className="text-xl uppercase tracking-wide font-lato antialiased mt-10 mb-5">
+        RETURN-ORIENTED METRICS
+      </h3>
+      <p className="mb-10">
         While return-oriented metrics vary in importance to any given investor based on the type of
         investor, life-cycle stage of the company, and individual investor preferences, they all
         focus on two fundamental questions; how much will I get in return for my investment and when
@@ -89,7 +91,7 @@ const Post = () => {
         Capital (MOIC).
       </p>
 
-      <ul className="list-disc">
+      <ul className="list-disc pl-5">
         <li>
           <b>IRR:</b> Along with MOIC, IRR is the most common return metric applied by investors to
           measure the success of their individual investments or of their portfolio. It is the
@@ -120,14 +122,11 @@ const Post = () => {
         </li>
       </ul>
 
-      <h3>Key asks</h3>
-      <p>
-        Key asks are your opportunity to spotlight the ways in which your investor base can add
-        value. These can include candidate referrals for active job listings, requests for warm
-        introductions to key partners that fit a certain profile, requests for introductions to
-        other prospective investors, or simply solicitations for advice and support on any business
-        challenges. Don’t be afraid to make requests – you never know what help your investors may
-        be able to provide.
+      <p className="my-10">
+        No one metric singlehandedly defines the success or failure of an investment from an
+        investor perspective but will be viewed comprehensively as part of the bigger picture. That
+        being said, all of these metrics really just boil down into a convoluted way of saying
+        investors desire greater returns and they want them faster.
       </p>
     </PostLayout>
   )

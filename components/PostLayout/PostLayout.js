@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Head from 'next/head'
 import Moment from 'react-moment'
 
-import { currentPosts } from 'getAllPosts'
+import posts from 'utils/posts'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import ShocialShare from 'components/SocialShare/ShocialShare'
@@ -13,30 +13,33 @@ import CLockworkCTA from 'components/ClockworkCTA'
 const PostLayout = ({ children, meta, isInterview }) => {
   const router = useRouter()
 
-  const sortedPosts = currentPosts.sort((a, b) => {
-    return new Date(b.module?.meta?.publishedAt) - new Date(a.module?.meta?.publishedAt)
-  })
+  const sortedPosts = Object.values(posts)
+    .flat()
+    .sort((a, b) => {
+      return new Date(b.publishedAt) - new Date(a.publishedAt)
+    })
 
   const getPrevPost = () => {
-    const index = sortedPosts.findIndex((post) => {
-      return post.link === `/${router.pathname.split('/')?.[2]}`
+    let index = sortedPosts.findIndex((post) => {
+      return post.link === meta.link
     })
+
     if (index > 0) {
       return sortedPosts[index - 1]
     }
-    return sortedPosts[0]
+    return sortedPosts[sortedPosts.length - 1]
   }
 
   const getNextPost = () => {
-    const index = sortedPosts.findIndex((post) => {
-      return post.link === `/${router.pathname.split('/')?.[2]}`
+    let index = sortedPosts.findIndex((post) => {
+      return post.link === meta.link
     })
-
     if (index < sortedPosts.length - 1) {
       return sortedPosts[index + 1]
     }
     return sortedPosts[0]
   }
+
   return (
     <>
       <Head>
@@ -104,17 +107,17 @@ const PostLayout = ({ children, meta, isInterview }) => {
               style={{
                 backgroundRepeat: 'no-repeat',
                 background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/${
-                  getPrevPost()?.module?.meta?.thumbnail
-                });`,
+                  getPrevPost()?.thumbnail
+                })`,
                 backgroundSize: 'cover',
               }}
             >
-              <a href={`/blog${getPrevPost()?.link}`} className="p-28 inline-block">
+              <a href={`/blog/${getPrevPost()?.link}`} className="p-28 inline-block">
                 <p className="text-white text-xl font-light mb-5 font-raleway text-right antialiased">
                   Previous Post
                 </p>
                 <p className="text-white text-2xl font-raleway text-right antialiased">
-                  {getPrevPost()?.module?.meta?.title}
+                  {getPrevPost()?.title}
                 </p>
               </a>
             </li>
@@ -123,17 +126,17 @@ const PostLayout = ({ children, meta, isInterview }) => {
               style={{
                 backgroundRepeat: 'no-repeat',
                 background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/${
-                  getNextPost()?.module?.meta?.thumbnail
-                });`,
+                  getNextPost()?.thumbnail
+                })`,
                 backgroundSize: 'cover',
               }}
             >
-              <a href={`/blog${getNextPost()?.link}`} className="p-28 inline-block">
+              <a href={`/blog/${getNextPost()?.link}`} className="p-28 inline-block">
                 <p className="text-white text-xl font-light mb-5 font-raleway text-left antialiased">
                   Next Post
                 </p>
                 <p className="text-white text-2xl font-raleway text-left antialiased">
-                  {getNextPost()?.module?.meta?.title}
+                  {getNextPost()?.title}
                 </p>
               </a>
             </li>
@@ -154,8 +157,9 @@ PostLayout.propTypes = {
     thumbnail: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
     publishedAt: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
+    author: PropTypes.string,
     twitterThumbnail: PropTypes.string,
+    link: PropTypes.string.isRequired,
   }),
   isInterview: PropTypes.bool,
 }
