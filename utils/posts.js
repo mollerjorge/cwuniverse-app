@@ -11,7 +11,7 @@ export default {
         'When sitting down to build your next investor update, consider beginning by identifying the thematic areas you plan to address with your audience. Distilling your update into smaller, topic-based segments will make for a more approachable letter with a narrative that sticks. Ideally the structure stays consistent over time. ',
     },
     {
-      author: 'Pat',
+      author: 'CAITLIN JAMES AND PATRICK ZAILCKAS',
       thumbnail: 'surf.jpg',
       category: 'Clockwork Perspectives',
       title: 'Striking The Balance: Investor Communications DOs And DON’Ts',

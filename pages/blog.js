@@ -33,6 +33,7 @@ const Blog = () => {
                     <Link key={post.link} as={`/blog/${post.link}`} href={`/blog/${post.link}`}>
                       <div className="flex flex-col  overflow-hidden cursor-pointer">
                         <Image
+                          alt="post thumbnail"
                           src={`/images/${post.thumbnail}`}
                           layout="responsive"
                           width={600}
@@ -56,9 +57,10 @@ const Blog = () => {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mt-10">
                 {sortedPosts.slice(2, sortedPosts.length).map((post) => {
                   return (
-                    <Link key={post.link} as={`/blog${post.link}`} href={`/blog/${post.link}`}>
+                    <Link key={post.link} as={`/blog/${post.link}`} href={`/blog/${post.link}`}>
                       <div className="flex flex-col rounded-md overflow-hidden cursor-pointer">
                         <Image
+                          alt="post thumbnail"
                           src={`/images/${post.thumbnail}`}
                           layout="responsive"
                           width={600}
