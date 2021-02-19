@@ -8,7 +8,7 @@ class MyDocument extends Document {
   }
 
   render() {
-    const GA_MEASUREMENT_ID = 250620077 
+    const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID
     return (
       <Html lang="en">
         <Head>
