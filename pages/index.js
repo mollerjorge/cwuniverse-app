@@ -21,6 +21,7 @@ import Testimonials from 'components/Testimonials'
 
 import FounderIcon from 'public/images/founder-icon.svg'
 import InvestorIcon from 'public/images/investor-icon.svg'
+import Newsletter from "components/Newsletter/Newsletter"
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(0)
@@ -455,6 +456,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <Newsletter />
 
         <Footer />
         <SignupModal
