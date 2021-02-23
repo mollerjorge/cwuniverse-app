@@ -44,7 +44,7 @@ const ForInvestors = () => {
                     onClick={() => {
                       setIsModalOpen(true)
                     }}
-                    className="transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block py-5 px-12 text-lg antialiased"
+                    className="transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block py-5 px-12 text-lg antialiased bg-teal"
                   >
                     Get started
                   </Button>
@@ -64,7 +64,7 @@ const ForInvestors = () => {
         </section>
 
         <section>
-          <div className="container py-20">
+          <div className="container pt-28 pb-10">
             <h2 className="text-center text-39 lg:text-46 text-gray">
               The evolution of investor relations.
             </h2>
@@ -217,12 +217,12 @@ const ForInvestors = () => {
             </p>
 
             <a
-              className="text-black antialiased flex font-normal text-sm tracking-wider font-raleway text-md uppercase text-center"
+              className="text-black antialiased flex justify-center items-center font-normal text-sm tracking-wider font-raleway text-md uppercase text-center hover:text-blue"
               href="https://clockwork4.typeform.com/to/Ma9jZH"
             >
               Contact us{' '}
               <svg
-                className="w-6 ml-5 text-gray-500 stroke-current"
+                className="w-6 ml-5  stroke-current fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"

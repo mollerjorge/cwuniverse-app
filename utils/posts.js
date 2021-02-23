@@ -49,6 +49,7 @@ export default {
       publishedAt: '2021-01-10',
       link: 'interview-with-alejandro-diez-barroso',
       description: 'Interview with alejandro diez barroso',
+      fundName: 'DILA Capital',
     },
     {
       thumbnail: 'sep-alavi.jpg',
@@ -57,6 +58,16 @@ export default {
       publishedAt: '2021-01-27',
       link: 'interview-with-sep-alavi',
       description: 'Interview with sep alavi',
+      fundName: 'White Star Capital Digital Asset',
+    },
+    {
+      thumbnail: 'odile.jpeg',
+      category: 'Clockwork Investor Series',
+      title: 'Interview With Odile Roujol',
+      publishedAt: '2021-02-23',
+      link: 'interview-with-odile-roujol',
+      description: 'Interview with Odile Roujol',
+      fundName: 'Fab Ventures, Fund I',
     },
   ],
 }

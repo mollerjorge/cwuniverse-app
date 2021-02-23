@@ -1,7 +1,7 @@
 @screen lg {
   .about-us-overlay {
     background-image: url('/images/about-us-background-overlay.svg');
-    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
   }
 }

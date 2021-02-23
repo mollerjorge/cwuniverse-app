@@ -111,7 +111,7 @@ const ForInvestors = () => {
 
         <section>
           <div className="container lg:py-40">
-            <h2 className="text-3xl lg:text-5xl font-regular text-gray-800 antialiased text-center">
+            <h2 className="text-3xl lg:text-5xl font-regular text-gray-800 antialiased text-center mb-6">
               Advancing global private markets...
             </h2>
 
@@ -126,7 +126,7 @@ const ForInvestors = () => {
 
         <section>
           <div className="container py-40">
-            <h2 className="text-3xl lg:text-5xl font-regular text-gray-800 antialiased text-center">
+            <h2 className="text-3xl lg:text-5xl font-regular text-gray-800 antialiased text-center mb-6">
               Join Us !
             </h2>
 

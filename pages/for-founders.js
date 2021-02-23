@@ -35,15 +35,14 @@ const ForFounders = () => {
                   </span>
                 </h1>
                 <p className="font-lato text-xl mt-6 leading-relaxed  text-gray-800 antialiased font-light lg:max-w-lg">
-                  Free modern investor reporting technology. Improve investor engagement with
-                  branded updates, file sharing, and more.
+                  Save time and build trust with better investor communications.
                 </p>
                 <div className="mt-8 mb-10 lg:mb-0">
                   <Button
                     onClick={() => {
                       setIsModalOpen(true)
                     }}
-                    className="transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block py-5 px-12 text-lg antialiased"
+                    className="transition duration-500 transform hover:-translate-y-4 hover:shadow-2xl inline-block py-5 px-12 text-lg antialiased bg-teal"
                   >
                     Get started
                   </Button>
@@ -63,7 +62,7 @@ const ForFounders = () => {
         </section>
 
         <section>
-          <div className="container py-20">
+          <div className="container pt-28 pb-10">
             <h2 className="text-center text-39 lg:text-46 text-gray">
               The evolution of investor relations.
             </h2>
@@ -176,8 +175,13 @@ const ForFounders = () => {
 
         <section className="py-20 bg-blue-dark">
           <div className="flex flex-col justify-center items-center px-10 lg:p-0">
-            <h2 className="text-4xl lg:text-5xl text-white antialiased text-center">
-              Sign Up Free & Claim Your Profile
+            <h2 className="text-4xl lg:text-5xl text-white antialiased text-center z-10">
+              Sign Up{' '}
+              <span className="relative inline-block">
+                <span className="badge badge-blue -bottom-0"></span>
+                Free
+              </span>{' '}
+              & Claim Your Profile
             </h2>
             <Button
               onClick={() => {
@@ -209,7 +213,7 @@ const ForFounders = () => {
             <h2 className="text-center text-5xl antialiased mb-10">Pricing</h2>
 
             <div className="flex flex-col lg:flex-row justify-center gap-6">
-              <div className="gradient w-full group lg:w-1/3 flex justify-center items-center flex-col border-1 border-gray-200 rounded-md text-gray-200 py-40 px-16">
+              <div className="gradient w-full group lg:w-1/3 flex justify-center items-center flex-col border-1 border-gray-200 rounded-md hover:rounded-md text-gray-200 py-40 px-16">
                 <span className="uppercase group-hover:text-white text-gray-500 text-md mb-5 font-raleway">
                   Try it now!
                 </span>

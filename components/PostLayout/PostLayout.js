@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
@@ -82,9 +83,11 @@ const PostLayout = ({ children, meta, isInterview }) => {
             }}
           >
             <div className="container flex flex-col justify-center items-center py-20">
-              <span className="uppercase font-normal font-lato text-white text-lg border-2 border-gray-300 rounded-md px-2 antialiased">
-                {meta.category}
-              </span>
+              <Link href="/blog" passHref className="cursor-pointer">
+                <span className="uppercase font-normal font-lato cursor-pointer text-white text-lg border-2 border-gray-300 rounded-md px-2 antialiased">
+                  {meta.category}
+                </span>
+              </Link>
               <h1 className="text-4xl my-10 antialiased font-raleway text-white font-normal max-w-4xl text-center">
                 {meta.title}
               </h1>
@@ -94,7 +97,8 @@ const PostLayout = ({ children, meta, isInterview }) => {
             </div>
           </div>
         </div>
-        <main className="post container pt-40 max-w-5xl antialiased leading-8 text-gray-800">
+
+        <main className="post max-w-4xl container pt-40 antialiased leading-8 text-gray-800">
           {children}
         </main>
 
@@ -111,7 +115,7 @@ const PostLayout = ({ children, meta, isInterview }) => {
         </div>
 
         <div className="mt-16">
-          <ul className="flex list-none overflow-hidden bg-blue ">
+          <ul className="flex list-none overflow-hidden bg-blue h-96 ">
             <li
               className="w-1/2  overflow-hidden "
               style={{
@@ -122,7 +126,10 @@ const PostLayout = ({ children, meta, isInterview }) => {
                 backgroundSize: 'cover',
               }}
             >
-              <a href={`/blog/${getPrevPost()?.link}`} className="p-28 inline-block">
+              <a
+                href={`/blog/${getPrevPost()?.link}`}
+                className="w-full flex items-end pr-10 justify-center flex-col h-full"
+              >
                 <p className="text-white text-xl font-light mb-5 font-raleway text-right antialiased">
                   Previous Post
                 </p>
@@ -141,7 +148,10 @@ const PostLayout = ({ children, meta, isInterview }) => {
                 backgroundSize: 'cover',
               }}
             >
-              <a href={`/blog/${getNextPost()?.link}`} className="p-28 inline-block">
+              <a
+                href={`/blog/${getNextPost()?.link}`}
+                className="w-full flex items-start pl-10 justify-center flex-col h-full"
+              >
                 <p className="text-white text-xl font-light mb-5 font-raleway text-left antialiased">
                   Next Post
                 </p>

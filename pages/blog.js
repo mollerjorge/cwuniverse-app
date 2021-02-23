@@ -31,7 +31,7 @@ const Blog = () => {
                 {sortedPosts?.slice(0, 2).map((post) => {
                   return (
                     <Link key={post.link} as={`/blog/${post.link}`} href={`/blog/${post.link}`}>
-                      <div className="flex flex-col  overflow-hidden cursor-pointer">
+                      <div className="flex flex-col  overflow-hidden cursor-pointer hover:-translate-y-1 transition-all transform">
                         <Image
                           alt="post thumbnail"
                           src={`/images/${post.thumbnail}`}
@@ -89,7 +89,7 @@ const Blog = () => {
                 return (
                   <Link key={post.link} as={`/blog/${post.link}`} href={`/blog/${post.link}`}>
                     <div
-                      className="flex flex-col rounded-md overflow-hidden cursor-pointer text-white p-5 justify-end"
+                      className="flex flex-col rounded-md overflow-hidden cursor-pointer text-white p-5 justify-end hover:-translate-y-1 transition-all transform"
                       style={{
                         background: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(/images/${post.thumbnail})`,
                         height: '490px',
@@ -103,6 +103,7 @@ const Blog = () => {
                         <h2 className="antialiased font-raleway mt-2 tracking-normal font-light text-3xl mb-5">
                           {post?.title}
                         </h2>
+                        <h3 className="text-white antialiased font-raleway">{post.fundName}</h3>
                       </div>
                     </div>
                   </Link>

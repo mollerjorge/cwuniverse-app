@@ -3,10 +3,10 @@
   position: absolute;
   height: 1rem;
   width: 100%;
-  bottom: 0;
+  bottom: .5rem;
   left: 0;
   z-index: -1;
-  @apply lg:h-8;
+  @apply lg:h-4;
 }
 
 .badge-red {
@@ -15,4 +15,8 @@
 
 .badge-green {
   background: #3cc3af;
+}
+
+.badge-blue {
+  background: #2463af;
 }

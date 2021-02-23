@@ -5,3 +5,7 @@
 .btn-primary {
   @apply bg-blue text-white uppercase text-15 font-normal font-lato antialiased tracking-wider;
 }
+
+.social-link:first-child {
+  margin-left: 0;
+}

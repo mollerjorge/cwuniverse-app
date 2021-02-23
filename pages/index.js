@@ -192,25 +192,25 @@ export default function Home() {
               <div className="hidden lg:block w-3/4">
                 <img
                   key="0"
-                  className={`mx-auto pt-16 ${activeTab === 0 ? 'block' : 'hidden'}`}
-                  width={1145}
-                  height={922}
+                  className={`mx-auto pt-5 ${activeTab === 0 ? 'block' : 'hidden'}`}
+                  width={1045}
+                  height={822}
                   src="images/dynamic-company-profiles.svg"
                   alt="automated investor reporting"
                 />
                 <img
                   key="1"
-                  className={`mx-auto pt-16 ${activeTab === 1 ? 'block' : 'hidden'}`}
-                  width={1145}
-                  height={922}
+                  className={`mx-auto pt-5 ${activeTab === 1 ? 'block' : 'hidden'}`}
+                  width={1045}
+                  height={822}
                   src="images/automated-investor-reporting.svg"
                   alt="automated investor reporting"
                 />
                 <img
                   key="2"
-                  className={`mx-auto pt-16 ${activeTab === 2 ? 'block' : 'hidden'}`}
-                  width={1145}
-                  height={922}
+                  className={`mx-auto pt-5 ${activeTab === 2 ? 'block' : 'hidden'}`}
+                  width={1045}
+                  height={822}
                   src="images/digital-private-investing.svg"
                   alt="automated investor reporting"
                 />
@@ -269,7 +269,7 @@ export default function Home() {
         <section className="container py-52">
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="flex flex-col justify-center lg:mr-20">
-              <h2 className="font-normal text-black text-4xl lg:text-46 antialiased">
+              <h2 className="font-normal text-black mb-6 text-4xl lg:text-46 antialiased">
                 Who we work with
               </h2>
               <p className="text-black font-normal text-base tracking-wide leading-8 max-w-md antialiased font-lato">

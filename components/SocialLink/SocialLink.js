@@ -1,6 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMedium, faLinkedin, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import {
+  faMedium,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+  faFacebook,
+} from '@fortawesome/free-brands-svg-icons'
 import { faLink } from '@fortawesome/pro-regular-svg-icons'
 
 const SocialLink = ({ to, icon }) => {
@@ -14,6 +20,8 @@ const SocialLink = ({ to, icon }) => {
         return faTwitter
       case 'facebook':
         return faFacebook
+      case 'instagram':
+        return faInstagram
       default:
         return faLink
     }
@@ -23,7 +31,8 @@ const SocialLink = ({ to, icon }) => {
       href={to}
       target="_blank"
       rel="noreferrer"
-      className="p-3 border-2 border-blue rounded-full w-14 h-14 flex justify-center items-center ml-5 cursor-pointer hover:bg-blue hover:text-white group transition-all"
+      style={{ width: '3.5rem', height: '3.5rem' }}
+      className="social-link p-3 border-2 border-blue rounded-full flex justify-center items-center ml-5 cursor-pointer hover:bg-blue hover:text-white group transition-all"
     >
       {
         <FontAwesomeIcon
