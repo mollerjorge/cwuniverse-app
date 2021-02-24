@@ -40,6 +40,16 @@ export default {
       description:
         'Established or nascent, public or private, a fundamental truism to businesses is that they require capital (in some form) to grow. Especially in the early stages of a company’s lifecycle, choosing...',
     },
+    {
+      author: 'BRIAN POCOCK & KYLE ROSE',
+      thumbnail: 'notebooks-papers.jpg',
+      category: 'Clockwork Perspectives',
+      title: 'Key Performance Indicators: What Are They And Why Do They Matter?',
+      publishedAt: '2021-02-17',
+      link: 'key-performance-indicators-what-are-they-and-why-do-they-matter',
+      description:
+        'Across nearly every vertical of the investment industry investors and funds focus on a few key performance and return-oriented metrics, such as IRR and MOIC, to gauge the success of their work. But while these metrics are useful to investors, they provide little meaning to portfolio company founders.',
+    },
   ],
   'Clockwork Investor Series': [
     {

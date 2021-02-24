@@ -26,7 +26,6 @@ const ClockworkCTA = () => {
         </a>{' '}
         or
         <a className="text-blue-dark font-bold" href="mailto:contact@clockwork.app">
-          {' '}
           contact us at contact@clockwork.app
         </a>{' '}
         to find out how Universe can meet your needs.

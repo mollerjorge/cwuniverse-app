@@ -64,7 +64,7 @@ const ForInvestors = () => {
         </section>
 
         <section>
-          <div className="container pt-28 pb-10">
+          <div className="container pt-40 pb-10">
             <h2 className="text-center text-39 lg:text-46 text-gray">
               The evolution of investor relations.
             </h2>
