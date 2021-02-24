@@ -40,6 +40,9 @@ NEXT_PUBLIC_INTERCOM_APP_ID=/*INTERCOM_APP_ID*/
 
 If using vercel you should also add this env variable under project settings > environment variables > plain text 
 
+## How to deploy
+Run `npm run build`. This will create an `out` folder with all of the static files in there.
+
 ## Project Structure
 
 ```bash
