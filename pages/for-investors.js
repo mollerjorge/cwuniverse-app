@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
 import Head from 'next/head'
 import Button from 'components/Button'
 import ReactCompareImage from 'react-compare-image'
@@ -110,13 +109,12 @@ const ForInvestors = () => {
                 </p>
               </div>
               <div className="w-full lg:w-1/2">
-                <Image
+                <img
                   className="mt-10 max-w-2xl"
                   width="672px"
                   height="592px"
                   src="/images/portfolio-dashboard.svg"
                   alt="portfolio dashboard"
-                  layout="responsive"
                 />
               </div>
             </div>
@@ -127,13 +125,12 @@ const ForInvestors = () => {
           <div className="w-full">
             <div className="mt-20 flex flex-col-reverse lg:flex-row  md:mt-40 lg:mt-12 lg:flex lg:justify-between lg:items-center">
               <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
-                <Image
+                <img
                   className="mt-10 max-w-2xl"
                   width="672px"
                   height="592px"
                   src="/images/company-index.svg"
                   alt="company index"
-                  layout="responsive"
                 />
               </div>
               <div className="m-0 lg:ml-20">
@@ -160,13 +157,12 @@ const ForInvestors = () => {
                 </p>
               </div>
               <div className="w-full lg:w-1/2">
-                <Image
+                <img
                   className="mt-10 max-w-2xl"
                   width="672px"
                   height="592px"
                   src="/images/portfolio-digest.svg"
                   alt="company index"
-                  layout="responsive"
                 />
               </div>
             </div>

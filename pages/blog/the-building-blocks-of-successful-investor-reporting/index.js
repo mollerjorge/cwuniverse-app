@@ -1,6 +1,5 @@
 import React from 'react'
 import PostLayout from 'components/PostLayout'
-import Image from 'next/image'
 import usePost from 'utils/usePost'
 
 const Post = () => {
@@ -35,13 +34,7 @@ const Post = () => {
         sections as desired.
       </p>
       <div className="p-20">
-        <Image
-          src="/images/pyramid.jpg"
-          alt="pyramid"
-          layout="responsive"
-          width={611}
-          height={407}
-        />
+        <img src="/images/pyramid.jpg" alt="pyramid" width={611} height={407} />
       </div>
 
       <h3 className="font-lato font-bold tracking-widest uppercase antialiased text-sm mb-6">
@@ -135,13 +128,7 @@ const Post = () => {
           </i>
         </p>
         <div className="p-20">
-          <Image
-            src="/images/snow.jpg"
-            alt="pyramid"
-            layout="responsive"
-            width={611}
-            height={407}
-          />
+          <img src="/images/snow.jpg" alt="pyramid" width={611} height={407} />
         </div>
       </div>
 
@@ -211,13 +198,7 @@ const Post = () => {
         of a new manufacturing facility. Explain how these changes will impact the business.
       </p>
       <div className="p-20">
-        <Image
-          src="/images/white-board.jpg"
-          alt="pyramid"
-          layout="responsive"
-          width={611}
-          height={407}
-        />
+        <img src="/images/white-board.jpg" alt="pyramid" width={611} height={407} />
       </div>
 
       <p className="mb-10">

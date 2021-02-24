@@ -1,6 +1,5 @@
 import React from 'react'
 import PostLayout from 'components/PostLayout'
-import Image from 'next/image'
 import usePost from 'utils/usePost'
 
 const Post = () => {
@@ -70,13 +69,7 @@ const Post = () => {
       </ul>
 
       <div className="px-32 mt-20">
-        <Image
-          src="/images/high-five.jpg"
-          alt="high five"
-          layout="responsive"
-          width={611}
-          height={407}
-        />
+        <img src="/images/high-five.jpg" alt="high five" width={611} height={407} />
       </div>
       <h3 className="text-xl uppercase tracking-wide font-lato antialiased mt-10 mb-5">
         RETURN-ORIENTED METRICS

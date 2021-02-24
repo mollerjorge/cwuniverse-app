@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Head from 'next/head'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
@@ -32,10 +31,9 @@ const Blog = () => {
                   return (
                     <Link key={post.link} as={`/blog/${post.link}`} href={`/blog/${post.link}`}>
                       <div className="flex flex-col  overflow-hidden cursor-pointer hover:-translate-y-1 transition-all transform">
-                        <Image
+                        <img
                           alt="post thumbnail"
                           src={`/images/${post.thumbnail}`}
-                          layout="responsive"
                           width={600}
                           height={400}
                           className="rounded-md"
@@ -59,10 +57,9 @@ const Blog = () => {
                   return (
                     <Link key={post.link} as={`/blog/${post.link}`} href={`/blog/${post.link}`}>
                       <div className="flex flex-col rounded-md overflow-hidden cursor-pointer">
-                        <Image
+                        <img
                           alt="post thumbnail"
                           src={`/images/${post.thumbnail}`}
-                          layout="responsive"
                           width={600}
                           height={400}
                           className="rounded-md"

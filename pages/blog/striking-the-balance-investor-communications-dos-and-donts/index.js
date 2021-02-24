@@ -1,6 +1,5 @@
 import React from 'react'
 import PostLayout from 'components/PostLayout'
-import Image from 'next/image'
 import usePost from 'utils/usePost'
 import { faCheck, faTimes } from '@fortawesome/pro-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -57,7 +56,7 @@ const Post = () => {
       </div>
 
       <div className="p-20">
-        <Image src="/images/watch.jpg" alt="watch" layout="responsive" width={611} height={407} />
+        <img src="/images/watch.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">
@@ -93,13 +92,7 @@ const Post = () => {
         </p>
       </div>
       <div className="p-20">
-        <Image
-          src="/images/white-bg.jpg"
-          alt="watch"
-          layout="responsive"
-          width={611}
-          height={407}
-        />
+        <img src="/images/white-bg.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">Asks</h2>
@@ -128,7 +121,7 @@ const Post = () => {
         </p>
       </div>
       <div className="p-20">
-        <Image src="/images/canoe.jpg" alt="watch" layout="responsive" width={611} height={407} />
+        <img src="/images/canoe.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">
@@ -158,13 +151,7 @@ const Post = () => {
         </p>
       </div>
       <div className="p-20">
-        <Image
-          src="/images/notebook.jpg"
-          alt="watch"
-          layout="responsive"
-          width={611}
-          height={407}
-        />
+        <img src="/images/notebook.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">
@@ -189,13 +176,7 @@ const Post = () => {
         </p>
       </div>
       <div className="p-20">
-        <Image
-          src="/images/coffe-shop.jpg"
-          alt="watch"
-          layout="responsive"
-          width={611}
-          height={407}
-        />
+        <img src="/images/coffe-shop.jpg" alt="watch" width={611} height={407} />
       </div>
     </PostLayout>
   )

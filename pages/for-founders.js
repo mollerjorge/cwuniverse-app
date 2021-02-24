@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
 import Head from 'next/head'
 import Button from 'components/Button'
 import ReactCompareImage from 'react-compare-image'
@@ -110,12 +109,11 @@ const ForFounders = () => {
                 </p>
               </div>
               <div className="w-full lg:w-1/2">
-                <Image
+                <img
                   width={672}
                   height={592}
                   src="/images/investor-relations.svg"
                   alt="home hero inphografic"
-                  layout="responsive"
                 />
               </div>
             </div>
@@ -126,12 +124,11 @@ const ForFounders = () => {
           <div className="w-full">
             <div className="mt-20 flex flex-col-reverse lg:flex-row  md:mt-40 lg:mt-12 lg:flex lg:justify-between lg:items-center">
               <div className="w-full lg:w-1/2">
-                <Image
+                <img
                   width={672}
                   height={592}
                   src="/images/investor-updates.svg"
                   alt="home hero inphografic"
-                  layout="responsive"
                 />
               </div>
               <div className="m-0 lg:ml-20">
@@ -161,12 +158,11 @@ const ForFounders = () => {
                 </p>
               </div>
               <div className="w-full lg:w-1/2">
-                <Image
+                <img
                   width={672}
                   height={592}
                   src="/images/integrations.svg"
                   alt="home hero inphografic"
-                  layout="responsive"
                 />
               </div>
             </div>

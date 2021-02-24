@@ -1,6 +1,5 @@
 import React from 'react'
 import PostLayout from 'components/PostLayout'
-import Image from 'next/image'
 import usePost from 'utils/usePost'
 
 const Post = () => {
@@ -32,13 +31,7 @@ const Post = () => {
       </p>
 
       <div className="p-10 my-20">
-        <Image
-          src="/images/hands-on-notebook.jpg"
-          alt="pyramid"
-          layout="responsive"
-          width={611}
-          height={407}
-        />
+        <img src="/images/hands-on-notebook.jpg" alt="pyramid" width={611} height={407} />
       </div>
 
       <p className="mb-10">
@@ -83,13 +76,7 @@ const Post = () => {
       </p>
 
       <div className="p-10 my-20">
-        <Image
-          src="/images/man-woman.jpg"
-          alt="pyramid"
-          layout="responsive"
-          width={611}
-          height={407}
-        />
+        <img src="/images/man-woman.jpg" alt="pyramid" width={611} height={407} />
       </div>
 
       <h2 className="text-lg font-bold tracking-widest antialiased mt-10 mb-10 font-raleway">
@@ -124,7 +111,7 @@ const Post = () => {
       </p>
 
       <div className="p-10 my-20">
-        <Image src="/images/seeds.jpg" alt="pyramid" layout="responsive" width={611} height={407} />
+        <img src="/images/seeds.jpg" alt="pyramid" width={611} height={407} />
       </div>
 
       <p className="mb-10">
