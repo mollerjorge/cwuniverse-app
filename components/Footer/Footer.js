@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-white pt-20 pb-10">
       <div className="container">
         <div className="flex flex-col lg:flex-row">
-          <div className="w-full lg:w-4/12 flex flex-col">
+          <div className="w-full lg:w-4/12 flex flex-col font-lato">
             <img width={300} height={32} src="/images/clockwork-logo.png" alt="clockwork logo" />
 
             <p className="text-md mt-10  text-gray-500 antialiased">
@@ -25,7 +25,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex mt-10 lg:ml-10 lg:mt-0 lg:w-4/12">
-            <div className="w-full lg:w-full pt-4 flex flex-col">
+            <div className="w-full lg:w-full pt-4 flex flex-col font-lato">
               <p className="text-black uppercase antialiased text-xl">Quick Links</p>
               <a href="/" className=" text-md mt-10 text-gray-500">
                 Home
@@ -40,7 +40,7 @@ const Footer = () => {
                 About us
               </a>
             </div>
-            <div className="w-full lg:w-full flex flex-col pt-4">
+            <div className="w-full lg:w-full flex flex-col pt-4 font-lato">
               <a href="/blog" className=" text-md mt-16 pt-1 text-gray-500">
                 Blog
               </a>
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex mt-10 lg:mt-0 lg:w-4/12">
-            <div className="w-full lg:w-full pt-4">
+            <div className="w-full lg:w-full pt-4 font-lato">
               <p className="text-black uppercase antialiased text-xl">JOIN CLOCKWORK®</p>
               <p className="text-gray-500 antialiased text-md leading-8 mt-10">
                 We’re always on the lookout for the best and brightest. Discover open opportunities
