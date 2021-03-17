@@ -6,6 +6,7 @@ import Button from 'components/Button'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import Testimonials from 'components/Testimonials'
+import Newsletter from 'components/Newsletter/Newsletter'
 
 const ForInvestors = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -18,9 +19,7 @@ const ForInvestors = () => {
           content="Clockwork Universe™ is a streamlined investor and founder collaboration platform which seeks to increase visibility and transparency."
         />
       </Head>
-
       <Header />
-
       <main className="py-20 pt-40">
         <div className="about-us-overlay py-12 relative z-0 2xl:py-20">
           <h1 className=" leading-tight capitalize text-big font-raleway font-normal text-center text-gray-700  lg:text-6xl z-10">
@@ -220,7 +219,7 @@ const ForInvestors = () => {
           </div>
         </section>
       </main>
-
+      <Newsletter />
       <Footer />
       <SignupModal
         onHide={() => {

@@ -5,6 +5,7 @@ import Header from 'components/Header'
 import Link from 'next/link'
 import categories from 'utils/categories'
 import posts from 'utils/posts'
+import Newsletter from 'components/Newsletter/Newsletter'
 
 const Blog = () => {
   const displayPosts = () => {
@@ -124,9 +125,7 @@ const Blog = () => {
           content="Clockwork Universe™ is a streamlined investor and founder collaboration platform which seeks to increase visibility and transparency."
         />
       </Head>
-
       <Header />
-
       <main className="container py-20 pt-40">
         <p className="font-raleway text-gray-700 antialiased uppercase tracking-wider mb-10">
           News and resources
@@ -143,6 +142,7 @@ const Blog = () => {
         </div>
         <section className="mt-20">{displayPosts()}</section>
       </main>
+      <Newsletter />
       <Footer />
     </div>
   )

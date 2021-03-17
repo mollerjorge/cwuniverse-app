@@ -9,6 +9,7 @@ import Footer from 'components/Footer'
 import Header from 'components/Header'
 import ShocialShare from 'components/SocialShare/ShocialShare'
 import CLockworkCTA from 'components/ClockworkCTA'
+import Newsletter from 'components/Newsletter/Newsletter'
 
 const InterviewLayout = ({ children, meta }) => {
   const router = useRouter()
@@ -135,7 +136,7 @@ const InterviewLayout = ({ children, meta }) => {
             </li>
           </ul>
         </div>
-
+        <Newsletter />
         <Footer />
       </main>
     </>

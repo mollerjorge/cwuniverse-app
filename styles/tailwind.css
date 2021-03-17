@@ -10,3 +10,20 @@
 body {
   font-family: 'Lato', sans-serif;
 }
+
+.email-input {
+  @apply border-white border-1 text-white bg-transparent pl-4 h-8 w-full focus:outline-none focus:ring-4
+}
+
+.email-input::placeholder {
+  color: #6f8aaa;
+}
+
+@media (max-width: 1282px) {
+  .intercom-lightweight-app-launcher {
+    bottom: 13rem !important;
+  }
+  .remove-bottom {
+    bottom: 20px !important;
+  }
+}

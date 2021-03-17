@@ -9,6 +9,7 @@ import posts from 'utils/posts'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import ShocialShare from 'components/SocialShare/ShocialShare'
+import Newsletter from 'components/Newsletter/Newsletter'
 import CLockworkCTA from 'components/ClockworkCTA'
 
 const PostLayout = ({ children, meta, isInterview }) => {
@@ -163,6 +164,7 @@ const PostLayout = ({ children, meta, isInterview }) => {
           </ul>
         </div>
 
+        <Newsletter />
         <Footer />
       </main>
     </>

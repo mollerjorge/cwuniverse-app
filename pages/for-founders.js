@@ -6,6 +6,7 @@ import ReactCompareImage from 'react-compare-image'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import SignupModal from 'components/SignupModal'
+import Newsletter from 'components/Newsletter/Newsletter'
 
 const ForFounders = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -347,6 +348,7 @@ const ForFounders = () => {
           </div>
         </section>
       </main>
+      <Newsletter />
 
       <Footer />
       <SignupModal

@@ -5,6 +5,7 @@ import ReactCompareImage from 'react-compare-image'
 
 import Footer from 'components/Footer'
 import Header from 'components/Header'
+import Newsletter from 'components/Newsletter/Newsletter'
 import SignupModal from 'components/SignupModal'
 
 const ForInvestors = () => {
@@ -308,7 +309,7 @@ const ForInvestors = () => {
           </div>
         </section>
       </main>
-
+      <Newsletter />
       <Footer />
       <SignupModal
         onHide={() => {
