@@ -27,6 +27,16 @@ class MyDocument extends Document {
             name="msapplication-TileImage"
             content="/images/cropped-clockwork-270x270.png"
           ></meta>
+          <meta property="og:site_name" content="Clockwork | Clockwork.app" />
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content="Clockwork" />
+          <meta
+            property="og:description"
+            content="Modern Investor Relations. Clockwork improves transparency to drive results for founders and investors alike."
+          />
+          <meta property="og:url" content="https://clockwork.app/" />
+          <meta property="og:image" content="/images/clockwork-thumbnail.png" />
+          <meta property="og:image:secure_url" content="/images/clockwork-thumbnail.png" />
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
           <script
             // eslint-disable-next-line react/no-danger
