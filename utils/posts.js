@@ -79,5 +79,14 @@ export default {
       description: 'Interview with Odile Roujol',
       fundName: 'Fab Ventures, Fund I',
     },
+    {
+      thumbnail: 'vaughn-blake.jpeg',
+      category: 'Clockwork Investor Series',
+      title: 'Interview With Vaughn Blake',
+      publishedAt: '2021-02-23',
+      link: 'interview-with-vaughn-blake',
+      description: 'Interview With Vaughn Blake',
+      fundName: 'Blue Bear Capital',
+    },
   ],
 }
