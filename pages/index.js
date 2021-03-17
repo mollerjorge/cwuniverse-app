@@ -21,7 +21,7 @@ import Testimonials from 'components/Testimonials'
 
 import FounderIcon from 'public/images/founder-icon.svg'
 import InvestorIcon from 'public/images/investor-icon.svg'
-import Newsletter from "components/Newsletter/Newsletter"
+import Newsletter from 'components/Newsletter/Newsletter'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(0)
@@ -111,7 +111,7 @@ export default function Home() {
 
             <div className="tabs-container relative flex mt-20">
               <div className="tab-line hidden lg:block" />
-              <div className="py-12 hidden lg:flex flex-col gap-10 w-1/4  max-w-sm justify-between">
+              <div className="pt-16 pb-24 hidden lg:flex flex-col gap-10 w-1/4  max-w-sm justify-between">
                 <button
                   type="button"
                   onClick={() => {
@@ -142,7 +142,7 @@ export default function Home() {
                   type="button"
                   onClick={() => {
                     document.getElementsByClassName('tab-line')[0].style.cssText =
-                      'transform: translateY(280px)'
+                      'transform: translateY(230px)'
                     setActiveTab(1)
                   }}
                   className={classNames(
@@ -168,7 +168,7 @@ export default function Home() {
                   type="button"
                   onClick={() => {
                     document.getElementsByClassName('tab-line')[0].style.cssText =
-                      'transform: translateY(540px)'
+                      'transform: translateY(460px)'
                     setActiveTab(2)
                   }}
                   className={classNames(

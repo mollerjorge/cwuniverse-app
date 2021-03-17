@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import classNames from 'classnames'
+import { useRouter } from 'next/router'
 
 const Header = () => {
   const [isNavbarOpen, setIsNavbarOpen] = React.useState(false)
+  const router = useRouter()
 
   const toggleNavigationBar = () => {
     setIsNavbarOpen((currentNavigationStatus) => !currentNavigationStatus)
@@ -26,14 +28,24 @@ const Header = () => {
           <ul className="flex font-raleway antialiased text-blue-darkest">
             <li>
               <Link href="/for-founders">
-                <span className="text-15 font-normal cursor-pointer hover:text-blue-light">
+                <span
+                  className={classNames(
+                    'text-15 font-normal cursor-pointer hover:text-blue-light',
+                    { ['text-blue-light']: router.pathname === '/for-founders' }
+                  )}
+                >
                   For Founders
                 </span>
               </Link>
             </li>
             <li>
               <Link href="/for-investors">
-                <span className="text-15 ml-10 font-normal cursor-pointer hover:text-blue-light">
+                <span
+                  className={classNames(
+                    'text-15 ml-10 font-normal cursor-pointer hover:text-blue-light',
+                    { ['text-blue-light']: router.pathname === '/for-investors' }
+                  )}
+                >
                   For Investors
                 </span>
               </Link>
@@ -43,7 +55,12 @@ const Header = () => {
                 href="/about-us"
                 className="text-15 ml-10 font-normal cursor-pointer hover:text-blue-light"
               >
-                <span className="text-15 ml-10 font-normal cursor-pointer hover:text-blue-light">
+                <span
+                  className={classNames(
+                    'text-15 ml-10 font-normal cursor-pointer hover:text-blue-light',
+                    { ['text-blue-light']: router.pathname === '/about-us' }
+                  )}
+                >
                   About Us
                 </span>
               </Link>
@@ -53,7 +70,12 @@ const Header = () => {
                 href="/blog"
                 className="text-15 ml-10 font-normal cursor-pointer hover:text-blue-light"
               >
-                <span className="text-15 ml-10 font-normal cursor-pointer hover:text-blue-light">
+                <span
+                  className={classNames(
+                    'text-15 ml-10 font-normal cursor-pointer hover:text-blue-light',
+                    { ['text-blue-light']: router.pathname === '/blog' }
+                  )}
+                >
                   Blog
                 </span>
               </Link>

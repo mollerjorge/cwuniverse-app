@@ -83,7 +83,7 @@ export default {
       thumbnail: 'vaughn-blake.jpeg',
       category: 'Clockwork Investor Series',
       title: 'Interview With Vaughn Blake',
-      publishedAt: '2021-02-23',
+      publishedAt: '2021-03-10',
       link: 'interview-with-vaughn-blake',
       description: 'Interview With Vaughn Blake',
       fundName: 'Blue Bear Capital',

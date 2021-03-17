@@ -15,10 +15,15 @@ const Footer = () => {
               Charlottesville | NYC | Mexico City | Montevideo
             </p>
 
-            <p className="text-md mt-5 text-gray-500 antialiased">contact@clockwork.app</p>
+            <a
+              className="text-md mt-5 text-gray-500 antialiased hover:text-gray-400"
+              href="mailto:contact@clockwork.app"
+            >
+              contact@clockwork.app
+            </a>
 
             <a
-              href="https://cwuniverse.app"
+              href="https://clockwork.app/"
               className="text-md mt-5 block  text-gray-500 antialiased"
             >
               clockwork.app
@@ -27,27 +32,48 @@ const Footer = () => {
           <div className="flex mt-10 lg:ml-10 lg:mt-0 lg:w-4/12">
             <div className="w-full lg:w-full pt-4 flex flex-col font-lato">
               <p className="text-black uppercase antialiased text-xl">Quick Links</p>
-              <a href="/" className=" text-md mt-10 text-gray-500">
+              <a
+                href="/"
+                className=" text-md mt-10 text-gray-500 hover:text-gray-400 transition-all"
+              >
                 Home
               </a>
-              <a href="/for-founders" className=" text-md mt-2 text-gray-500">
+              <a
+                href="/for-founders"
+                className=" text-md mt-2 text-gray-500 hover:text-gray-400 transition-all"
+              >
                 For founders
               </a>
-              <a href="/for-investors" className=" text-md mt-2 text-gray-500">
+              <a
+                href="/for-investors"
+                className=" text-md mt-2 text-gray-500 hover:text-gray-400 transition-all"
+              >
                 For investors
               </a>
-              <a href="/about-us" className=" text-md mt-2 text-gray-500">
+              <a
+                href="/about-us"
+                className=" text-md mt-2 text-gray-500 hover:text-gray-400 transition-all"
+              >
                 About us
               </a>
             </div>
             <div className="w-full lg:w-full flex flex-col pt-4 font-lato">
-              <a href="/blog" className=" text-md mt-16 pt-1 text-gray-500">
+              <a
+                href="/blog"
+                className=" text-md mt-16 pt-1 text-gray-500 hover:text-gray-400 transition-all"
+              >
                 Blog
               </a>
-              <a href="/privacy-policy" className=" text-md mt-2 text-gray-500">
+              <a
+                href="/privacy-policy"
+                className=" text-md mt-2 text-gray-500 hover:text-gray-400 transition-all"
+              >
                 Privacy Policy
               </a>
-              <a href="/terms-of-use" className=" text-md mt-2 text-gray-500">
+              <a
+                href="/terms-of-use"
+                className=" text-md mt-2 text-gray-500 hover:text-gray-400 transition-all"
+              >
                 Terms of use
               </a>
             </div>
@@ -59,7 +85,7 @@ const Footer = () => {
                 We’re always on the lookout for the best and brightest. Discover open opportunities
                 or create your own.
               </p>
-              <div className="mt-20">
+              <div className="mt-6">
                 <Button
                   onClick={() => {
                     window.open('https://clockwork4.typeform.com/to/QIJxjP', '_blank')

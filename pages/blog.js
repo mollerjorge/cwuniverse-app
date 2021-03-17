@@ -56,13 +56,13 @@ const Blog = () => {
                 {sortedPosts.slice(2, sortedPosts.length).map((post) => {
                   return (
                     <Link key={post.link} as={`/blog/${post.link}`} href={`/blog/${post.link}`}>
-                      <div className="flex flex-col rounded-md overflow-hidden cursor-pointer">
+                      <div className="flex flex-col rounded-md cursor-pointer overflow-visible">
                         <img
                           alt="post thumbnail"
                           src={`/images/${post.thumbnail}`}
                           width={600}
                           height={400}
-                          className="rounded-md"
+                          className="rounded-md hover:-translate-y-1 transition-all transform hover:shadow-xl"
                         />
                         <p className="antialiased  mt-5 font-raleway text-gray-600 text-sm">
                           {post.category}
