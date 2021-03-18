@@ -158,10 +158,10 @@ const Header = () => {
         <div className="lg:hidden">
           <button
             onClick={toggleNavigationBar}
-            className="flex gap-1 flex-col focus:ring focus:ring-offset-8 focus:outline-none focus:ring-blue-light focus:ring-opacity-50"
+            className="flex flex-col focus:ring focus:ring-offset-8 focus:outline-none focus:ring-blue-light focus:ring-opacity-50"
           >
-            <i className="w-6 h-0.5  bg-gray-900" />
-            <i className="w-6 h-0.5  bg-gray-900" />
+            <i className="w-6 h-0.5 mb-1  bg-gray-900" />
+            <i className="w-6 h-0.5 mb-1  bg-gray-900" />
             <i className="w-4 h-0.5 bg-gray-900" />
           </button>
         </div>
