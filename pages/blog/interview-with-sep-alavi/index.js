@@ -10,8 +10,11 @@ const Interview = () => {
 
   return (
     <PostLayout isInterview meta={currentPost}>
-      <div className="flex mb-20">
-        <div className=" border-gray-300 border-1 p-8 w-1/3" style={{ height: 'max-content' }}>
+      <div className="flex flex-col md:flex-row mb-20">
+        <div
+          className=" border-gray-300 border-1 p-8 w-full md:w-1/3"
+          style={{ height: 'max-content' }}
+        >
           <div>
             <img
               src="/images/sep-alavi.jpg"
@@ -55,7 +58,7 @@ const Interview = () => {
           </div>
         </div>
 
-        <div className="w-2/3 ml-10">
+        <div className="w-full md:w-2/3 md:ml-10">
           <h3 className="text-blue antialiased uppercase font-lato font-bold tracking-widest mt-10">
             HOW AND WHY DID YOU GET STARTED IN PRIVATE INVESTING?
           </h3>

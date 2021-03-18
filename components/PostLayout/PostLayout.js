@@ -99,7 +99,7 @@ const PostLayout = ({ children, meta, isInterview }) => {
           </div>
         </div>
 
-        <main className="post max-w-4xl container pt-40 antialiased leading-8 text-gray-800">
+        <main className="post max-w-4xl container pt-40 antialiased leading-8 text-gray-800 overflow-auto">
           {children}
         </main>
 

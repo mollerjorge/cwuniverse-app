@@ -68,8 +68,8 @@ const Post = () => {
         </li>
       </ul>
 
-      <div className="px-32 mt-20">
-        <img src="/images/high-five.jpg" alt="high five" width={611} height={407} />
+      <div className="mt-20 w-full">
+        <img className="w-full p-6" src="/images/high-five.jpg" alt="high five" width={611} height={407} />
       </div>
       <h3 className="text-xl uppercase tracking-wide font-lato antialiased mt-10 mb-5">
         RETURN-ORIENTED METRICS

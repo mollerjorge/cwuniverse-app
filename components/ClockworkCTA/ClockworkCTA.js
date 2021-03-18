@@ -2,9 +2,9 @@ import React from 'react'
 
 const ClockworkCTA = () => {
   return (
-    <div className="flex flex-col sm:flex-row mt-20 items-start">
+    <div className="flex flex-col items-center sm:flex-row mt-20 md:items-start">
       <img
-        className="mr-16 mb-10 sm:mb-0"
+        className="md:mr-16 mb-10 sm:mb-0 w-20 md:w-40"
         src="/images/clockwork.png"
         width={150}
         height={50}

@@ -55,8 +55,8 @@ const Post = () => {
         </p>
       </div>
 
-      <div className="p-20">
-        <img src="/images/watch.jpg" alt="watch" width={611} height={407} />
+      <div className="p-6">
+        <img className="w-full" src="/images/watch.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">
@@ -91,8 +91,8 @@ const Post = () => {
           idea of where the company stands.
         </p>
       </div>
-      <div className="p-20">
-        <img src="/images/white-bg.jpg" alt="watch" width={611} height={407} />
+      <div className="p-6">
+        <img className="w-full" src="/images/white-bg.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">Asks</h2>
@@ -120,8 +120,8 @@ const Post = () => {
           have someone to refer who can in turn lead you closer to the key hire.
         </p>
       </div>
-      <div className="p-20">
-        <img src="/images/canoe.jpg" alt="watch" width={611} height={407} />
+      <div className="p-6">
+        <img className="w-full" src="/images/canoe.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">
@@ -150,8 +150,8 @@ const Post = () => {
           investor materials the next time you set out to fundraise.
         </p>
       </div>
-      <div className="p-20">
-        <img src="/images/notebook.jpg" alt="watch" width={611} height={407} />
+      <div className="p-6">
+        <img className="w-full" src="/images/notebook.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">
@@ -175,8 +175,8 @@ const Post = () => {
           an openness to chat further over a call or in-person meeting.
         </p>
       </div>
-      <div className="p-20">
-        <img src="/images/coffe-shop.jpg" alt="watch" width={611} height={407} />
+      <div className="p-6">
+        <img className="w-full" src="/images/coffe-shop.jpg" alt="watch" width={611} height={407} />
       </div>
     </PostLayout>
   )

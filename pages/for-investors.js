@@ -111,9 +111,7 @@ const ForInvestors = () => {
               </div>
               <div className="w-full lg:w-1/2">
                 <img
-                  className="mt-10 max-w-2xl"
-                  width="672px"
-                  height="592px"
+                  className="mt-10 w-full"
                   src="/images/portfolio-dashboard.svg"
                   alt="portfolio dashboard"
                 />
@@ -127,9 +125,7 @@ const ForInvestors = () => {
             <div className="mt-20 flex flex-col-reverse lg:flex-row  md:mt-40 lg:mt-12 lg:flex lg:justify-between lg:items-center">
               <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
                 <img
-                  className="mt-10 max-w-2xl"
-                  width="672px"
-                  height="592px"
+                  className="mt-10 max-w-2xl w-full"
                   src="/images/company-index.svg"
                   alt="company index"
                 />
@@ -159,9 +155,7 @@ const ForInvestors = () => {
               </div>
               <div className="w-full lg:w-1/2">
                 <img
-                  className="mt-10 max-w-2xl"
-                  width="672px"
-                  height="592px"
+                  className="mt-10 max-w-2xl w-full"
                   src="/images/portfolio-digest.svg"
                   alt="company index"
                 />

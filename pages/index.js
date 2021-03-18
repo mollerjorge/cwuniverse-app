@@ -78,7 +78,7 @@ export default function Home() {
               <h2 className="leading-tight font-raleway font-normal text-gray-900 text-4xl lg:text-46 antialized">
                 Meet Clockwork Universe
               </h2>
-              <p className="text-md font-light antialiased">
+              <p className="text-md font-light antialiased mb-10">
                 A new technology platform for collaborative private investing.
               </p>
             </div>
@@ -280,50 +280,50 @@ export default function Home() {
             </div>
 
             <div className="mt-10 lg:mt-0 grid-cols-1 grid-row-6 lg:grid-cols-3 lg:grid-rows-2 grid gap-7 px-0">
-              <div className="justify-center flex  flex-col rounded-md bg-red text-white p-10">
+              <div className="flex  flex-col justify-center items-center md:items-start rounded-md bg-red text-white p-10">
                 <FontAwesomeIcon icon={faUserHardHat} className="text-3xl" />
 
-                <h3 className="text-lg mt-5  text-white font-raleway font-light">
+                <h3 className="text-lg mt-5 text-center md:text-left  text-white font-raleway font-light">
                   Founders & managements teams
                 </h3>
               </div>
 
-              <div className="justify-center lg:-mt-12 lg:mb-12 flex  flex-col rounded-md bg-blue text-white p-10">
+              <div className="justify-center items-center md:items-start lg:-mt-12 lg:mb-12 flex  flex-col rounded-md bg-blue text-white p-10">
                 <FontAwesomeIcon icon={faBriefcase} className="text-3xl" />
 
-                <h3 className="text-lg mt-5  text-white font-raleway font-light">
+                <h3 className="text-lg mt-5  text-white text-center md:text-left font-raleway font-light">
                   VC/PE Funds & Corporate Venture
                 </h3>
               </div>
 
-              <div className="justify-center flex  flex-col rounded-md bg-blue-light text-white p-10">
+              <div className="justify-center items-center md:items-start flex  flex-col rounded-md bg-blue-light text-white p-10">
                 <FontAwesomeIcon icon={faUniversity} className="text-3xl" />
 
-                <h3 className="text-lg mt-5  text-white font-raleway font-light">
+                <h3 className="text-lg mt-5  text-white text-center md:text-left font-raleway font-light">
                   Institutional Limited Partners
                 </h3>
               </div>
 
-              <div className="justify-center flex  flex-col rounded-md bg-teal text-white p-10">
+              <div className="justify-center items-center md:items-start flex  flex-col rounded-md bg-teal text-white p-10">
                 <FontAwesomeIcon icon={faUsers} className="text-3xl" />
 
-                <h3 className="text-lg mt-5  text-white font-raleway font-light">
+                <h3 className="text-lg mt-5  text-white text-center md:text-left font-raleway font-light">
                   Individuals & Family Offices
                 </h3>
               </div>
 
-              <div className="justify-center lg:-mt-12 lg:mb-12 flex  flex-col rounded-md bg-purple text-white p-10">
+              <div className="justify-center items-center md:items-start lg:-mt-12 lg:mb-12 flex  flex-col rounded-md bg-purple text-white p-10">
                 <FontAwesomeIcon icon={faRocket} className="text-3xl" />
 
-                <h3 className="text-lg mt-5  text-white font-raleway font-light">
+                <h3 className="text-lg mt-5  text-white text-center md:text-left font-raleway font-light">
                   Accelerators & Angel Groups
                 </h3>
               </div>
 
-              <div className="justify-center flex  flex-col rounded-md bg-yellow text-white p-10">
+              <div className="justify-center items-center md:items-start flex  flex-col rounded-md bg-yellow text-white p-10">
                 <FontAwesomeIcon icon={faCogs} className="text-3xl" />
 
-                <h3 className="text-lg mt-5  text-white font-raleway font-light">
+                <h3 className="text-lg mt-5  text-white text-center md:text-left font-raleway font-light">
                   Advisors & Intermediaries
                 </h3>
               </div>

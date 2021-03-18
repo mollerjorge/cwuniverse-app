@@ -30,8 +30,14 @@ const Post = () => {
         meaningful collaboration to further promote the success of their business.
       </p>
 
-      <div className="p-10 my-20">
-        <img src="/images/hands-on-notebook.jpg" alt="pyramid" width={611} height={407} />
+      <div className="p-6 my-20">
+        <img
+          className="w-full"
+          src="/images/hands-on-notebook.jpg"
+          alt="pyramid"
+          width={611}
+          height={407}
+        />
       </div>
 
       <p className="mb-10">
@@ -75,8 +81,14 @@ const Post = () => {
         table right beside you.
       </p>
 
-      <div className="p-10 my-20">
-        <img src="/images/man-woman.jpg" alt="pyramid" width={611} height={407} />
+      <div className="p-6 my-20">
+        <img
+          className="w-full"
+          src="/images/man-woman.jpg"
+          alt="pyramid"
+          width={611}
+          height={407}
+        />
       </div>
 
       <h2 className="text-lg font-bold tracking-widest antialiased mt-10 mb-10 font-raleway">
@@ -110,8 +122,8 @@ const Post = () => {
         raise any skeptical eyebrows.
       </p>
 
-      <div className="p-10 my-20">
-        <img src="/images/seeds.jpg" alt="pyramid" width={611} height={407} />
+      <div className="p-6 my-20">
+        <img className="w-full" src="/images/seeds.jpg" alt="pyramid" width={611} height={407} />
       </div>
 
       <p className="mb-10">
