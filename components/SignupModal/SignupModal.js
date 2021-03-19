@@ -38,7 +38,7 @@ const SignupModal = ({ isOpen, onHide }) => {
           Please select the type of account you would like to create.
         </p>
 
-        <div className="flex mt-4">
+        <div className="flex flex-col md:flex-row mt-4">
           <SelectBox
             active={groupTypeSelected === GROUP_TYPES.FOUNDER}
             name={GROUP_TYPES.FOUNDER}
@@ -57,7 +57,7 @@ const SignupModal = ({ isOpen, onHide }) => {
             active={groupTypeSelected === GROUP_TYPES.INVESTOR}
             name={GROUP_TYPES.INVESTOR}
             onClick={onSelectGroupType}
-            className="ml-10"
+            className="mt-10 md:mt-0 md:ml-10"
           >
             <SelectBox.Image image="/images/investor.svg" />
             <SelectBox.Title>Investor</SelectBox.Title>
@@ -71,7 +71,7 @@ const SignupModal = ({ isOpen, onHide }) => {
             active={groupTypeSelected === GROUP_TYPES.OTHER}
             name={GROUP_TYPES.OTHER}
             onClick={onSelectGroupType}
-            className="ml-10"
+            className="mt-10 md:mt-0 md:ml-10"
           >
             <SelectBox.Image image="/images/other.svg" />
 

@@ -43,7 +43,8 @@ const Modal = ({ show, onHide, children, hideOnOustideClick }) => {
             initial={{ y: '-100%', x: '-50%', opacity: 1 }}
             animate={animation}
             exit={exitAnimation}
-            className="bg-white rounded-md flex flex-col left-1/2 top-1/2 fixed -translate-x-1/2"
+            style={{ maxHeight: '100vh' }}
+            className="bg-white overflow-auto rounded-md flex flex-col left-1/2 top-1/2 fixed -translate-x-1/2"
             onClick={(event) => {
               event.stopPropagation()
             }}
