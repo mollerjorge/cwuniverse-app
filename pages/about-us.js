@@ -21,7 +21,7 @@ const ForInvestors = () => {
       </Head>
       <Header />
       <main className="py-20 pt-40">
-        <div className="about-us-overlay py-12 relative z-0 2xl:py-20">
+        <div className="about-us-overlay py-12 relative z-0">
           <h1 className=" leading-tight capitalize text-big font-raleway font-normal text-center text-gray-700  lg:text-6xl z-10">
             Transparency drives{' '}
             <span className="relative inline-block ">
