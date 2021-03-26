@@ -88,5 +88,14 @@ export default {
       description: 'Interview With Vaughn Blake',
       fundName: 'Blue Bear Capital',
     },
+    {
+      thumbnail: 'kevin-leonard.jpeg',
+      category: 'Clockwork Investor Series',
+      title: 'Interview With Kevin Leonard (MissionOG)',
+      publishedAt: '2021-03-24',
+      link: 'interview-with-kevin-leonard',
+      description: 'Interview With Kevin Leonard (MissionOG)',
+      fundName: 'MissionOG',
+    },
   ],
 }
