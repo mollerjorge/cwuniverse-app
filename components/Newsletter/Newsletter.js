@@ -92,7 +92,11 @@ const Newsletter = () => {
           }}
           className="focus:outline-none"
         >
-          <FontAwesomeIcon icon={faTimes} className="text-white absolute right-2 top-2" />
+          <FontAwesomeIcon
+            icon={faTimes}
+            style={{ width: '0.6875em' }}
+            className="text-white absolute right-2 top-2 w-1"
+          />
         </button>
       </div>
     </>
