@@ -65,6 +65,7 @@ module.exports = {
         39: '39px',
         46: '46px',
         60: '60px',
+        250: '250px',
       },
       borderWidth: {
         1: '1px',
