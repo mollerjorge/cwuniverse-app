@@ -13,6 +13,7 @@ import Newsletter from 'components/Newsletter/Newsletter'
 import CLockworkCTA from 'components/ClockworkCTA'
 
 const PostLayout = ({ children, meta, isInterview }) => {
+  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID
   const router = useRouter()
 
   const sortedPosts = Object.values(posts)
@@ -167,6 +168,22 @@ const PostLayout = ({ children, meta, isInterview }) => {
         <Newsletter />
         <Footer />
       </main>
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
+      <script
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{
+          __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('set', 'linker', {
+                  'domains': ['cwuniverse.app'],
+                  'decorate_forms': true,
+                  'url_position': 'fragment'
+                });
+              `,
+        }}
+      />
     </>
   )
 }
