@@ -91,11 +91,20 @@ export default {
     {
       thumbnail: 'kevin-leonard.jpeg',
       category: 'Clockwork Investor Series',
-      title: 'Interview With Kevin Leonard (MissionOG)',
+      title: 'Interview With Kevin Leonard',
       publishedAt: '2021-03-24',
       link: 'interview-with-kevin-leonard',
-      description: 'Interview With Kevin Leonard (MissionOG)',
+      description: 'Interview With Kevin Leonard',
       fundName: 'MissionOG',
+    },
+    {
+      thumbnail: 'nisa-amoils.jpeg',
+      category: 'Clockwork Investor Series',
+      title: 'Interview With Nisa Amoils',
+      publishedAt: '2021-04-14',
+      link: 'interview-with-nisa-amoils',
+      description: 'Interview With Nisa Amoils (A100x Ventures)',
+      fundName: 'A100x Ventures',
     },
   ],
 }
