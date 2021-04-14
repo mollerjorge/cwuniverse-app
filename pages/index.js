@@ -22,13 +22,14 @@ import Testimonials from 'components/Testimonials'
 import FounderIcon from 'public/images/founder-icon.svg'
 import InvestorIcon from 'public/images/investor-icon.svg'
 import Newsletter from 'components/Newsletter/Newsletter'
+import Layout from 'components/Layout'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(0)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Clockwork Universe</title>
         <meta name="description" content="Clockwork universe, investment intelligence app" />
@@ -467,6 +468,6 @@ export default function Home() {
           isOpen={isModalOpen}
         />
       </main>
-    </div>
+    </Layout>
   )
 }

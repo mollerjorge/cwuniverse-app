@@ -38,6 +38,7 @@ const InterviewLayout = ({ children, meta }) => {
     }
     return sortedPosts[0]
   }
+
   return (
     <>
       <Head>

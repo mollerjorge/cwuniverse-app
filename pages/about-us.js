@@ -7,11 +7,12 @@ import Footer from 'components/Footer'
 import Header from 'components/Header'
 import Testimonials from 'components/Testimonials'
 import Newsletter from 'components/Newsletter/Newsletter'
+import Layout from 'components/Layout'
 
 const ForInvestors = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   return (
-    <div>
+    <Layout>
       <Head>
         <title>About | Clockwork</title>
         <meta
@@ -227,7 +228,7 @@ const ForInvestors = () => {
         }}
         isOpen={isModalOpen}
       />
-    </div>
+    </Layout>
   )
 }
 

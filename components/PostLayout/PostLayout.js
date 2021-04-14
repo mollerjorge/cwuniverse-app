@@ -49,7 +49,7 @@ const PostLayout = ({ children, meta, isInterview }) => {
         <title>{meta.title}</title>
 
         <meta property="og:title" content={meta.title}></meta>
-        <meta property="og:description" content={meta.description}></meta>
+        <meta property="og:description" content={meta.description} key="desc"></meta>
         <meta
           property="og:image"
           content={`${process.env.NEXT_PUBLIC_HOST}/images/${meta.thumbnail}`}

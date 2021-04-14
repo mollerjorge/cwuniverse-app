@@ -7,11 +7,12 @@ import Footer from 'components/Footer'
 import Header from 'components/Header'
 import SignupModal from 'components/SignupModal'
 import Newsletter from 'components/Newsletter/Newsletter'
+import Layout from 'components/Layout'
 
 const ForFounders = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Clockwork Universe for Founders</title>
         <meta
@@ -357,7 +358,7 @@ const ForFounders = () => {
         }}
         isOpen={isModalOpen}
       />
-    </div>
+    </Layout>
   )
 }
 

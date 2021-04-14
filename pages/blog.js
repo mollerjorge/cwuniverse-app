@@ -6,6 +6,7 @@ import Link from 'next/link'
 import categories from 'utils/categories'
 import posts from 'utils/posts'
 import Newsletter from 'components/Newsletter/Newsletter'
+import Layout from 'components/Layout'
 
 const Blog = () => {
   const displayPosts = () => {
@@ -117,7 +118,7 @@ const Blog = () => {
   }
 
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Blog | Clockwork Universe</title>
         <meta
@@ -144,7 +145,7 @@ const Blog = () => {
       </main>
       <Newsletter />
       <Footer />
-    </div>
+    </Layout>
   )
 }
 
