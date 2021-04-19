@@ -50,6 +50,16 @@ export default {
       description:
         'Across nearly every vertical of the investment industry investors and funds focus on a few key performance and return-oriented metrics, such as IRR and MOIC, to gauge the success of their work. But while these metrics are useful to investors, they provide little meaning to portfolio company founders.',
     },
+    {
+      author: 'PATRICK ZAILCKAS',
+      thumbnail: 'switch.jpg',
+      category: 'Clockwork Perspectives',
+      title: 'The Flippening: Founders vs Funds as Lead Investors',
+      publishedAt: '2021-04-19',
+      link: 'the-flippening-founders-vs-funds-as-lead-investors',
+      description:
+        'Is the age of institutional venture capital dwindling away?  There might be a case to make as access to private capital expands across the fat tail of the private investment market among family offices and angels.',
+    },
   ],
   'Clockwork Investor Series': [
     {
