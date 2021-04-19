@@ -125,6 +125,7 @@ const Blog = () => {
           name="description"
           content="Clockwork Universe™ is a streamlined investor and founder collaboration platform which seeks to increase visibility and transparency."
         />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <Header />
       <main className="container py-20 pt-40">

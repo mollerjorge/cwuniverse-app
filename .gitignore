@@ -32,3 +32,17 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+.aws-ecs
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+
+# Build output
+.next
+.next-tf
+
+# Temp files
+*.swp*

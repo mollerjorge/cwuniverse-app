@@ -48,12 +48,12 @@ const PostLayout = ({ children, meta, isInterview }) => {
       <Head>
         <meta name="Description" content={meta.description}></meta>
         <title>{meta.title}</title>
-
+        <link rel="icon" href="/images/favicon.ico" />
         <meta property="og:title" content={meta.title}></meta>
         <meta property="og:description" content={meta.description} key="desc"></meta>
         <meta
           property="og:image"
-          content={`${process.env.NEXT_PUBLIC_HOST}images/${meta.thumbnail}`}
+          content={`${process.env.NEXT_PUBLIC_HOST}/images/${meta.thumbnail}`}
         ></meta>
         <meta
           property="og:url"
@@ -67,7 +67,7 @@ const PostLayout = ({ children, meta, isInterview }) => {
         <meta property="twitter:domain" content="clockwork.app"></meta>
         <meta
           property="twitter:image"
-          content={`${process.env.NEXT_PUBLIC_HOST}images/${
+          content={`${process.env.NEXT_PUBLIC_HOST}/images/${
             meta.twitterThumbnail || meta.thumbnail
           }`}
         ></meta>

@@ -33,7 +33,7 @@ export default function Home() {
       <Head>
         <title>Clockwork Universe</title>
         <meta name="description" content="Clockwork universe, investment intelligence app" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
 
       <Header />
