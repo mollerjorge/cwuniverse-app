@@ -60,25 +60,35 @@ export default {
       description:
         'Is the age of institutional venture capital dwindling away?  There might be a case to make as access to private capital expands across the fat tail of the private investment market among family offices and angels.',
     },
+    {
+      author: 'KYLE ROSE',
+      thumbnail: 'safe-future.jpg',
+      category: 'Clockwork Perspectives',
+      title: 'Simple Agreement for Future Equity (SAFE): An Overview',
+      publishedAt: '2021-04-28',
+      link: 'simple-agreement-for-future-equity-SAFE-an-overview',
+      description:
+        'Simple Agreements for Future Equity (SAFEs) are one of the simplest and most common forms of fundraising employed by early-stage founders.',
+    },
   ],
   'Clockwork Investor Series': [
-    {
-      thumbnail: 'alejandro.jpg',
-      category: 'Clockwork Investor Series',
-      title: 'Interview With Alejandro Diez Barroso',
-      publishedAt: '2021-01-10',
-      link: 'interview-with-alejandro-diez-barroso',
-      description: 'Interview with alejandro diez barroso',
-      fundName: 'DILA Capital',
-    },
     {
       thumbnail: 'sep-alavi.jpg',
       category: 'Clockwork Investor Series',
       title: 'Interview With Sep Alavi',
-      publishedAt: '2021-01-27',
+      publishedAt: '2021-01-10',
       link: 'interview-with-sep-alavi',
       description: 'Interview with sep alavi',
       fundName: 'White Star Capital Digital Asset',
+    },
+    {
+      thumbnail: 'alejandro.jpg',
+      category: 'Clockwork Investor Series',
+      title: 'Interview With Alejandro Diez Barroso',
+      publishedAt: '2021-01-27',
+      link: 'interview-with-alejandro-diez-barroso',
+      description: 'Interview with alejandro diez barroso',
+      fundName: 'DILA Capital',
     },
     {
       thumbnail: 'odile.jpeg',
@@ -115,6 +125,15 @@ export default {
       link: 'interview-with-nisa-amoils',
       description: 'Interview With Nisa Amoils (A100x Ventures)',
       fundName: 'A100x Ventures',
+    },
+    {
+      thumbnail: 'Paul-Nolde.jpg',
+      category: 'Clockwork Investor Series',
+      title: 'Interview With Paul Nolde',
+      publishedAt: '2021-04-28',
+      link: 'interview-with-paul-nolde',
+      description: 'Interview with Paul Nolde',
+      fundName: 'Riverflow Growth Fund',
     },
   ],
 }
