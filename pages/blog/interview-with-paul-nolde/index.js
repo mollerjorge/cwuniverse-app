@@ -56,7 +56,7 @@ const Interview = () => {
           <b className="antialiased">Early to Late Seed</b>
 
           <div className="flex mt-5">
-            <SocialLink to="hwww.riverflow.vc" />
+            <SocialLink to="www.riverflow.vc" />
           </div>
         </div>
 
@@ -65,14 +65,14 @@ const Interview = () => {
             HOW AND WHY DID YOU GET STARTED IN PRIVATE INVESTING?
           </h3>
           <p className="font-lato antialiased tracking-wide text-black mt-5">
-          As a former retail and small business banker, and later wealth manager, I developed an admiration for, and curiosity in, founders scaling and exiting high growth companies. Why do they do it? How do they build a culture? Etc. When I left banking and ran a smallfamily office making angel and seed stage investments, my interest extended into the dynamic between founders and funders. I enjoyed the non-linear approach of early stage, private equity investing vs. the more rigid, institutionalized practice of lending. At the end of the day, however, my good fortune to be doing what I do can be attributed to being at the right place, at the right time, knowing the right people.
+          As a former retail and small business banker, and later wealth manager, I developed an admiration for, and curiosity in, founders scaling and exiting high growth companies. Why do they do it? How do they build a culture? When I left banking and ran a small family office making angel and seed stage investments, my interest extended into the dynamic between founders and funders. I enjoyed the non-linear approach of early stage, private equity investing vs. the more rigid, institutionalized practice of lending. At the end of the day, however, my good fortune to be doing what I do can be attributed to being at the right place, at the right time, knowing the right people.
           </p>
 
           <h3 className="text-blue antialiased uppercase font-lato font-bold tracking-widest mt-10">
             WHAT IS THE SINGLE MOST IMPORTANT THING YOU VALUE IN AN INVESTMENT OPPORTUNITY?
           </h3>
           <p className="font-lato antialiased tracking-wide text-black mt-5">
-          Does the product or service (and associated industry/market) truly interest me? Obviously “team” and “size of market” are practically two of the most important criteria atthe seed stage, but I have to have a sincere interest in what I’m spending my time and money on...it has to “get me up in the morning” and instill a sense of sustained curiosity and excitement of what’s to come.
+          Does the product or service (and associated industry / market) truly interest me? Obviously “team” and “size of market” are practically two of the most important criteria atthe seed stage, but I have to have a sincere interest in what I’m spending my time and money on...it has to “get me up in the morning” and instill a sense of sustained curiosity and excitement of what’s to come.
           </p>
 
           <h3 className="text-blue antialiased uppercase font-lato font-bold tracking-widest mt-10">
