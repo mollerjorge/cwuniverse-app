@@ -80,6 +80,16 @@ export default {
       description:
         'Broadly speaking, when it comes to tracking sales or business development related metrics it makes sense to break it down into two summary groups, 1) activities and 2) results.',
     },
+    {
+      author: 'KYLE ROSE',
+      thumbnail: 'zbynek-burival-V4ZYJZJ3W4M-unsplash.jpeg',
+      category: 'Clockwork Perspectives',
+      title: 'Convertible Notes: An Overview',
+      publishedAt: '2021-05-04',
+      link: 'convertible-notes-an-overview',
+      description:
+        'Convertible notes are the investor-friendly version of SAFEs, with the addition of features designed to enhance investor interests like maturity dates and interest rates.',
+    },
   ],
   'Clockwork Investor Series': [
     {
