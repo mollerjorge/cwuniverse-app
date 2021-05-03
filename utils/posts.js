@@ -74,7 +74,7 @@ export default {
       author: 'CORY SHEA',
       thumbnail: 'sales-metric.jpg',
       category: 'Clockwork Perspectives',
-      title: 'Sales Mertrics',
+      title: 'Greasing the Sales Engine with Metrics',
       publishedAt: '2021-05-03',
       link: 'sales-metrics',
       description:
