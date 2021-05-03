@@ -70,6 +70,16 @@ export default {
       description:
         'Simple Agreements for Future Equity (SAFEs) are one of the simplest and most common forms of fundraising employed by early-stage founders.',
     },
+    {
+      author: 'CORY SHEA',
+      thumbnail: 'sales-metric.jpg',
+      category: 'Clockwork Perspectives',
+      title: 'Sales Mertrics',
+      publishedAt: '2021-05-03',
+      link: 'sales-metrics',
+      description:
+        'Broadly speaking, when it comes to tracking sales or business development related metrics it makes sense to break it down into two summary groups, 1) activities and 2) results.',
+    },
   ],
   'Clockwork Investor Series': [
     {
