@@ -90,6 +90,16 @@ export default {
       description:
         'Convertible notes are the investor-friendly version of SAFEs, with the addition of features designed to enhance investor interests like maturity dates and interest rates.',
     },
+    {
+      author: 'CAITLIN JAMES',
+      thumbnail: 'austin-distel-mpN7xjKQ_Ns-unsplash.jpeg',
+      category: 'Clockwork Perspectives',
+      title: 'Should you join an accelerator? 3 Big Questions to Ask',
+      publishedAt: '2021-05-07',
+      link: 'should-you-join-an-accelerator-3-big-questions-to-ask',
+      description:
+        'The decision to join an accelerator can be a difficult one, especially for first-time founders who are new to the startup world.',
+    },
   ],
   'Clockwork Investor Series': [
     {

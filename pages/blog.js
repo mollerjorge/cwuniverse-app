@@ -38,7 +38,7 @@ const Blog = () => {
                           src={`/images/${post.thumbnail}`}
                           width={600}
                           height={400}
-                          className="rounded-md"
+                          className="rounded-md img-max-height"
                         />
                         <p className="antialiased  mt-5 font-raleway text-gray-600 text-sm">
                           {post.category}
@@ -139,7 +139,7 @@ const Blog = () => {
 
           <p className="antialized font-light text-gray-700 ">
             Follow Clockwork’s new blog to find out about strategic insights, practical ideas and
-            actionable tips and ticks for founders and investors.
+            actionable tips and tricks for founders and investors.
           </p>
         </div>
         <section className="mt-20">{displayPosts()}</section>
