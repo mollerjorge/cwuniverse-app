@@ -1,0 +1,5 @@
+/* Style for images of the blog*/
+.img-max-height {
+  max-height: 380px;
+  width: auto;
+}

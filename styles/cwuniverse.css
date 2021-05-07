@@ -15,6 +15,7 @@
 
 /* Pages start */
 @import './pages/about-us.css';
+@import './pages/blog.css';
 @import './pages/post.css';
 @import './pages/terms-of-use.css';
 /* Pages end */
