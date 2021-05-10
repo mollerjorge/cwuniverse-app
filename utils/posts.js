@@ -100,6 +100,16 @@ export default {
       description:
         'The decision to join an accelerator can be a difficult one, especially for first-time founders who are new to the startup world.',
     },
+    {
+      author: 'PATRICK ZAILCKAS',
+      thumbnail: 'joshua-sortino-LqKhnDzSF-8-unsplash.jpeg',
+      category: 'Clockwork Perspectives',
+      title: 'Decentralized Finance: New Paradigms on How We Business',
+      publishedAt: '2021-05-10',
+      link: 'decentralized-finance-new-paradigms-on-how-we-business',
+      description:
+        'You might feel like if you’re just hearing about the surge of crypto industry that you are late to the party. Perhaps you’re right on time, we may just be getting started. ',
+    },
   ],
   'Clockwork Investor Series': [
     {
