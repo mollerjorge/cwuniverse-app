@@ -16,8 +16,8 @@ const Interview = () => {
         >
           <div>
             <img
-              src="/images/Paul-Nolde.jpg"
-              alt="alejandro"
+              src="/images/investor-series/paul-nolde.jpg"
+              alt="Paul Nolde"
               style={{ margin: '0', width: 'auto', height: '200px' }}
               className="m-0 rounded-md"
             />

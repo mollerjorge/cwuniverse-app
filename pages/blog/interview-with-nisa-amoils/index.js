@@ -16,8 +16,8 @@ const Interview = () => {
         >
           <div>
             <img
-              src="/images/nisa-amoils.jpeg"
-              alt="alejandro"
+              src="/images/investor-series/nisa-amoils.jpeg"
+              alt="Nisa Amoils"
               style={{ margin: '0', width: 'auto', height: '200px' }}
               className="m-0 rounded-md"
             />

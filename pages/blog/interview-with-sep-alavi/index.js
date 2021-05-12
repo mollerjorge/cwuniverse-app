@@ -17,8 +17,8 @@ const Interview = () => {
         >
           <div>
             <img
-              src="/images/sep-alavi.jpg"
-              alt="sep alavi"
+              src="/images/investor-series/sep-alavi.jpg"
+              alt="Sep Alavi"
               style={{ margin: '0', width: '100%', height: 'auto' }}
               className="m-0 rounded-md"
             />

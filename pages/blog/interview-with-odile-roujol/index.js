@@ -16,8 +16,8 @@ const Interview = () => {
         >
           <div>
             <img
-              src="/images/odile.jpeg"
-              alt="alejandro"
+              src="/images/investor-series/odile-roujol.jpeg"
+              alt="Odile Roujol"
               style={{ margin: '0', width: '100%', height: 'auto' }}
               className="m-0 rounded-md"
             />
