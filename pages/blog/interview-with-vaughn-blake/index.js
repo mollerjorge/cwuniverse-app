@@ -17,7 +17,7 @@ const Interview = () => {
         >
           <div>
             <img
-              src="/images/vaughn-blake.jpeg"
+              src="/images/investor-series/vaughn-blake.jpeg"
               alt="Vaughn Blake"
               style={{ margin: '0', width: '100%', height: 'auto' }}
               className="m-0 rounded-md"
