@@ -2,7 +2,7 @@ export default {
   'Clockwork Perspectives': [
     {
       author: ' CAITLIN JAMES AND PATRICK ZAILCKAS',
-      thumbnail: 'rocks.jpg',
+      thumbnail: 'the-building-blocks-of-successful-investor-reporting/rocks.jpg',
       category: 'Clockwork Perspectives',
       title: 'The Building Blocks Of Successful Investor Reporting',
       publishedAt: '2021-01-21',
@@ -12,7 +12,7 @@ export default {
     },
     {
       author: 'CAITLIN JAMES AND PATRICK ZAILCKAS',
-      thumbnail: 'surf.jpg',
+      thumbnail: 'striking-the-balance-investor-communications-dos-and-donts/surf.jpg',
       category: 'Clockwork Perspectives',
       title: 'Striking The Balance: Investor Communications DOs And DON’Ts',
       publishedAt: '2021-01-04 00:00',
@@ -22,7 +22,7 @@ export default {
     },
     {
       author: 'Kyle Rose',
-      thumbnail: 'umbrellas.jpg',
+      thumbnail: 'performance-metrics-how-are-your-investors-judging-you/umbrellas.jpg',
       category: 'Clockwork Perspectives',
       title: 'Performance Metrics: How Are Your Investors Judging You?',
       publishedAt: '2021-02-02',
@@ -32,7 +32,7 @@ export default {
     },
     {
       author: 'CAITLIN JAMES AND PATRICK ZAILCKAS',
-      thumbnail: 'women.jpg',
+      thumbnail: 'an-honest-approach-to-investor-relations/women-interview.jpg',
       category: 'Clockwork Perspectives',
       title: 'An Honest Approach To Investor Relations',
       publishedAt: '2020-12-23',
@@ -42,7 +42,7 @@ export default {
     },
     {
       author: 'BRIAN POCOCK & KYLE ROSE',
-      thumbnail: 'notebooks-papers.jpg',
+      thumbnail: 'key-performance-indicators-what-are-they-and-why-do-they-matter/notebooks-papers.jpg',
       category: 'Clockwork Perspectives',
       title: 'Key Performance Indicators: What Are They And Why Do They Matter?',
       publishedAt: '2021-02-17',
@@ -52,7 +52,7 @@ export default {
     },
     {
       author: 'PATRICK ZAILCKAS',
-      thumbnail: 'switch.jpg',
+      thumbnail: 'the-flippening-founders-vs-funds-as-lead-investors/switch.jpg',
       category: 'Clockwork Perspectives',
       title: 'The Flippening: Founders vs Funds as Lead Investors',
       publishedAt: '2021-04-19',
@@ -62,7 +62,7 @@ export default {
     },
     {
       author: 'KYLE ROSE',
-      thumbnail: 'safe-future.jpg',
+      thumbnail: 'simple-agreement-for-future-equity-SAFE-an-overview/safe-future.jpg',
       category: 'Clockwork Perspectives',
       title: 'Simple Agreement for Future Equity (SAFE): An Overview',
       publishedAt: '2021-04-28',
@@ -72,7 +72,7 @@ export default {
     },
     {
       author: 'CORY SHEA',
-      thumbnail: 'rktkn-BZ9z9ZeUjbI-unsplash.jpeg',
+      thumbnail: 'sales-metrics/engine.jpeg',
       category: 'Clockwork Perspectives',
       title: 'Greasing the Sales Engine with Metrics',
       publishedAt: '2021-05-03',
@@ -82,7 +82,7 @@ export default {
     },
     {
       author: 'KYLE ROSE',
-      thumbnail: 'zbynek-burival-V4ZYJZJ3W4M-unsplash.jpeg',
+      thumbnail: 'convertible-notes-an-overview/solar-panels.jpeg',
       category: 'Clockwork Perspectives',
       title: 'Convertible Notes: An Overview',
       publishedAt: '2021-05-04',
@@ -92,7 +92,7 @@ export default {
     },
     {
       author: 'CAITLIN JAMES',
-      thumbnail: 'austin-distel-mpN7xjKQ_Ns-unsplash.jpeg',
+      thumbnail: 'should-you-join-an-accelerator-3-big-questions-to-ask/people-working.jpeg',
       category: 'Clockwork Perspectives',
       title: 'Should you join an accelerator? 3 Big Questions to Ask',
       publishedAt: '2021-05-07',
@@ -102,7 +102,7 @@ export default {
     },
     {
       author: 'PATRICK ZAILCKAS',
-      thumbnail: 'joshua-sortino-LqKhnDzSF-8-unsplash.jpeg',
+      thumbnail: 'decentralized-finance-new-paradigms-on-how-we-business/looking-into-the-future.jpeg',
       category: 'Clockwork Perspectives',
       title: 'Decentralized Finance: New Paradigms on How We Business',
       publishedAt: '2021-05-10',
@@ -113,7 +113,7 @@ export default {
   ],
   'Clockwork Investor Series': [
     {
-      thumbnail: 'sep-alavi.jpg',
+      thumbnail: 'investor-series/sep-alavi.jpg',
       category: 'Clockwork Investor Series',
       title: 'Interview With Sep Alavi',
       publishedAt: '2021-01-10',
@@ -122,7 +122,7 @@ export default {
       fundName: 'White Star Capital Digital Asset',
     },
     {
-      thumbnail: 'alejandro.jpg',
+      thumbnail: 'investor-series/alejandro-diez-barroso.jpg',
       category: 'Clockwork Investor Series',
       title: 'Interview With Alejandro Diez Barroso',
       publishedAt: '2021-01-27',
@@ -131,7 +131,7 @@ export default {
       fundName: 'DILA Capital',
     },
     {
-      thumbnail: 'odile.jpeg',
+      thumbnail: 'investor-series/odile-roujol.jpeg',
       category: 'Clockwork Investor Series',
       title: 'Interview With Odile Roujol',
       publishedAt: '2021-02-23',
@@ -140,7 +140,7 @@ export default {
       fundName: 'Fab Ventures, Fund I',
     },
     {
-      thumbnail: 'vaughn-blake.jpeg',
+      thumbnail: 'investor-series/vaughn-blake.jpeg',
       category: 'Clockwork Investor Series',
       title: 'Interview With Vaughn Blake',
       publishedAt: '2021-03-10',
@@ -149,7 +149,7 @@ export default {
       fundName: 'Blue Bear Capital',
     },
     {
-      thumbnail: 'kevin-leonard.jpeg',
+      thumbnail: 'investor-series/kevin-leonard.jpeg',
       category: 'Clockwork Investor Series',
       title: 'Interview With Kevin Leonard',
       publishedAt: '2021-03-24',
@@ -158,7 +158,7 @@ export default {
       fundName: 'MissionOG',
     },
     {
-      thumbnail: 'nisa-amoils.jpeg',
+      thumbnail: 'investor-series/nisa-amoils.jpeg',
       category: 'Clockwork Investor Series',
       title: 'Interview With Nisa Amoils',
       publishedAt: '2021-04-14',
@@ -167,13 +167,22 @@ export default {
       fundName: 'A100x Ventures',
     },
     {
-      thumbnail: 'Paul-Nolde.jpg',
+      thumbnail: 'investor-series/paul-nolde.jpg',
       category: 'Clockwork Investor Series',
       title: 'Interview With Paul Nolde',
       publishedAt: '2021-04-28',
       link: 'interview-with-paul-nolde',
-      description: 'Interview with Paul Nolde',
+      description: 'Interview with Paul Nolde (Riverflow Growth Fund)',
       fundName: 'Riverflow Growth Fund',
+    },
+    {
+      thumbnail: 'investor-series/jai-malik.jpeg',
+      category: 'Clockwork Investor Series',
+      title: 'Interview With Jai Malik',
+      publishedAt: '2021-04-28',
+      link: 'interview-with-paul-nolde',
+      description: 'Interview With Jai Malik (Countdown Capital)',
+      fundName: 'Countdown Capital',
     },
   ],
 }
