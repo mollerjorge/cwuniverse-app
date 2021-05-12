@@ -56,7 +56,7 @@ const Post = () => {
       </div>
 
       <div className="p-6">
-        <img className="w-full" src="/images/watch.jpg" alt="watch" width={611} height={407} />
+        <img className="w-full" src="/images/striking-the-balance-investor-communications-dos-and-donts/watch.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">
@@ -92,7 +92,7 @@ const Post = () => {
         </p>
       </div>
       <div className="p-6">
-        <img className="w-full" src="/images/white-bg.jpg" alt="watch" width={611} height={407} />
+        <img className="w-full" src="/images/striking-the-balance-investor-communications-dos-and-donts/white-bg.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">Asks</h2>
@@ -121,7 +121,7 @@ const Post = () => {
         </p>
       </div>
       <div className="p-6">
-        <img className="w-full" src="/images/canoe.jpg" alt="watch" width={611} height={407} />
+        <img className="w-full" src="/images/striking-the-balance-investor-communications-dos-and-donts/canoe.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">
@@ -151,7 +151,7 @@ const Post = () => {
         </p>
       </div>
       <div className="p-6">
-        <img className="w-full" src="/images/notebook.jpg" alt="watch" width={611} height={407} />
+        <img className="w-full" src="/images/striking-the-balance-investor-communications-dos-and-donts/notebook.jpg" alt="watch" width={611} height={407} />
       </div>
 
       <h2 className="font-raleway tracking-widest mb-8 uppercase antialised font-bold">
@@ -176,7 +176,7 @@ const Post = () => {
         </p>
       </div>
       <div className="p-6">
-        <img className="w-full" src="/images/coffe-shop.jpg" alt="watch" width={611} height={407} />
+        <img className="w-full" src="/images/striking-the-balance-investor-communications-dos-and-donts/coffe-shop.jpg" alt="watch" width={611} height={407} />
       </div>
     </PostLayout>
   )

@@ -38,7 +38,7 @@ const Post = () => {
       <div className="p-6 py-0">
         <img
           className="w-full"
-          src="/images/people-sunset.jpg"
+          src="/images/the-flippening-founders-vs-funds-as-lead-investors/people-sunset.jpg"
           alt="pyramid"
           width={611}
           height={407}
@@ -118,8 +118,8 @@ const Post = () => {
       <div className="p-6 py-0">
         <img
           className="w-full m-0"
-          src="/images/space.jpg"
-          alt="pyramid"
+          src="/images/the-flippening-founders-vs-funds-as-lead-investors/space.jpg"
+          alt="space"
           width={611}
           height={407}
         />

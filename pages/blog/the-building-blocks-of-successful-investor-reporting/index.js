@@ -36,7 +36,7 @@ const Post = () => {
       <div>
         <img
           className="w-full p-6"
-          src="/images/pyramid.jpg"
+          src="/images/the-building-blocks-of-successful-investor-reporting/pyramid.jpg"
           alt="pyramid"
           width={611}
           height={407}
@@ -134,7 +134,7 @@ const Post = () => {
           </i>
         </p>
         <div className="p-6">
-          <img className="w-full" src="/images/snow.jpg" alt="pyramid" width={611} height={407} />
+          <img className="w-full" src="/images/the-building-blocks-of-successful-investor-reporting/snow.jpg" alt="Snow" width={611} height={407} />
         </div>
       </div>
 
@@ -206,8 +206,8 @@ const Post = () => {
       <div className="p-6">
         <img
           className="w-full"
-          src="/images/white-board.jpg"
-          alt="pyramid"
+          src="/images/the-building-blocks-of-successful-investor-reporting/white-board.jpg"
+          alt="White Board"
           width={611}
           height={407}
         />
