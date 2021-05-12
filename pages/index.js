@@ -103,7 +103,7 @@ export default function Home() {
         <section id="enhancing private investment efficienty" className="bg-blue py-32">
           <div className=" container m-auto flex 2xl:px-24 w-full flex-col">
             <h2 className="text-4xl lg:text-5xl text-center w-full capitalize text-white mb-4 font-raleway">
-              enhancing private investment efficienty
+              enhancing private investment efficiency
             </h2>
             <p className="text-white text-center font-normal font-raleway antialiased text-lg  w-full">
               Clockwork® enables better outcomes for founders and investors throughout the
