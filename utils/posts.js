@@ -118,7 +118,7 @@ export default {
       publishedAt: '2021-05-12',
       link: 'common-equity-an-overview',
       description:
-        'Unlike many of the more complicated transaction types often associated with private investments, common equity is about as straightforward as it gets. The verysame type of instrument as the public stocks you trade (probably far too frequently)in your brokerage account, at its most fundamental level common equity simply represents ownership of a company.',
+        'Unlike many of the more complicated transaction types often associated with private investments, common equity is about as straightforward as it gets. The very same type of instrument as the public stocks you trade (probably far too frequently) in your brokerage account, at its most fundamental level common equity simply represents ownership of a company.',
     },
   ],
   'Clockwork Investor Series': [
