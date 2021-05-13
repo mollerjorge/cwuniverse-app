@@ -9,10 +9,10 @@ const Post = () => {
   return (
     <PostLayout meta={post}>
       <p className="mb-10">
-      Unlike many of the more complicated transaction types often associated with private investments, common equity is about as straightforward as it gets. The verysame type of instrument as the public stocks you trade (probably far too frequently)in your brokerage account, at its most fundamental level common equity simply represents ownership of a company.
+      Unlike many of the more complicated transaction types often associated with private investments, common equity is about as straightforward as it gets. The very same type of instrument as the public stocks you trade (probably far too frequently) in your brokerage account, at its most fundamental level common equity simply represents ownership of a company.
       </p>
       <p className="mb-10">
-      As an owner of the company, a common equity holder is entitled to a proportionate share of the profits that are generated each quarter. The catch is that common equity is subordinate to every other type of financing in the payment and liquidationhierarchy. Before the profits are paid out to common equity holders, the company first pays any costs of production, taxes, interest and principal due on debt financing, and any preferred equity dividends. But while these equity payments are unknown, they also have the unique advantage of being uncapped. Whereas the return profile to debtholders is bound by the agreed upon interest rate, common equity is entitled to everything else.
+      As an owner of the company, a common equity holder is entitled to a proportionate share of the profits that are generated each quarter. The catch is that common equity is subordinate to every other type of financing in the payment and liquidation hierarchy. Before the profits are paid out to common equity holders, the company first pays any costs of production, taxes, interest and principal due on debt financing, and any preferred equity dividends. But while these equity payments are unknown, they also have the unique advantage of being uncapped. Whereas the return profile to debtholders is bound by the agreed upon interest rate, common equity is entitled to everything else.
       </p>
       <p className="mb-10">
       When a company generates a quarterly profit, management teams have three options for what they can do with the excess capital:
@@ -31,7 +31,7 @@ const Post = () => {
       </ul>
 
       <p className="mb-10">
-      While options 1 and 2 are typical among more established public companies, privateentities tend to be cashflow negative in the early to middle stages of their life cycle.Rather than pursuing additional dilutive financing, management will therefore typically exercise option 3 to help grow the business organically whenever possible. A general rule of thumb is thatmanagement should return capital to shareholders through one of the first two options only if there are no positive Net Present Value (NPV) projects available that would represent a better internal use of that capital.
+      While options 1 and 2 are typical among more established public companies, private entities tend to be cashflow negative in the early to middle stages of their life cycle.Rather than pursuing additional dilutive financing, management will therefore typically exercise option 3 to help grow the business organically whenever possible. A general rule of thumb is that management should return capital to shareholders through one of the first two options only if there are no positive Net Present Value (NPV) projects available that would represent a better internal use of that capital.
       </p>
       <p className="mb-10">
       Businesses like grocery stores and utilities may be constrained in their profitable investment opportunities, which is why these types of mature businesses generally return the majority of profits to shareholders. Alternatively, startups and emerging technologies generally face the opposite problem and have too many profitable investment opportunities and not enough profits with which to fund them.
