@@ -120,6 +120,16 @@ export default {
       description:
         'Unlike many of the more complicated transaction types often associated with private investments, common equity is about as straightforward as it gets. The very same type of instrument as the public stocks you trade (probably far too frequently) in your brokerage account, at its most fundamental level common equity simply represents ownership of a company.',
     },
+    {
+      author: 'PATRICK ZAILCKAS',
+      thumbnail: 'introducing-the-diligence-series-applying-a-simple-framework/modern-achitecture.jpeg',
+      category: 'Clockwork Perspectives',
+      title: 'Introducing the Diligence Series: Applying a Simple Framework',
+      publishedAt: '2021-05-18',
+      link: 'introducing-the-diligence-series-applying-a-simple-framework',
+      description:
+        'When analyzing a new private investment opportunity, you may ask yourself “where do I begin?” While gut feeling, personal interests, pre-existing relationships, and capital availability are all important factors, it is best practice to honor a standard, objective approach to your assessment framework which adds clarity to the benefits, risks, and red flags of any opportunity crossing your plate. This article marks the beginning of a multi-post series on due diligence.',
+    },
   ],
   'Clockwork Investor Series': [
     {
