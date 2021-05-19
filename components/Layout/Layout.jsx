@@ -30,6 +30,16 @@ const Layout = ({ children }) => {
         <meta property="og:url" content="https://clockwork.app/" />
         <meta property="og:image" content="/images/clockwork-thumbnail.png" />
         <meta property="og:image:secure_url" content="/images/clockwork-thumbnail.png" />
+        <meta property="twitter:title" content="Clockwork"></meta>
+        <meta
+          property="twitter:description"
+          content="Modern Investor Relations. Clockwork improves transparency to drive results for founders and investors alike."
+        ></meta>
+        <meta
+          property="twitter:image"
+          content="https://www.clockwork.app/images/clockwork-thumbnail.png"
+        ></meta>
+        <meta property="twitter:card" content="summary_large_image"></meta>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
         <script
           // eslint-disable-next-line react/no-danger
