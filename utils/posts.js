@@ -130,6 +130,16 @@ export default {
       description:
         'When analyzing a new private investment opportunity, you may ask yourself “where do I begin?” While gut feeling, personal interests, pre-existing relationships, and capital availability are all important factors, it is best practice to honor a standard, objective approach to your assessment framework which adds clarity to the benefits, risks, and red flags of any opportunity crossing your plate. This article marks the beginning of a multi-post series on due diligence.',
     },
+    {
+      author: 'PAOLA SCHAAR',
+      thumbnail: 'what-a-recession-would-mean-to-startups/money-jar.png',
+      category: 'Clockwork Perspectives',
+      title: 'What a recession would mean to startups',
+      publishedAt: '2021-05-20',
+      link: 'what-a-recession-would-mean-to-startups',
+      description:
+        'Unfortunately, we are currently experiencing a global economic recession. COVID-19 has taken a huge toll on businesses and economics around the world and most countries are struggling with rising unemployment, business bankruptcy and a significant reduction in aggregate demand.',
+    },
   ],
   'Clockwork Investor Series': [
     {
