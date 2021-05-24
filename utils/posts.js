@@ -140,6 +140,16 @@ export default {
       description:
         'Unfortunately, we are currently experiencing a global economic recession. COVID-19 has taken a huge toll on businesses and economics around the world and most countries are struggling with rising unemployment, business bankruptcy and a significant reduction in aggregate demand.',
     },
+    {
+      author: 'PATRICK ZAILCKAS',
+      thumbnail: 'diligence_series_weighing_the_value_proposition/puzzle.jpeg',
+      category: 'Clockwork Perspectives',
+      title: 'Diligence Series: Weighing the Value Proposition',
+      publishedAt: '2021-05-24',
+      link: 'diligence_series_weighing_the_value_proposition',
+      description:
+        'The first due diligence questions you will likely ask about any business are “what is it?”, “what does it do?”, “why does it exist?”, and, maybe, “who cares?” And it’s not difficult to see why.',
+    },
   ],
   'Clockwork Investor Series': [
     {
