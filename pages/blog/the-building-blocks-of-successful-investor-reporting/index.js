@@ -153,11 +153,7 @@ const Post = () => {
         SALES & MARKETING
       </h3>
       <p>
-        Share details on key product advancements, including a few screenshots or photos to show
-        features and progress. Talk about major milestones, and be honest about hurdles. Help your
-        audience understand the evolution and development of your product. What’s working? What’s
-        taking longer than expected? What should your audience be excited about that’s coming soon
-        or that recently launched? How can they engage and provide feedback, if desired?
+      Here you can discuss the latest sales and marketing efforts (and key wins), relevant partnership conversations, sales channels and conversion rates, and perhaps where you’re experiencing friction. Explain how much growth you’ve achieved and how you project your traction to evolve going forward.
       </p>
 
       <h3 className="font-lato font-bold tracking-widest uppercase antialiased text-sm my-6">
