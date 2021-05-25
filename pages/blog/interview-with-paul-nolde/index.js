@@ -24,7 +24,7 @@ const Interview = () => {
           </div>
 
           <p className="uppercase mt-5 font-raleway tracking-widest font-light text-sm">Name</p>
-          <p className="antialiased">Paul Nolde</p>
+          <b className="antialiased">Paul Nolde</b>
 
           <p className="uppercase mt-5 font-raleway tracking-widest font-light text-sm">
             Fund / Group
