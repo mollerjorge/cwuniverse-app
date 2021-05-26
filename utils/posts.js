@@ -224,5 +224,14 @@ export default {
       description: 'Interview With Jai Malik (Countdown Capital)',
       fundName: 'Countdown Capital',
     },
+    {
+      thumbnail: 'investor-series/ariana-thacker.png',
+      category: 'Clockwork Investor Series',
+      title: 'Interview With Ariana Thacker',
+      publishedAt: '2021-05-26',
+      link: 'interview-with-ariana-thacker',
+      description: 'Interview With Ariana Thacker (Conscience VC)',
+      fundName: 'Conscience VC',
+    },
   ],
 }
