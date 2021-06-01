@@ -38,7 +38,7 @@ An environment file .env or .env.local should be placed in the local directory w
 NEXT_PUBLIC_INTERCOM_APP_ID=/*INTERCOM_APP_ID*/
 ```
 
-If using vercel you should also add this env variable under project settings > environment variables > plain text 
+If using vercel you should also add this env variable under project settings > environment variables > plain text
 
 ## How to deploy
 Run `npm run build`. This will create an `out` folder with all of the static files in there.
@@ -47,7 +47,7 @@ Run `npm run build`. This will create an `out` folder with all of the static fil
 
 ```bash
 README.md
-├── components # Reusable components should live under this folder 
+├── components # Reusable components should live under this folder
 │   ├── Button
 │   │   ├── Button.js
 │   │   └── index.js
@@ -81,15 +81,15 @@ README.md
 │   └── Testimonials
 │       ├── Testimonials.js
 │       └── index.js
-├── getAllPosts.js # Helper function to pull in all posts 
-├── jsconfig.json # js configuration to use absolute paths 
-├── next.config.js # Next js configuration file 
+├── getAllPosts.js # Helper function to pull in all posts
+├── jsconfig.json # js configuration to use absolute paths
+├── next.config.js # Next js configuration file
 ├── package.json
-├── pages # This directory holds all the pages for the site. 
+├── pages # This directory holds all the pages for the site.
 │   ├── _app.js
 │   ├── _document.js
 │   ├── about-us.js
-│   ├── blog # This directory hold all of the blog posts 
+│   ├── blog # This directory hold all of the blog posts
 │   │   ├── an-honest-approach-to-investor-relations
 │   │   │   └── index.mdx
 │   │   ├── performance-metrics-how-are-your-investors-judging-you
@@ -107,7 +107,7 @@ README.md
 ├── postcss.config.js
 ├── public
 │   ├── images # You should add images to this directory and reference them from code like this: src=" images/clockworkLogo.png"
-├── styles # Folder to hold all styles 
+├── styles # Folder to hold all styles
 │   ├── base
 │   │   ├── reset.css
 │   │   └── typography.css
@@ -131,7 +131,7 @@ README.md
 
 ## FAQ
 ### How can I create a new page?
-You can create a new page, e.g. https://clockwork.app/contact-us by adding a `contact-us.js` file under the `pages` directory. From there you should export a react function/component that holds the content of the entire page. Refer to the ones that are already created for examples.
+You can create a new page, e.g. https://www.clockwork.app/contact-us by adding a `contact-us.js` file under the `pages` directory. From there you should export a react function/component that holds the content of the entire page. Refer to the ones that are already created for examples.
 
 ### How can I create a new blog post?
 You can create a new blog post by adding a folder under the `pages/blog` directory with the name of the blog post. Next create an `index.mdx` file under that folder.
@@ -139,7 +139,7 @@ You can create a new blog post by adding a folder under the `pages/blog` directo
 e.g.
 pages
 │
-├── blog 
+├── blog
 │   │   ├── this-is-a-new-blog-post
 │   │   │   └── index.mdx
 ```
@@ -153,8 +153,8 @@ The project uses [tailwind css](https://tailwindcss.com/docs). Its a utility fir
 // e.g.
 
 ...
-<h1 className="text-center"> 
-  This is some title that I want to modify 
+<h1 className="text-center">
+  This is some title that I want to modify
 </h1>
 
 ...

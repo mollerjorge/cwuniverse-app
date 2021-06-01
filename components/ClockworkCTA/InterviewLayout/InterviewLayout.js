@@ -47,14 +47,17 @@ const InterviewLayout = ({ children, meta }) => {
 
         <meta property="og:title" content={meta.title}></meta>
         <meta property="og:description" content={meta.description}></meta>
-        <meta property="og:image" content={`/images/${meta.thumbnail}`}></meta>
-        <meta property="og:url" content={`https://clockwork.app${router.pathname}`}></meta>
+        <meta
+          property="og:image"
+          content={`https://www.clockwork.app/images/${meta.thumbnail}`}
+        ></meta>
+        <meta property="og:url" content={`https://www.clockwork.app${router.pathname}`}></meta>
 
         <meta property="twitter:title" content={meta.title}></meta>
         <meta property="twitter:description" content={meta.description}></meta>
         <meta
           property="twitter:image"
-          content={`https://cwuniverse-app.vercel.app/images/${meta.thumbnail}`}
+          content={`https://www.clockwork.app/images/${meta.thumbnail}`}
         ></meta>
         <meta property="twitter:card" content="summary_large_image"></meta>
       </Head>

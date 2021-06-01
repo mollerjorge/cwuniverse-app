@@ -65,8 +65,8 @@ module "tf_next" {
   # e.g. domain_names[0] -> domain_zone_names[0]
   #      domain_names[1] -> domain_zone_names[1]
   #      etc.
-  domain_names      = [local.custom_domain, "clockwork.app"]
-  domain_zone_names = [data.aws_route53_zone.custom_domain_zone.name, data.aws_route53_zone.custom_domain_zone.name]
+  domain_names      = [local.custom_domain]
+  domain_zone_names = [data.aws_route53_zone.custom_domain_zone.name]
 
   # Tell CloudFront to use our created certificate
   cloudfront_viewer_certificate_arn = "arn:aws:acm:us-east-1:613429685354:certificate/fff6731f-119f-4c99-8e2a-0cc6355924da"

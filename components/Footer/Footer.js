@@ -23,7 +23,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://clockwork.app/"
+              href="https://www.clockwork.app/"
               className="text-md mt-5 block  text-gray-500 antialiased"
             >
               clockwork.app
