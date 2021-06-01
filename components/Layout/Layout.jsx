@@ -27,9 +27,15 @@ const Layout = ({ children }) => {
           property="og:description"
           content="Modern Investor Relations. Clockwork improves transparency to drive results for founders and investors alike."
         />
-        <meta property="og:url" content="https://clockwork.app/" />
-        <meta property="og:image" content="https://clockwork.app/images/clockwork-share-image_2x.png" />
-        <meta property="og:image:secure_url" content="https://clockwork.app/images/clockwork-share-image_2x.png" />
+        <meta property="og:url" content="https://www.clockwork.app/" />
+        <meta
+          property="og:image"
+          content="https://www.clockwork.app/images/clockwork-share-image_2x.png"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.clockwork.app/images/clockwork-share-image_2x.png"
+        />
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
         <script
           // eslint-disable-next-line react/no-danger
