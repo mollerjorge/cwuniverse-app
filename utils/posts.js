@@ -150,6 +150,16 @@ export default {
       description:
         'The first due diligence questions you will likely ask about any business are “what is it?”, “what does it do?”, “why does it exist?”, and, maybe, “who cares?” And it’s not difficult to see why.',
     },
+    {
+      author: 'CAITLIN JAMES',
+      thumbnail: 'the-new-startup-cities/city-landscape.jpg',
+      category: 'Clockwork Perspectives',
+      title: 'The New Startup Cities',
+      publishedAt: '2021-06-01',
+      link: 'the-new-startup-cities',
+      description:
+        'While traditional hubs such as the Bay Area and New York City continue to be popular choices for launching new companies, numerous other US cities can boast of vibrant entrepreneurial communities.',
+    },
   ],
   'Clockwork Investor Series': [
     {
