@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
         />
         <meta
           property="og:description"
-          content="Clockwork powers modern investor relations. Improving transparency to drive results for founders and investors alike."
+          content="Clockwork powers modern investor relations and management, improving transparency to drive results for founders and investors alike."
         />
         <meta property="og:url" content="https://www.clockwork.app/" />
         <meta
@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
         />
         <meta
           name="twitter:description"
-          content="Clockwork powers modern investor relations. Improving transparency to drive results for founders and investors alike."
+          content="Clockwork powers modern investor relations and management, improving transparency to drive results for founders and investors alike."
         />
         <meta
           name="twitter:image"

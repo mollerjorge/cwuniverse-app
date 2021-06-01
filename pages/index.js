@@ -31,8 +31,13 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Clockwork Universe</title>
-        <meta name="description" content="Clockwork universe, investment intelligence app" />
+        <title>
+          Clockwork | Private Investment Intelligence Software for Founders and Investors
+        </title>
+        <meta
+          name="description"
+          content="Clockwork powers modern investor relations and management, improving transparency to drive results for founders and investors alike."
+        />
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
 
