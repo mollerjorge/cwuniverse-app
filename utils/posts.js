@@ -160,6 +160,16 @@ export default {
       description:
         'While traditional hubs such as the Bay Area and New York City continue to be popular choices for launching new companies, numerous other US cities can boast of vibrant entrepreneurial communities.',
     },
+    {
+      author: 'PATRICK ZAILCKAS',
+      thumbnail: 'diligence-series-meeting-the-team/pyramid-sky.jpg',
+      category: 'Clockwork Perspectives',
+      title: 'Diligence Series: Meeting the Team',
+      publishedAt: '2021-06-07',
+      link: 'diligence-series-meeting-the-team',
+      description:
+        'If you’ve gathered a solid understanding of what exactly a particular business venture seeks to accomplish, the next questions that probably need addressing are “who’s building it?” and “who’s behind it?” Here, we embark on a journey to examine the legitimacy of the leaders seeking to bring their vision to fruition.',
+    },
   ],
   'Clockwork Investor Series': [
     {
