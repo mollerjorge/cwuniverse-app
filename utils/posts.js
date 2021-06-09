@@ -253,5 +253,14 @@ export default {
       description: 'Interview With Ariana Thacker (Conscience VC)',
       fundName: 'Conscience VC',
     },
+    {
+      thumbnail: 'investor-series/sunny-dhillon.jpg',
+      category: 'Clockwork Investor Series',
+      title: 'Interview With Sunny Dhillon',
+      publishedAt: '2021-06-09',
+      link: 'interview-with-sunny-dhillon',
+      description: 'Interview With Sunny Dhillon (Signia Venture Partners)',
+      fundName: 'Signia Venture Partners',
+    },
   ],
 }
