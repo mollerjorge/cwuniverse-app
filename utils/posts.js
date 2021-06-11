@@ -170,6 +170,16 @@ export default {
       description:
         'If you’ve gathered a solid understanding of what exactly a particular business venture seeks to accomplish, the next questions that probably need addressing are “who’s building it?” and “who’s behind it?” Here, we embark on a journey to examine the legitimacy of the leaders seeking to bring their vision to fruition.',
     },
+    {
+      author: 'KYLE ROSE',
+      thumbnail: 'preferred-equity-an-overview/team-working.jpg',
+      category: 'Clockwork Perspectives',
+      title: 'Preferred Equity: An Overview',
+      publishedAt: '2021-06-11',
+      link: 'preferred-equity-an-overview',
+      description:
+        'As a follow up to our most recent instrument publication on common equity, this piece is meant to provide a brief overview of preferred equity, specifically as it pertains to and is commonly used in early-stage financing.',
+    },
   ],
   'Clockwork Investor Series': [
     {
