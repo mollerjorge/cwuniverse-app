@@ -48,8 +48,8 @@ export default function Home() {
           <div className="w-full">
             <div className="mt-20  md:mt-40 lg:mt-12 lg:flex lg:justify-between lg:items-center">
               <div className="w-full lg:w-1/2">
-                <h1 className="capitalize text-big font-raleway font-normal text-gray-700 max-w-sm lg:text-60 lg:max-w-2xl">
-                  Modern investor relations
+                <h1 className="text-big font-raleway font-normal text-gray-700 max-w-sm lg:text-60 lg:max-w-2xl">
+                  The Evolution of Portfolio Operations.
                 </h1>
                 <p className="font-lato text-xl mt-6  text-black font-light lg:max-w-lg antialiased">
                   Clockwork improves transparency to drive results for founders and investors alike.
