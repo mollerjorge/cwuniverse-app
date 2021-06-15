@@ -180,6 +180,16 @@ export default {
       description:
         'As a follow up to our most recent instrument publication on common equity, this piece is meant to provide a brief overview of preferred equity, specifically as it pertains to and is commonly used in early-stage financing.',
     },
+    {
+      author: 'PAOLA SCHAAR',
+      thumbnail: 'venture-backed-in-latin-america-a-booming-ecosystem/Growing-plant-on-money.jpg',
+      category: 'Clockwork Perspectives',
+      title: 'Venture Backed in Latin America: A Booming Ecosystem',
+      publishedAt: '2021-06-16',
+      link: 'venture-backed-in-latin-america-a-booming-ecosystem',
+      description:
+        'As the Venture Capital (VC) ecosystem continues to experience strong growth globally, even despite the pandemic, it is important to call attention to a new promising player, LatAm.',
+    },
   ],
   'Clockwork Investor Series': [
     {
