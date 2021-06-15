@@ -21,7 +21,7 @@ const Post = () => {
       </p>
 
       <p className="mb-16">
-      The region’s favorable conditions and economic environment has prompted venture capital to take off as of late. Despite the pandemic, Latin American startups had a record number of VC deals in 2020 with startup valuations exceeding levels ever seen before.
+      The region’s favorable conditions and economic environment have prompted venture capital to take off as of late. Despite the pandemic, Latin American startups had a record number of VC deals in 2020 with startup valuations exceeding levels ever seen before.
       </p>
 
       <div>
