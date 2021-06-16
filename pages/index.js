@@ -52,7 +52,8 @@ export default function Home() {
                   The Evolution of Portfolio Operations.
                 </h1>
                 <p className="font-lato text-xl mt-6  text-black font-light lg:max-w-lg antialiased">
-                  Clockwork improves transparency to drive results for founders and investors alike.
+                  Clockwork powers the actionable <br />
+                  source of truth for investors and founders.
                 </p>
                 <div className="mt-10 mb-10 lg:mb-0">
                   <Button
@@ -84,9 +85,6 @@ export default function Home() {
               <h2 className="leading-tight font-raleway font-normal text-gray-900 text-4xl lg:text-46 antialized">
                 Meet Clockwork Universe
               </h2>
-              <p className="text-md font-light antialiased mb-10">
-                A new technology platform for collaborative private investing.
-              </p>
             </div>
             <div className="w-full lg:w-8/12 flex flex-col lg:flex-row">
               <GroupBox
@@ -108,7 +106,8 @@ export default function Home() {
         <section id="enhancing private investment efficienty" className="bg-blue py-32">
           <div className=" container m-auto flex 2xl:px-24 w-full flex-col">
             <h2 className="text-4xl lg:text-5xl text-center w-full capitalize text-white mb-4 font-raleway">
-              enhancing private investment efficiency
+              The digital infrastructure <br />
+              for private investment.
             </h2>
             <p className="text-white text-center font-normal font-raleway antialiased text-lg  w-full">
               Clockwork® enables better outcomes for founders and investors throughout the
