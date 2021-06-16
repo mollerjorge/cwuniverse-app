@@ -20,15 +20,15 @@ const Layout = ({ children }) => {
         <link rel="apple-touch-icon" href="/images/cropped-clockwork-180x180.png"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <meta name="msapplication-TileImage" content="/images/cropped-clockwork-270x270.png"></meta>
-        <meta property="og:site_name" content="Clockwork | Clockwork Universe" />
+        <meta property="og:site_name" content="Clockwork Universe" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Clockwork | Private Investment Intelligence Software for Founders and Investors"
+          content="Clockwork Universe | Portfolio Operations and Investor Relations Software"
         />
         <meta
           property="og:description"
-          content="Clockwork powers modern investor relations and management, improving transparency to drive results for founders and investors alike."
+          content="Clockwork is the digital infrastructure for private investment, centered around a portfolio operations and investor relations platform."
         />
         <meta property="og:url" content="https://www.clockwork.app/" />
         <meta
@@ -44,11 +44,11 @@ const Layout = ({ children }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Clockwork | Private Investment Intelligence Software for Founders and Investors"
+          content="Clockwork Universe | Portfolio Operations and Investor Relations Software"
         />
         <meta
           name="twitter:description"
-          content="Clockwork powers modern investor relations and management, improving transparency to drive results for founders and investors alike."
+          content="Clockwork is the digital infrastructure for private investment, centered around a portfolio operations and investor relations platform."
         />
         <meta
           name="twitter:image"
