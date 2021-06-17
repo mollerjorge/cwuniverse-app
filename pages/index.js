@@ -52,7 +52,7 @@ export default function Home() {
                   The Evolution of Portfolio Operations.
                 </h1>
                 <p className="font-lato text-xl mt-6  text-black font-light lg:max-w-lg antialiased">
-                  Clockwork powers the actionable <br />
+                  Clockwork® powers the actionable <br />
                   source of truth for investors and founders.
                 </p>
                 <div className="mt-10 mb-10 lg:mb-0">
