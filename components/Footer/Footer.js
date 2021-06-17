@@ -101,7 +101,7 @@ const Footer = () => {
 
         <div className="mt-20 flex justify-between flex-col lg:flex-row">
           <p className="text-sm text-gray-500 antialiased">
-            © 2021 Clockwork. All Rights Reserved. Value over vanity.
+            © 2021 CLOCKWORK UNIVERSE, INC. All Rights Reserved. Value over vanity.
           </p>
           <div className="mt-5 lg:mt-0">
             <a

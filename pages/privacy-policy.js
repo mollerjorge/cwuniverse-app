@@ -4,14 +4,14 @@ const PrivacyPolicy = () => {
   return (
     <div className="p-32 font-lato privacy-policy">
       <h1 className="text-6xl font-raleway antialiased font-normal">
-        CLOCKWORK, LLC Privacy Policy
+        CLOCKWORK UNIVERSE, INC. Privacy Policy
       </h1>
       <p>EFFECTIVE DATE: June 15, 2020</p>
       <p>
-        In this Privacy Policy (“Policy”), we describe how Clockwork, LLC (“Clockwork,” “we,” “us,”
-        or “our”) collects, uses, and discloses information that we obtain about visitors to our
-        website https://www.clockwork.app/ (the “Site”) and the Clockwork Universe private
-        investment monitoring services (the “Services”).
+        In this Privacy Policy (“Policy”), we describe how CLOCKWORK UNIVERSE, INC. (“Clockwork,”
+        “we,” “us,” or “our”) collects, uses, and discloses information that we obtain about
+        visitors to our website https://www.clockwork.app/ (the “Site”) and the Clockwork Universe
+        private investment monitoring services (the “Services”).
       </p>
       <p>
         By visiting the Site, or using any of our Services, you agree that your personal information
