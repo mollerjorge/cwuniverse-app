@@ -48,7 +48,7 @@ const Newsletter = () => {
             ✉️
           </span>
           <p className="text-white font-lato tracking-wide text-md antialiased">
-            <span className="font-bold">Signup for the Clockwork orbit</span> for content on private
+            <span className="font-bold">Signup for the Clockwork Orbit</span> for content on private
             investing and product tips!
           </p>
         </div>
