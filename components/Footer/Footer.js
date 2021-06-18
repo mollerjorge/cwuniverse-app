@@ -9,8 +9,13 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-4/12 flex flex-col font-lato">
-            <img width={300} height={32} src="/images/clockwork-logo.png" alt="clockwork logo" />
-
+            <img
+              width={300}
+              height={63}
+              src="/images/clockwork-light-r.svg"
+              alt="clockwork logo"
+              className="cursor-pointer"
+            />
             <p className="text-md mt-10  text-gray-500 antialiased">
               Charlottesville | NYC | Mexico City | Montevideo
             </p>

@@ -16,9 +16,8 @@ const Header = () => {
       <div className="container flex m-auto py-8  justify-between items-center md:justify-between">
         <Link href="/">
           <img
-            width="230px"
-            height="48px"
-            src="/images/clockwork-logo.png"
+            width="280px"
+            src="/images/clockwork-light-r.svg"
             alt="clockwork logo"
             className="cursor-pointer"
           />
