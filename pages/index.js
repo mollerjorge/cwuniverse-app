@@ -49,10 +49,10 @@ export default function Home() {
             <div className="mt-20  md:mt-40 lg:mt-12 lg:flex lg:justify-between lg:items-center">
               <div className="w-full lg:w-1/2">
                 <h1 className="text-big font-raleway font-normal text-gray-700 max-w-sm lg:text-60 lg:max-w-2xl">
-                  The Evolution of Portfolio Operations.
+                  The evolution of portfolio operations.
                 </h1>
                 <p className="font-lato text-xl mt-6  text-black font-light lg:max-w-lg antialiased">
-                  Clockwork® powers the actionable <br />
+                  Clockwork Universe powers the actionable <br />
                   source of truth for investors and founders.
                 </p>
                 <div className="mt-10 mb-10 lg:mb-0">
