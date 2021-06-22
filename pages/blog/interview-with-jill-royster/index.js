@@ -29,7 +29,7 @@ const Interview = () => {
           <p className="uppercase mt-5 font-raleway tracking-widest font-light text-sm">
             Fund / Group
           </p>
-          <p className="antialiased">My investment process is two-fold: I invest directly in companies as an Angel, and I’m also a Venture Partner at Powerhouse Capital, a media focused technology venture firm in Los Angeles, CA.</p>
+          <strong className="antialiased">Angel / Venture Partner at Powerhouse Capital</strong>
 
           <p className="uppercase mt-5 font-raleway tracking-widest font-light text-sm">
             Focus Areas
@@ -49,14 +49,14 @@ const Interview = () => {
             HOW AND WHY DID YOU GET STARTED IN PRIVATE INVESTING?
           </h3>
           <p className="font-lato antialiased tracking-wide text-black mt-5">
-          I started investing as a direct byproduct of helping sell a sports consultancy in 2016. I’m a marketer by training and having worked for both publicly traded (Time Warner, Gannett) and PE-owned companies (TH Lee), I am comfortable navigating highly complex, nuanced organizations with varying lines of business, differing priorities and multiple stakeholders. My role in the sales effort was essentially to network the opportunity and “gut check” the different options. To get up to speed, I needed to increase my own understanding of the traditional deal process. I joined an angel syndicate in NYC, I went through the 37 Angels Investor Bootcamp course, and I started building a network of trusted, like-minded folks to help me learn and become a better investor. The Wing was my very first direct investment, and that single opportunity has afforded me many new learnings over the course of five (5) years.   
+          I started investing as a direct byproduct of helping sell a sports consultancy in 2016. I’m a marketer by training and having worked for both publicly traded (Time Warner, Gannett) and PE-owned companies (TH Lee), I am comfortable navigating highly complex, nuanced organizations with varying lines of business, differing priorities and multiple stakeholders. My role in the sales effort was essentially to network the opportunity and “gut check” the different options. To get up to speed, I needed to increase my own understanding of the traditional deal process. I joined an angel syndicate in NYC, I went through the 37 Angels Investor Bootcamp course, and I started building a network of trusted, like-minded folks to help me learn and become a better investor. The Wing was my very first direct investment, and that single opportunity has afforded me many new learnings over the course of years.
           </p>
 
           <h3 className="text-blue antialiased uppercase font-lato font-bold tracking-widest mt-10">
             WHAT IS THE SINGLE MOST IMPORTANT THING YOU VALUE IN AN INVESTMENT OPPORTUNITY?
           </h3>
           <p className="font-lato antialiased tracking-wide text-black mt-5">
-          It’s a tie between product market fit and the Founder(s).
+          It’s a tie between product market fit and the founder(s).
           </p>
 
           <h3 className="text-blue antialiased uppercase font-lato font-bold tracking-widest mt-10">
@@ -125,6 +125,7 @@ const Interview = () => {
           <h3 className="text-blue antialiased uppercase font-lato font-bold tracking-widest mt-10">
             WHAT’S YOUR TAKE ON THE PRIVATE MARKET OVERALL?
           </h3>
+          <MarketMeter count={5} />
           <p className="font-lato antialiased tracking-wide text-black mt-5">
           It’s frothy, but I’m optimistic.  Right now I’m trying to balance that optimism with realism.  
           </p>
