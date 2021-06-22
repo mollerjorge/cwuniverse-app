@@ -282,5 +282,14 @@ export default {
       description: 'Interview With Sunny Dhillon (Signia Venture Partners)',
       fundName: 'Signia Venture Partners',
     },
+    {
+      thumbnail: 'investor-series/jill-royster.jpg',
+      category: 'Clockwork Investor Series',
+      title: 'Interview With Jill Royster',
+      publishedAt: '2021-06-23',
+      link: 'interview-with-jill-royster',
+      description: 'Interview With Jill Royster (Angel / Powerhouse Capital)',
+      fundName: 'Angel / Powerhouse Capital',
+    },
   ],
 }
